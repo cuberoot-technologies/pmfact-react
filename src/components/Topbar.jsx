@@ -9,13 +9,25 @@ import { BsSearch } from "react-icons/bs";
 function Topbar() {
   return (
     <>
-   <div> <img src=" https://placehold.co/1519x150" /></div>
-   <Navbar expand="lg" className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center">
+      <img
+        src="https://placehold.co/1519x150"
+        alt=""
+        className="img-fluid"
+          style={{ maxWidth: "100%" }}
+      />
+    </div>
+    <Navbar expand="lg" className="d-flex justify-content-center">
       <Container fluid>
-        <Navbar.Brand href="#" className="text-center w-100"> {/* Add text-center and w-100 classes */}
-          <img src={pflogo} alt="" width="300px" className="mx-auto mt-3" />
+        <Navbar.Brand href="#" className="text-center w-100">
+          <img
+            src={pflogo}
+            alt=""
+            className="img-fluid mx-auto mt-3" 
+            style={{ maxWidth: "300px" }}
+          />
         </Navbar.Brand>
-        
+
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -29,8 +41,8 @@ function Topbar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </>
-  );
+  </>
+);
 }
 
 export default Topbar;
