@@ -11,7 +11,7 @@ function Topbar() {
     <>
     <div className="d-flex justify-content-center">
       <img
-        src="https://placehold.co/1519x150"
+        src="https://placehold.co/1920x150"
         alt=""
         className="img-fluid"
           style={{ maxWidth: "100%" }}
