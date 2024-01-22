@@ -7,7 +7,7 @@ const MemberNameLIst = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 9.5,
+    slidesToShow: 9,
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,

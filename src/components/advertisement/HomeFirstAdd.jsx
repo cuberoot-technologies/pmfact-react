@@ -7,9 +7,11 @@ const HomeFirstAdd = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.5,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     initialSlide: 0,
+    autoplay:true,
+    autoplaySpeed:2000,
     responsive: [
       {
         breakpoint: 600,
@@ -39,10 +41,16 @@ const HomeFirstAdd = () => {
         <div className="container">
           <Slider {...settings} style={sliderStyle}>
             <div className="first-add">
-              <img src={add1} alt="" />
+              <img src="https://placehold.co/2000x400" alt="" />
             </div>
             <div className="first-add">
-              <img src={add1} alt="" />
+              <img src="https://placehold.co/2000x400" alt="" />
+            </div>
+            <div className="first-add">
+              <img src="https://placehold.co/2000x400" alt="" />
+            </div>
+            <div className="first-add">
+              <img src="https://placehold.co/2000x400" alt="" />
             </div>
           </Slider>
         </div>
