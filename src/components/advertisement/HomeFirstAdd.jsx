@@ -6,12 +6,12 @@ const HomeFirstAdd = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay:true,
-    autoplaySpeed:2000,
+    autoplaySpeed:3000,
     responsive: [
       {
         breakpoint: 600,

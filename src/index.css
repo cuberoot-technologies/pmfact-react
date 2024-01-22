@@ -350,17 +350,17 @@ p.card-text {
 /*  mp-performance********************** */
 .mps {
   padding: 30px 0;
-  background: transparent linear-gradient(28deg, #FFFFFF 0%, #EDF2F6 100%) 0% 0% no-repeat padding-box;
+  background: #ebebeb 0% 0% no-repeat padding-box;
 }
 
 .gmps {
   padding: 30px 0;
-  background: transparent linear-gradient(28deg, #FFFFFF 0%, #d4d4d4 100%) 0% 0% no-repeat padding-box;
+  background: #ebebeb 0% 0% no-repeat padding-box;
 }
 
 
 .mps-background {
-  background: transparent linear-gradient(28deg, #FFFFFF 0%, #EDF2F6 100%) 0% 0% no-repeat padding-box;
+  background: #ebebeb 0% 0% no-repeat padding-box;
 }
 
 .wmps {
