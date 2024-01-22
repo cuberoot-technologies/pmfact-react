@@ -18,9 +18,6 @@ const Home = () => {
       <HomeFirstAdd />
       <Circles />
       <NewsvideoDesk />
-      {/* <div className="mps">
-        <NewsandVideos />
-      </div> */}
       <div className="mps">
         <MPperformance />
         <TopPerformerMps />

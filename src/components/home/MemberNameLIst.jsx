@@ -2,8 +2,6 @@ import Slider from "react-slick";
 import React from "react";
 import profile from "../../assets/profile.jpg";
 
-
-
 const MemberNameLIst = () => {
   var settings = {
     dots: false,
@@ -12,6 +10,8 @@ const MemberNameLIst = () => {
     slidesToShow: 9.5,
     slidesToScroll: 2,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2000, 
     responsive: [
       {
         breakpoint: 1024,
@@ -38,11 +38,22 @@ const MemberNameLIst = () => {
       },
     ],
   };
+
+
   return (
     <>
-    <div className="mem-list">
-      <div className="container mem-list">
-        <Slider {...settings}>
+     <style>{`
+        .slick-prev:before,
+        .slick-next:before {
+          font-size: 20px;
+          line-height: 1;
+          opacity: 0.75;
+          color: #000;
+        }
+      `}</style>
+      <div className="mem-list">
+        <div className="container mem-list">
+          <Slider {...settings}>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
@@ -104,7 +115,7 @@ const MemberNameLIst = () => {
             <p>Member Name Extend</p>
           </div>
         </Slider>
-      </div>
+        </div>
       </div>
     </>
   );
