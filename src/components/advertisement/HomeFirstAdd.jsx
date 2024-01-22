@@ -28,11 +28,16 @@ const HomeFirstAdd = () => {
       },
     ],
   };
+
+  const sliderStyle = {
+    width: '100%',
+    margin: '200',
+  };
   return (
     <>
       <div className="home-add-first">
         <div className="container">
-          <Slider {...settings}>
+          <Slider {...settings} style={sliderStyle}>
             <div className="first-add">
               <img src={add1} alt="" />
             </div>

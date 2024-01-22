@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import React from "react";
 import profile from "../../assets/profile.jpg";
 
+
+
 const MemberNameLIst = () => {
   var settings = {
     dots: false,
