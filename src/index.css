@@ -4602,3 +4602,52 @@ input{
   grid-template-columns: auto auto auto;
 } */
 }
+.slidercontent{
+  margin-left: 7.5rem;
+  display: flex;
+}
+
+.socialIcons{
+  color: #1b316a;
+  font-size:16px;
+   margin-right: 9.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 750px) {
+  .topbarcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slidercontent {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .socialIcons {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .slidercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topbarbox {
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+  }
+}

@@ -6,6 +6,9 @@ import Navbar from "react-bootstrap/Navbar";
 import pflogo from "../assets/pflogo.png";
 import { BsSearch } from "react-icons/bs";
 import Slider from "react-slick";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function Topbar() {
   var settings = {
@@ -66,11 +69,12 @@ function Topbar() {
           />
         </div>
       </div>
-      <div className="topbarcontainer" style={{ marginTop: "20px", display: "flex", justifyContent: "center" }}>
-        <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", marginRight: "2rem" }}>
+      <div className="topbarcontainer" style={{ marginTop: "20px", display: "flex", justifyContent: "space-between" }}>
+        <div className="slidercontent">
+        <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center",marginRight:"1rem" }}>
           <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>
         </div>
-        <div className="topbarslider" style={{ maxWidth: "400px", width: "50%" }}>
+        <div className="topbarslider" style={{ maxWidth: "250px", width: "100%"}}>
           <Slider {...settings}>
             <div className="topbarslider-content">
               <p>People Celebrate Diwali all across India on 22 January 2024</p>
@@ -91,7 +95,14 @@ function Topbar() {
               <p>Rahul Gandhi, Denied Entry In Temple, Asks "What Crime Have I Committed?"</p>
             </div>
           </Slider>
+          </div>
         </div>
+        <div className="socialIcons">
+        <i className="bi bi-facebook" style={{ marginRight: "10px" }}></i>
+        <i className="bi bi-whatsapp" style={{ marginRight: "10px" }}></i>
+        <i className="bi bi-linkedin" style={{ marginRight: "10px" }}></i>
+        <i className="bi bi-twitter-x" style={{ marginRight: "10px" }}></i>
+      </div>
       </div>
 
       <Navbar expand="lg" className="d-flex justify-content-center">
@@ -102,7 +113,7 @@ function Topbar() {
                 src={pflogo}
                 alt=""
                 className="img-fluid mx-auto mt-3"
-                style={{ maxWidth: "50%", height: "auto" }}
+                style={{ maxWidth: "40%", height: "auto" }}
               />
             </div>
           </Navbar.Brand>
