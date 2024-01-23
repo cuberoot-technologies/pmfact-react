@@ -11,6 +11,8 @@ const NewsvideoDesk = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay:true,
+    autoplaySpeed:6000,
     responsive: [
       {
         breakpoint: 1024,
@@ -115,9 +117,9 @@ const NewsvideoDesk = () => {
                 </div>
               </Slider>
             </div>
-            <div className="news-desk-bottom">
+            {/* <div className="news-desk-bottom">
               <div className="news-desk-bottom-add"></div>
-            </div>
+            </div> */}
           </div>
           <div className="home-news-grid">
             <div className="parliament-news-video-mp-news-list">
