@@ -4651,3 +4651,34 @@ input{
     margin-right: 0;
   }
 }
+
+.textbar-link {
+  text-decoration: none;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.textbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 600px) {
+  .textbar-link {
+    font-size: 10px;
+    margin-right: 3px;
+  }
+
+  .textslide a{
+    font-size: 10px;
+  }
+
+  .textbar-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
