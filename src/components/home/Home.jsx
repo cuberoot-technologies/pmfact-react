@@ -20,6 +20,9 @@ const Home = () => {
       <NewsvideoDesk />
       <div className="mps">
         <MPperformance />
+      </div>
+
+      <div className="wmps">
         <TopPerformerMps />
       </div>
 

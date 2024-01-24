@@ -50,7 +50,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -154,6 +154,7 @@ const NewsvideoDesk = () => {
             </div>
           </div>
         </div>
+
         <div className="bg-news-shorts">
           <div className="container">
             <div className="news-and-videos-shorts">
