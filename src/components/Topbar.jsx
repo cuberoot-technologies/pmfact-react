@@ -143,8 +143,8 @@ function Topbar() {
               <img
                 src={pflogo}
                 alt=""
-                className="img-fluid mx-auto mt-3"
-                style={{ maxWidth: "50%", height: "auto" }}
+                className="img-fluid mx-auto"
+                style={{ maxWidth: "30%", height: "auto" }}
               />
             </div>
           </Navbar.Brand>

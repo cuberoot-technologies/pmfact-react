@@ -4664,9 +4664,13 @@ input{
 }
 
 .textbar-link p {
-  font-size: 18px;
+  font-size: 15px;
 }
-
+.textbar-link{
+  text-decoration: none;
+  padding: 8px;
+  font-size: 15px;
+}
 .slidercontent{
   margin-left: 7.5rem;
   display: flex;
@@ -4767,11 +4771,7 @@ input{
     text-align: center;
   }
 }
-.textbar-link {
-  text-decoration: none;
-  padding: 8px;
-  font-size: 18px;
-}
+
 
 .textbar-container {
   display: flex;

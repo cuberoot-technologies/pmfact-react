@@ -7,13 +7,13 @@ const Textbar = () => {
 
   const linkStyle = {
     textDecoration: 'none',
-    padding: '8px',
+    padding: '4px',
   };
 
   const dropdownStyle = {
     ...linkStyle,
     color: hoveredLink === 'MPs Section' ? 'rgb(27, 49, 106)' : 'black',
-    fontWeight: hoveredLink === 'MPs Section' ? 'bold' : 'normal',
+    fontWeight: hoveredLink === 'MPs Section' ? 'bold' : 'bold',
   };
 
   return (
@@ -22,7 +22,7 @@ const Textbar = () => {
         <div className="container d-flex justify-content-between">
           <Link
             to="/" className="textbar-link"
-            style={hoveredLink === 'Home' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+            style={hoveredLink === 'Home' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('Home')}
             onMouseLeave={() => setHoveredLink(null)}
           >
@@ -30,7 +30,7 @@ const Textbar = () => {
           </Link>
           <Link
             to="/news-and-videos" className="textbar-link"
-            style={hoveredLink === 'News & Videos' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+            style={hoveredLink === 'News & Videos' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('News & Videos')}
             onMouseLeave={() => setHoveredLink(null)}
           >
@@ -38,7 +38,7 @@ const Textbar = () => {
           </Link>
           <Link
             to="/public-voice" className="textbar-link"
-            style={hoveredLink === 'Public Voice' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+            style={hoveredLink === 'Public Voice' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('Public Voice')}
             onMouseLeave={() => setHoveredLink(null)}
           >
@@ -46,7 +46,7 @@ const Textbar = () => {
           </Link>
           <Link
             to="/our-expert" className="textbar-link"
-            style={hoveredLink === 'PF Experts' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+            style={hoveredLink === 'PF Experts' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('PF Experts')}
             onMouseLeave={() => setHoveredLink(null)}
           >
@@ -54,7 +54,7 @@ const Textbar = () => {
           </Link>
           <Link
             to="/parliament-blog" className="textbar-link"
-            style={hoveredLink === 'Parliamentary blog' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+            style={hoveredLink === 'Parliamentary blog' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('Parliamentary blog')}
             onMouseLeave={() => setHoveredLink(null)}
           >
@@ -72,28 +72,28 @@ const Textbar = () => {
               <Dropdown.Item
                 as={Link}
                 to="/parliament-performance" className="textbar-link"
-                style={hoveredLink === 'Parliament Performance' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+                style={hoveredLink === 'Parliament Performance' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
               >
                 Parliament Performance
               </Dropdown.Item>
               <Dropdown.Item
                 as={Link}
                 to="/rate-your-mp" className="textbar-link"
-                style={hoveredLink === 'Rate Your MPs' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+                style={hoveredLink === 'Rate Your MPs' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
               >
                 Rate Your MPs
               </Dropdown.Item>
               <Dropdown.Item
                 as={Link}
                 to="/our-mps" className="textbar-link"
-                style={hoveredLink === 'Our MPs' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+                style={hoveredLink === 'Our MPs' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
               >
                 Our MPs
               </Dropdown.Item>
               <Dropdown.Item
                 as={Link}
                 to="/wish-your-mp" className="textbar-link"
-                style={hoveredLink === 'Wish your Mp' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontWeight: 'bold' } : linkStyle}
+                style={hoveredLink === 'Wish your Mp' ? { ...linkStyle, color: 'rgb(27, 49, 106)',fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontSize: '15px', fontWeight: 'bold' }}
               >
                 Wish your Mp
               </Dropdown.Item>
