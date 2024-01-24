@@ -4674,7 +4674,7 @@ input{
 
 .socialIcons{
   color: #1b316a;
-  font-size:16px;
+  font-size:20px;
    margin-right: 9.5rem;
   display: flex;
   justify-content: space-around;
@@ -4698,6 +4698,12 @@ input{
     justify-content: center;
     margin-top: 1rem;
   }
+
+  .date-icon {
+    display: flex;
+    align-items: center; 
+    text-align: center;
+  }
 }
 
 @media (max-width: 450px) {
@@ -4714,6 +4720,12 @@ input{
     justify-content: center;
     text-align: center;
     margin-right: 0;
+  }
+
+  .date-icon {
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
 }
 

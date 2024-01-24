@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import pflogo from "../assets/pflogo.png";
 import { BsSearch } from "react-icons/bs";
 import Slider from "react-slick";
+import React, { useState, useEffect } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -47,7 +48,32 @@ function Topbar() {
       },
     ],
   };
+  const [currentDate, setCurrentDate] = useState('Loading...');
 
+  useEffect(() => {
+    const formatDate = (date) => {
+      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const day = days[date.getDay()];
+      const dayOfMonth = date.getDate();
+      const month = date.getMonth() + 1;
+      const year = date.getFullYear();
+
+      return `${day}, ${dayOfMonth < 10 ? '0' : ''}${dayOfMonth}-${month < 10 ? '0' : ''}${month}-${year}`;
+    };
+
+    const fetchCurrentDate = async () => {
+      try {
+        const currentDate = new Date();
+        const formattedDate = formatDate(currentDate);
+        setCurrentDate(formattedDate);
+      } catch (error) {
+        console.error('Error fetching current date:', error);
+        setCurrentDate('Error fetching date');
+      }
+    };
+
+    fetchCurrentDate();
+  }, []);
   return (
     <>
       <div className="d-flex justify-content-center">
@@ -97,11 +123,16 @@ function Topbar() {
           </Slider>
           </div>
         </div>
+        <div className="date-icon" style={{flexDirection:'column'}}>
         <div className="socialIcons">
-        <i className="bi bi-facebook" style={{ marginRight: "10px" }}></i>
-        <i className="bi bi-whatsapp" style={{ marginRight: "10px" }}></i>
-        <i className="bi bi-linkedin" style={{ marginRight: "10px" }}></i>
-        <i className="bi bi-twitter-x" style={{ marginRight: "10px" }}></i>
+        <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
+        <i className="bi bi-whatsapp" style={{ marginRight: "15px" }}></i>
+        <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
+        <i className="bi bi-twitter-x" style={{ marginRight: "13px" }}></i>
+        </div>
+        <div className="datecontainer">
+          <p style={{fontWeight:'bold',fontSize:'12px'}}>{currentDate}</p>
+        </div>
       </div>
       </div>
 

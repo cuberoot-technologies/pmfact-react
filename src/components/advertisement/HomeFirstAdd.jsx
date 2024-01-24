@@ -16,7 +16,7 @@ const HomeFirstAdd = () => {
       {
         breakpoint: 1000,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           initialSlide: 1,
         },
