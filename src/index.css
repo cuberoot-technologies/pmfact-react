@@ -4671,7 +4671,7 @@ input{
 }
 
 .navbarbox img{
-  width: 40vw;
+  width: 30vw;
   height: auto
 }
 .textbar-link p {
@@ -4702,9 +4702,9 @@ input{
 }
 
 .brand-text {
-  font-size: 15px;
+  font-size: 12px;
   text-align: left;
-  margin-left: 0.8rem;
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 750px) {
