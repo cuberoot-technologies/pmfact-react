@@ -1234,7 +1234,7 @@ input {
 
 /* footer******************* */
 .footer {
-  background: #7A7A7A 0% 0% no-repeat padding-box;
+  background: #5a5959 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
@@ -3881,10 +3881,6 @@ input.click-here {
 
 
 @media only screen and (min-width: 991px) {
-
-
-
-  /* home*************** */
   .member-profile-img img {
     height: 80px;
     width: 80px;
@@ -4460,6 +4456,7 @@ input.click-here {
     grid-template-columns: auto auto auto auto;
     column-gap: 30px;
     height: 380px;
+    margin-top: 2rem;
   }
 
   .footer-wrapper h5 {
@@ -4497,12 +4494,6 @@ input.click-here {
     padding: 15px 15px 5px 15px;
   }
 
-  .footer-wrapper-fourth svg {
-    color: hsla(38, 100%, 50%, 1) !important;
-    font-size: 28px;
-    margin-right: 10px;
-  }
-
   .individuals-top-wrapper-bottom-details h1 {
     padding: 20px;
     font-size: 16px;
@@ -4513,19 +4504,23 @@ input.click-here {
   }
 
   .footer-wrapper-left {
-    width: 100%;
+    width: 50%;
   }
 
   .footer-wrapper-middle {
-    width: 100%;
+    width: 50%;
   }
 
   .footer-wrapper-right {
-    width: 100%;
+    width: 80%;
+  }
+
+  .footer-wrapper-right p{
+    width: 70%;
   }
 
   .footer-wrapper-fourth {
-    width: 100%;
+    width: 50%;
   }
 
   .footer-wrapper-left img {
@@ -4753,6 +4748,64 @@ input{
 
   .textbar-container {
     flex-direction: column;
+  }
+}
+
+@media (max-width:990px){
+  .footer-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-wrapper-left {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .footer-wrapper-middle {
+    width: 100%;
+    margin-top: 2rem;
+    display: none;
+  }
+
+  .footer-wrapper-right {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .footer-wrapper p{
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .footer-wrapper-fourth {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-wrapper-left img {
+    width: 40px;
+    margin-bottom: 20px;
+    margin-top:1rem;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 30px;
+    height: auto;
+  }
+
+  .footer-wrapper h5 {
+    color: #e0e0e0;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-wrapper p {
+    color: #cdcbcb;
+    font-size: 12px;
   }
 }
 

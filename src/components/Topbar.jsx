@@ -136,7 +136,7 @@ function Topbar() {
       </div>
       </div>
 
-      <Navbar expand="lg" className="d-flex justify-content-center">
+      <Navbar expand="lg" className="d-flex justify-content-center" style={{zIndex:'3'}}>
         <Container fluid>
           <Navbar.Brand href="#" className="text-center w-100">
             <div className="d-flex align-items-end justify-content-center">

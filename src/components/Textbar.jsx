@@ -18,7 +18,7 @@ const Textbar = () => {
 
   return (
     <>
-      <div className="textslide textbar-container">
+      <div className="textslide textbar-container" style={{zIndex:'3'}}>
         <div className="container d-flex justify-content-between">
           <Link
             to="/" className="textbar-link"

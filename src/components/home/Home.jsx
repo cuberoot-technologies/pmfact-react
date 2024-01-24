@@ -33,7 +33,7 @@ const Home = () => {
       <div className="wmps">
         <OurExperts />
       </div>
-        <FollowUs />
+        {/* <FollowUs /> */}
     </>
   );
 };
