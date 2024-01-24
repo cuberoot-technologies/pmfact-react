@@ -134,14 +134,19 @@ function Topbar() {
       <Navbar expand="lg" className="d-flex justify-content-center" style={{zIndex:'3'}}>
         <Container fluid>
           <Navbar.Brand href="#" className="text-center w-100">
+            <div className="navbarbox">
             <div className="d-flex align-items-end justify-content-center">
               <img
                 src={pflogo}
                 alt=""
-                className="mx-auto"
-                style={{ width: "40%", height: "auto" }}
+                style={{ }}
               />
+              </div>
+              <div className="brandtextbox">
+              <p className="brand-text">Representatives<br/>At Work</p>
             </div>
+            </div>
+            
           </Navbar.Brand>
         </Container>
       </Navbar>

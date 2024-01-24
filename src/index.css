@@ -4657,12 +4657,23 @@ input{
 .wish-your-mp-wrapper{
   margin: 0;
 }
+
 /* .pfblog-desk-grid{
   display: grid;
   grid-template-columns: auto auto auto;
 } */
 }
 
+.navbarbox{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.navbarbox img{
+  width: 40vw;
+  height: auto
+}
 .textbar-link p {
   font-size: 15px;
 }
@@ -4690,6 +4701,12 @@ input{
   justify-content: space-between
 }
 
+.brand-text {
+  font-size: 15px;
+  text-align: left;
+  margin-left: 0.8rem;
+}
+
 @media (max-width: 750px) {
   .topbarcontainer {
     flex-direction: column;
@@ -4699,6 +4716,11 @@ input{
   .slidercontent {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  .brand-text {
+    font-size: 7px;
+    margin-left: 0.4rem;
   }
 
   .socialIcons {
@@ -4764,7 +4786,10 @@ input{
     flex-direction: column;
     align-items: center;
   }
-
+  .navbarbox img{
+    width: 55vw;
+    justify-content: center;
+  }
   .topbarbox {
     margin-bottom: 0.5rem;
     align-items: center;
