@@ -65,7 +65,7 @@ const Textbar = () => {
             onMouseLeave={() => setHoveredLink(null)}
           >
             <Dropdown.Toggle variant="link" id="dropdown-basic" style={dropdownStyle}  className="textbar-link">
-              MPs Section
+              <p>MPs Section</p>
             </Dropdown.Toggle>
 
             <Dropdown.Menu>

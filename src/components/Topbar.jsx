@@ -79,8 +79,8 @@ function Topbar() {
       <div className="d-flex justify-content-center">
         <div
           style={{
-            width: '84%',
-            height: '100px',
+            width: '95%',
+            height: '115px',
             backgroundColor: 'rgb(27 49 106)',
             display: 'flex',
             justifyContent: 'center',
@@ -100,7 +100,7 @@ function Topbar() {
         <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center",marginRight:"1rem" }}>
           <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>
         </div>
-        <div className="topbarslider" style={{ maxWidth: "250px", width: "100%"}}>
+        <div className="topbarslider">
           <Slider {...settings}>
             <div className="topbarslider-content">
               <p>People Celebrate Diwali all across India on 22 January 2024</p>
