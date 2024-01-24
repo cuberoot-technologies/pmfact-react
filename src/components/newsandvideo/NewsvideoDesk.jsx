@@ -50,7 +50,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -160,7 +160,6 @@ const NewsvideoDesk = () => {
             <div className="news-and-videos-shorts">
               <div className="parlimentry-news">
                 <h1>
-                  {" "}
                   <span className="top-line"></span>Parliamentary Shorts
                 </h1>
                 <button className="view-more-news">View More</button>
