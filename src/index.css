@@ -229,12 +229,12 @@ p {
 
 .textslide {
   width: auto;
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .textslide a {
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
   padding: 0;
   text-align: center;
   margin: 0;
@@ -4416,7 +4416,7 @@ input.click-here {
   }
 
   .textslide a {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .mp-performance h1 {
@@ -4683,6 +4683,13 @@ input{
   display: flex;
   justify-content: space-around;
 }
+
+.topbarcontainer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between
+}
+
 @media (max-width: 750px) {
   .topbarcontainer {
     flex-direction: column;
@@ -4741,6 +4748,15 @@ input{
   max-width: 400px;
 }
 
+.adtopbar{
+  width:95%;
+  height:115px;
+  background-color: rgb(27 49 106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 450px) {
 
   .slidercontent {
@@ -4757,8 +4773,16 @@ input{
     margin-right: 0;
   }
 
+  .topbarcontainer{
+    display: none;
+  }
+
   .textbar-link p{
     font-size: 10px;
+  }
+
+  .adtopbar{
+    display: none;
   }
 
   .topbarslider {
