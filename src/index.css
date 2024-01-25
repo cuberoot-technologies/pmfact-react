@@ -105,6 +105,7 @@ p {
   color: #fff;
   border-radius: 5px;
   padding: 2px 20px;
+  margin-bottom: 2rem;
 }
 
 .view-more-news {
@@ -3912,6 +3913,11 @@ input.click-here {
     align-items: center;
   }
 
+  .kharch-form, .kharch-form-second{
+    margin: auto;
+  width: 50%; 
+  text-align: center;
+  }
   .res-desk {
     display: flex;
   }
