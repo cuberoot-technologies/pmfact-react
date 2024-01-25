@@ -108,12 +108,13 @@ p {
 }
 
 .view-more-news {
-  font-size: 14px;
+  font-size: 12px;
   outline: none;
   color: #FB8179;
   margin: 0;
+  margin-right: 3%;
   border: 1px solid;
-  padding: yellow;
+  /* padding: yellow; */
   padding: 3px 18px !important;
   padding: 26px;
   border-radius: 26px;
@@ -239,11 +240,6 @@ p {
   text-align: center;
   margin: 0;
 }
-
-.slick-slide.slick-active {
-  /* text-align: center; */
-}
-
 
 /* MEmber list**************************************** */
 .member-profile-box {
@@ -2309,9 +2305,10 @@ form input[type="text"] {
   position: absolute;
   font-size: 16px;
   background-color: red;
-  padding: 10px;
+  padding: 5px;
   margin: 20px;
   color: #fff;
+  border-radius: 3px;
 }
 
 .caption-news {
@@ -2447,6 +2444,7 @@ form input[type="text"] {
 .time-play span svg {
   font-size: 20px;
 }
+
 
 
 /* mp-news** */
@@ -4274,6 +4272,10 @@ input.click-here {
     width: 70%;
   }
 
+  .parliament-news-video-mp-news{
+    display: flex;
+    flex-direction: column;
+  }
   .parliament-news-video-mp-news-list img {
     height: 108px;
     width: 50%;

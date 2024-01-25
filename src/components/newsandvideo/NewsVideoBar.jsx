@@ -31,17 +31,15 @@ const NewsVideoBar = () => {
                 activeItemIndex={activeItemIndex}
                 numberOfCards={1.9}
                 gutter={0}
-                // leftChevron={<button>{''}</button>}
-                // rightChevron={<button>{''}</button>}
                 outsideChevron
                 chevronWidth={chevronWidth}
               >
-                <button onClick={() => handleClick("button1")}>
+                {/* <button onClick={() => handleClick("button1")}>
                   Home
                 </button>
                 <button onClick={() => handleClick("button2")}>
                   News
-                </button>
+                </button> */}
               </ItemsCarousel>
               {renderData(
                 "button1",
@@ -49,12 +47,12 @@ const NewsVideoBar = () => {
                   < NewsAndVideos/>
                 </div>
               )}
-              {renderData(
+              {/* {renderData(
                 "button2",
                 <div className="wmps">
                 <NewsAndVideoDetails/>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

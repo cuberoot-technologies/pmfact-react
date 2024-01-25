@@ -90,7 +90,7 @@ function Topbar() {
           />
         </div>
       </div>
-      <div className="topbarcontainer" style={{  }}>
+      <div className="topbarcontainer">
         <div className="slidercontent">
         <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center",marginRight:"1rem" }}>
           <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>

@@ -10,7 +10,9 @@ const NewsAndVideos = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.5,
+    autoplay:true,
+    autoplaySpeed:4000,
+    slidesToShow: 1,
     slidesToScroll: 1,
 
     responsive: [
@@ -29,14 +31,16 @@ const NewsAndVideos = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    autoplay:true,
+    autoplaySpeed:4000,
+    slidesToShow: 4,
     slidesToScroll: 1,
 
     responsive: [
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -78,7 +82,7 @@ const NewsAndVideos = () => {
                 <img
                   src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
                   width="100%"
-                  height={400}
+                  height={'400px'}
                   alt=""
                 />
                 <div className="caption-news">
@@ -135,7 +139,7 @@ const NewsAndVideos = () => {
 
           <div className="news-and-videos-parlimentry-news">
             <div className="parlimentry-news">
-              <h1>Parliamentry</h1>
+              <h1 style={{color:'black', marginLeft:'3%',textDecoration:'underline', textDecorationColor:'red'}}>Parliamentry News</h1>
               <button className="view-more-news">View More</button>
             </div>
             <div className="parlimentry-news-list">
@@ -176,7 +180,7 @@ const NewsAndVideos = () => {
         </div>
         <div className="news-and-videos-shorts">
           <div className="parlimentry-news">
-            <h1>Parliamentry</h1>
+            <h1 style={{color:'black', marginLeft:'3%',textDecoration:'underline', textDecorationColor:'red'}}>Parliamentry Shorts</h1>
             <button className="view-more-news">View More</button>
           </div>
           <Slider {...settingsFirst}>
@@ -260,8 +264,9 @@ const NewsAndVideos = () => {
 
         <div className="parliament-news-video-mp-news">
           <div className="parlimentry-news">
-            <h1>Parliamentry</h1>
+            <h1 style={{color:'black', marginLeft:'3%',textDecoration:'underline', textDecorationColor:'red'}}>MPs News</h1>
             <button className="view-more-news">View More</button>
+            </div>
           <div className="news-pu">
            
               <div className="parliament-news-video-mp-news-list">
@@ -317,7 +322,6 @@ const NewsAndVideos = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };
