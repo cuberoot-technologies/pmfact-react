@@ -19,7 +19,7 @@ const ParliamentMpBlog = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -72,13 +72,14 @@ const ParliamentMpBlog = () => {
               </div>
               <div className="individuals-top-wrapper-bottom-content-right">
                 <div className="individuals-top-wrapper-bottom-progress">
-                  <CircularProgressbar
+                  <CircularProgressbar className="pfblogcircle"
                     value={percentage}
                     text={`${percentage}%`}
                     styles={buildStyles({
                       rotation: 0.5,
                       textSize: "16px",
                       textColor: "#f88",
+                      
                     })}
                   />
                 </div>
@@ -134,7 +135,7 @@ const ParliamentMpBlog = () => {
                 </div>
                 <div className="individuals-top-wrapper-bottom-content-right">
                   <div className="individuals-top-wrapper-bottom-progress">
-                    <CircularProgressbar
+                    <CircularProgressbar className="pfblogcircle"
                       value={percentage}
                       text={`${percentage}%`}
                       styles={buildStyles({
@@ -167,7 +168,7 @@ const ParliamentMpBlog = () => {
       <NewsandVideos />
       <div className="news-and-videos-shorts">
         <div className="parlimentry-news">
-          <h1>Parliamentry</h1>
+          <h1>Parliamentry Shorts</h1>
           <button className="view-more-news">View More</button>
         </div>
         <Slider {...settingsFirst}>

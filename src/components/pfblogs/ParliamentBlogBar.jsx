@@ -45,7 +45,7 @@ const ParliamentBlogBar = () => {
             </h3>
             <h3 onClick={() => handleClick("button4")}>Public Rating</h3>
             <h3 onClick={() => handleClick("button5")}>
-              News amd Videos
+              News and Videos
             </h3>
           </ItemsCarousel>
           {renderData(

@@ -9,9 +9,9 @@ const ParliamentBlogPerformance = () => {
       <div className="pf-blog-performance">
         <div className="pf-blog-performance-graph">
           <div className="pf-blog-performance-graph-half">
-            {/* <div className="all-cicle">
-              <div className="circle-first-1">
-                <div style={{ width: 00, height: 300 }}>
+            <div className="all-cicle">
+              {/* <div className="circle-first-1">
+                <div style={{ width: 300, height: 300 }}>
                   <CircularProgressbar
                     value={10}
                     styles={buildStyles({
@@ -21,9 +21,9 @@ const ParliamentBlogPerformance = () => {
                     })}
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="circle-sec">
-                <div style={{ width: 240, height: 240 }}>
+                <div style={{ width: 170, height: 170 }}>
                   <CircularProgressbar
                     value={46}
                     styles={buildStyles({
@@ -35,7 +35,7 @@ const ParliamentBlogPerformance = () => {
                 </div>
               </div>
               <div className="circle-th">
-                <div style={{ width: 180, height: 180 }}>
+                <div style={{ width: 110, height: 110 }}>
                   <CircularProgressbar
                     value={33}
                     styles={buildStyles({
@@ -47,7 +47,7 @@ const ParliamentBlogPerformance = () => {
                 </div>
               </div>
               <div className="circle-for">
-                <div style={{ width: 120, height: 120 }}>
+                <div style={{ width: 70, height: 70 }}>
                   <CircularProgressbar
                     value={66}
                     styles={buildStyles({
@@ -59,7 +59,7 @@ const ParliamentBlogPerformance = () => {
                 </div>
               </div>
               <div className="circle-fiv">
-                <div style={{ width: 70, height: 70 }}>
+                <div style={{ width: 30, height: 30 }}>
                   <CircularProgressbar
                     value={56}
                     styles={buildStyles({
@@ -70,8 +70,7 @@ const ParliamentBlogPerformance = () => {
                   />
                 </div>
               </div>
-            </div> */}
-            graph
+            </div>
           </div>
           <div className="pf-blog-performance-graph-content">
             <h6>Overall Performance</h6>
@@ -90,7 +89,7 @@ const ParliamentBlogPerformance = () => {
           <div className="pf-blog-performance-all-det">
             <div className="pf-blog-performance-all-det-top">
               <h3>83.14</h3>
-              <h6>Loksabha Perform...</h6>
+              <h6 style={{marginLeft:'1rem'}}>Loksabha Perform...</h6>
             </div>
             <div className="pf-blog-performance-all-det-top">
               <h4>421</h4>

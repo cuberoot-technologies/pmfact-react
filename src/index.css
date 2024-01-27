@@ -798,7 +798,7 @@ input {
   display: flex;
   width: 100%;
   padding-top: 10px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .share {
@@ -815,8 +815,6 @@ input {
 }
 
 
-
-
 .support-karen {
   display: flex;
   padding: 10px 0;
@@ -829,7 +827,10 @@ input {
   width: 40%;
 
 }
-
+.pfblogcircle{
+  width:70%;
+  margin-bottom: 2rem;
+}
 .support-karen-img img {
   width: 110px;
   height: 50px;
@@ -4536,8 +4537,6 @@ input.click-here {
     margin-bottom: 20px;
   }
 
-
-
   .f-img img {
     width: 50%;
   }
@@ -4893,6 +4892,8 @@ input{
     font-size: 12px;
   }
 }
+
+
 
 
 
