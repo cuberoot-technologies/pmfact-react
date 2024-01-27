@@ -4,11 +4,17 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import Card from "react-bootstrap/Card";
 
 const Circles = () => {
+    const containerStyle = {
+      padding: "25px",
+    };
   return (
     <>
       <div className="mps ">
         <div className="container res-desk">
-          <div className="circles">
+        <div className="newsandvideo">
+          <h1> <span className="top-line"></span>Overall Performance</h1>
+          </div>
+          <div className="circles" style={containerStyle}>
             <div className="all-cicle">
               <div className="circle-first">
                 <div style={{ width: 300, height: 300 }}>

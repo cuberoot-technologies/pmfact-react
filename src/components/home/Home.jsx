@@ -18,11 +18,11 @@ const Home = () => {
       <HomeFirstAdd />
       <Circles />
       <NewsvideoDesk />
-      {/* <div className="mps">
-        <NewsandVideos />
-      </div> */}
       <div className="mps">
         <MPperformance />
+      </div>
+
+      <div className="wmps">
         <TopPerformerMps />
       </div>
 
@@ -33,7 +33,7 @@ const Home = () => {
       <div className="wmps">
         <OurExperts />
       </div>
-        <FollowUs />
+        {/* <FollowUs /> */}
     </>
   );
 };

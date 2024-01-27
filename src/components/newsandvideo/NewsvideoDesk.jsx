@@ -11,6 +11,8 @@ const NewsvideoDesk = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay:true,
+    autoplaySpeed:6000,
     responsive: [
       {
         breakpoint: 1024,
@@ -48,7 +50,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1.2,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -115,9 +117,9 @@ const NewsvideoDesk = () => {
                 </div>
               </Slider>
             </div>
-            <div className="news-desk-bottom">
+            {/* <div className="news-desk-bottom">
               <div className="news-desk-bottom-add"></div>
-            </div>
+            </div> */}
           </div>
           <div className="home-news-grid">
             <div className="parliament-news-video-mp-news-list">
@@ -152,12 +154,12 @@ const NewsvideoDesk = () => {
             </div>
           </div>
         </div>
+
         <div className="bg-news-shorts">
           <div className="container">
             <div className="news-and-videos-shorts">
               <div className="parlimentry-news">
                 <h1>
-                  {" "}
                   <span className="top-line"></span>Parliamentary Shorts
                 </h1>
                 <button className="view-more-news">View More</button>

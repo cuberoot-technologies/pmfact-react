@@ -16,7 +16,7 @@ const PublicVoice = () => {
               <ItemsCarousel
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
-                numberOfCards={1.3}
+                numberOfCards={2}
                 gutter={30}
                 // leftChevron={<button>{''}</button>}
                 // rightChevron={<button>{''}</button>}
@@ -27,7 +27,7 @@ const PublicVoice = () => {
                   {" "}
                   <h1>Yahan Kharch Kijiye Sansad Ji</h1>
                 </Link>
-                <Link to="/public-">
+                <Link to="/public-voice">
                   {" "}
                   <h1>Sansad Ji Puchiye Mera Sawal</h1>
                 </Link>
@@ -47,26 +47,27 @@ const PublicVoice = () => {
                 </h6>
               </div>
               <div className="kharch-form">
-                <form action="">
-                  <input type="text" placeholder="Distric" />
-                  <input type="text" placeholder="Place" />
-                  <input type="text" placeholder="Type Your address/location" />
-                  <input type="text" placeholder="Filter by Work or Type" />
+                <form action="" className="kharchform">
+                  <input type="text" placeholder="Distric" style={{marginBottom:'0.5rem'}} />
+                  <input type="text" placeholder="Place" style={{marginBottom:'0.5rem'}} />
+                  <input type="text" placeholder="Type Your address/location" style={{marginBottom:'0.5rem'}} />
+                  <input type="text" placeholder="Filter by Work or Type" style={{marginBottom:'0.5rem'}} />
                   <input type="text" placeholder="Write Your Message" />
                   <div className="kharch-form-btn">
                     <button className="click-here"> Click Here</button>
                   </div>
-
+                  </form>
+                  </div>
                   <div className="kharch-form-second">
-                    <input type="text" placeholder="Type Name" />
-                    <input type="text" placeholder="Email" />
-                    <input type="text" placeholder="Mobile No" />
-                    <input type="text" placeholder="Slect Age Category" />
+                  <form action="">
+                    <input type="text" placeholder="Type Name" style={{marginBottom:'0.5rem'}} />
+                    <input type="text" placeholder="Email" style={{marginBottom:'0.5rem'}} />
+                    <input type="text" placeholder="Mobile No" style={{marginBottom:'0.5rem'}} />
+                    <input type="text" placeholder="Slect Age Category" style={{marginBottom:'0.5rem'}} />
                     <input type="text" placeholder="Enter city /Distric Name" />
                     <div className="kharch-form-btn">
-                      <input className="click-here" type="submit" />
+                      <input className="click-here" type="submit" style={{width:'100px'}}/>
                     </div>
-                  </div>
                 </form>
               </div>
             </div>

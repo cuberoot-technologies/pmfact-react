@@ -11,6 +11,7 @@ const TopPerformerMps = () => {
     slidesToShow: 4.9,
     slidesToScroll: 1,
     initialSlide: 0,
+    infinite: true,
     responsive: [
       {
         breakpoint: 1400,
@@ -40,7 +41,7 @@ const TopPerformerMps = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2.2,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -48,7 +49,7 @@ const TopPerformerMps = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.8,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
         },
       },

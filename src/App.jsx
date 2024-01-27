@@ -36,16 +36,6 @@ const App = () => {
     <>
       <Topbar />
       <Textbar />
-      <div className="float-rate">
-        {/* <RatePopup /> */}
-      </div>
-      <div className="float-arrow">
-        {/* <Uparrow /> */}
-      </div>
-      {/* <div className="float-news">
-        <UpdateNewspopUp/>
-      </div> */}
-      <div className="float">{/* <BottomBar /> */}</div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

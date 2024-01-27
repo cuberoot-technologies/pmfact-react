@@ -7,9 +7,12 @@ const MPperformance = () => {
   var settings = {
     dots: false,
     infinite: false,
+    autoplay:true,
+    autoplaySpeed:5000,
     speed: 500,
     slidesToShow: 4.9,
     slidesToScroll: 1,
+    infinite: true,
     initialSlide: 0,
     responsive: [
       {
@@ -40,7 +43,7 @@ const MPperformance = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2.2,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -48,7 +51,7 @@ const MPperformance = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2.2,
+          slidesToShow: 1.5,
           slidesToScroll: 1,
         },
       },
