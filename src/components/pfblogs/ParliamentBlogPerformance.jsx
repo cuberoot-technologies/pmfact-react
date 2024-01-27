@@ -22,7 +22,7 @@ const ParliamentBlogPerformance = () => {
                   />
                 </div>
               </div> */}
-              <div className="circle-sec">
+              {/* <div className="circle-sec">
                 <div style={{ width: 170, height: 170 }}>
                   <CircularProgressbar
                     value={46}
@@ -33,7 +33,7 @@ const ParliamentBlogPerformance = () => {
                     })}
                   />
                 </div>
-              </div>
+              </div> */}
               <div className="circle-th">
                 <div style={{ width: 110, height: 110 }}>
                   <CircularProgressbar
@@ -49,7 +49,7 @@ const ParliamentBlogPerformance = () => {
               <div className="circle-for">
                 <div style={{ width: 70, height: 70 }}>
                   <CircularProgressbar
-                    value={66}
+                    value={22}
                     styles={buildStyles({
                       rotation: 0.5,
                       textSize: "16px",
@@ -61,7 +61,7 @@ const ParliamentBlogPerformance = () => {
               <div className="circle-fiv">
                 <div style={{ width: 30, height: 30 }}>
                   <CircularProgressbar
-                    value={56}
+                    value={25}
                     styles={buildStyles({
                       rotation: 0.5,
                       textSize: "16px",
