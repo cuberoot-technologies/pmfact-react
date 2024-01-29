@@ -23,22 +23,6 @@ const Textbar = () => {
   return (
     <>
     <Navbar expand="lg" className="textslide textbar-container" style={{ zIndex: '3'}}>
-  <div className="d-flex align-items-center justify-content-between w-100">
-    {/* <div className="headerimage" style={{marginLeft:'0.3rem'}}>
-      <div className="navbarbox">
-        <div className="d-flex align-items-end justify-content-center">
-          <img
-            src={pflogo}
-            alt=""
-            style={{ }}
-          />
-        </div>
-      </div>
-      <div className="brandtextbox d-flex align-items-end justify-content-center">
-        <p className="brand-text">Representatives At Work</p>
-      </div>
-    </div> */}
-
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="container d-flex align-items-center justify-content-center">
@@ -128,7 +112,6 @@ const Textbar = () => {
           </NavDropdown>
           </Nav>
     </Navbar.Collapse>
-  </div>
 </Navbar>
     </>
   );
