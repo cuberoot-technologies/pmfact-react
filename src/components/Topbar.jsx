@@ -20,8 +20,9 @@ function Topbar() {
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,
+    
     autoplaySpeed: 4000,
-    arrows: false,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -78,9 +79,6 @@ function Topbar() {
     <>
       <div className="d-flex justify-content-center">
         <div className="adtopbar"
-          style={{
-            
-          }}
         >
           <img
             src="https://placehold.co/1920x150"
@@ -95,7 +93,7 @@ function Topbar() {
         <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center",marginRight:"1rem" }}>
           <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>
         </div>
-        <div className="topbarslider">
+        <div className="topbarslider" style={{margin:'0 8px'}}>
           <Slider {...settings}>
             <div className="topbarslider-content">
               <p>People Celebrate Diwali all across India on 22 January 2024</p>
@@ -131,8 +129,8 @@ function Topbar() {
       </div>
       </div>
 
-      <Navbar expand="lg" className="d-flex justify-content-center" style={{zIndex:'3'}}>
-        <Container fluid>
+      <Navbar expand="lg" className="topbarimage d-flex justify-content-center">
+        <Container fluid className="">
           <Navbar.Brand href="#" className="text-center w-100">
             <div className="navbarbox">
             <div className="d-flex align-items-end justify-content-center">
@@ -142,11 +140,10 @@ function Topbar() {
                 style={{ }}
               />
               </div>
-              <div className="brandtextbox">
-              <p className="brand-text">Representatives<br/>At Work</p>
             </div>
+            <div className="brandtextbox d-flex align-items-end justify-content-center">
+              <p className="brand-text">Representatives At Work</p>
             </div>
-            
           </Navbar.Brand>
         </Container>
       </Navbar>

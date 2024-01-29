@@ -11,6 +11,7 @@ const MemberNameLIst = () => {
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,
+    arrows:false,
     autoplaySpeed: 3000, 
     responsive: [
       {
@@ -42,15 +43,6 @@ const MemberNameLIst = () => {
 
   return (
     <>
-     <style>{`
-        .slick-prev:before,
-        .slick-next:before {
-          font-size: 20px;
-          line-height: 1;
-          opacity: 0.75;
-          color: #000;
-        }
-      `}</style>
       <div className="mem-list">
         <div className="container mem-list">
           <Slider {...settings}>

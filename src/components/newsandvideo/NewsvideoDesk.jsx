@@ -6,12 +6,13 @@ import profile from "../../assets/profile.jpg";
 const NewsvideoDesk = () => {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay:true,
+    arrows:false,
     autoplaySpeed:6000,
     responsive: [
       {
@@ -42,6 +43,7 @@ const NewsvideoDesk = () => {
   var settingsFirst = {
     dots: false,
     infinite: true,
+    arrows:false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,

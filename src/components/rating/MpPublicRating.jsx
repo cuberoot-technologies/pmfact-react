@@ -11,9 +11,9 @@ const MpPublicRating = () => {
   return (
     <>
       <div className="container">
-        <div className="mp-performance mt-2">
+        <div className="mp-performance ">
           <h1> <span className="top-line"></span>#MPs Public Rating</h1>
-          <p>Rate Your MP</p>
+          <button className="view-more-news">Rate Your MP</button>
         </div>
         <div className="mp-public-rating-text">
           <p>
