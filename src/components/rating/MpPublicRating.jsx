@@ -53,7 +53,8 @@ const MpPublicRating = () => {
             <div className="public-rating-card-right-dot">
               <BsThreeDotsVertical />
             </div>
-          </div><div className="public-rating-card">
+          </div>
+          <div className="public-rating-card">
             <div className="badges">4.3</div>
             <div className="public-rating-card-left">
               <img src={profile} alt="" />

@@ -515,7 +515,7 @@ p.card-text {
   display: flex;
   padding: 10px;
   background-color: #fff;
-  border-radius: 8px;
+  /* border-radius: 0px; */
   margin: 10px 0;
 }
 
@@ -537,8 +537,8 @@ p.card-text {
 
 .public-rating-card {
   padding-right: 20px;
-  border: 2px solid #c6c6c633;
-  border-radius: 30px;
+  /* border: 2px solid #c6c6c633; */
+  border-radius: 16px;
 }
 
 
