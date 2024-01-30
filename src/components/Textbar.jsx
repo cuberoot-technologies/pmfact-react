@@ -25,7 +25,7 @@ const Textbar = () => {
     <Navbar expand="lg" className="textslide textbar-container" style={{ zIndex: '3'}}>
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="container d-flex align-items-center justify-content-center">
+      <Nav className="container d-flex align-items-center justify-content-center" style={{padding:'0'}}>
           <Link
             to="/"
             className="textbar-link"
@@ -62,21 +62,30 @@ const Textbar = () => {
           >
             Blogs
           </Link>
+          <Link
+            to="/parliament-blog"
+            className="textbar-link"
+            style={hoveredLink === 'Parliamentary Performance' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontWeight: 'bold' }}
+            onMouseEnter={() => setHoveredLink('Parliamentary Performance')}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            Parliament Performance
+          </Link>
           <NavDropdown className="custom-dropdown"
-            title={<p className="moredropdown">More</p>}
+            title={<p className="moredropdown">...</p>}
             id="basic-nav-dropdown"
             style={dropdownStyle}
             onMouseEnter={() => setHoveredLink('MPs Section')}
             onMouseLeave={() => setHoveredLink(null)}
           >
-            <NavDropdown.Item
+            {/* <NavDropdown.Item
               as={Link}
               to="/parliament-performance"
               className="textbar-link"
               style={hoveredLink === 'Parliament Performance' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontWeight: 'bold' }}
             >
               Parliament Performance
-            </NavDropdown.Item>
+            </NavDropdown.Item> */}
             <NavDropdown.Item
               as={Link}
               to="/rate-your-mp"
