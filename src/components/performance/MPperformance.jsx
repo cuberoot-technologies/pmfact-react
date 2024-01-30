@@ -11,7 +11,7 @@ const MPperformance = () => {
     autoplaySpeed:5000,
     speed: 500,
     arrows: false,
-    slidesToShow: 4.9,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 0,

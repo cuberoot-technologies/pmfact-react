@@ -94,6 +94,9 @@ function Topbar() {
           <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>
         </div>
         <div className="topbarslider" style={{margin:'0 8px'}}>
+          <style>
+            
+          </style>
           <Slider {...settings}>
             <div className="topbarslider-content">
               <p>People Celebrate Diwali all across India on 22 January 2024</p>
