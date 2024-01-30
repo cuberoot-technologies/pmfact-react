@@ -60,7 +60,7 @@ const TopPerformerMps = () => {
     <>
      <div className="container">
         <div className="mp-performance">
-          <h1><span className="top-line"></span>#TopMP Performance</h1>
+          <h1>#TopMP Performance<span className="top-line"></span></h1>
           <button className="view-more-news">Search Your MP</button>
         </div>
         <div className="populer-performance">

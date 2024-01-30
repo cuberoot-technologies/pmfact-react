@@ -50,7 +50,7 @@ const OurExpert = () => {
     <>
       <div className="container  mb-5">
         <div className="mp-performance">
-          <h1> <span className="top-line"></span>Our Experts</h1>
+          <h1>Our Experts  <span className="top-line"></span></h1>
          <button className="view-more-news">View All</button>
         </div>
         <Slider {...settings}>

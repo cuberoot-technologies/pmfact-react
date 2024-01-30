@@ -64,7 +64,7 @@ const MPperformance = () => {
         <div className="mp-performance">
           <h1>
             {" "}
-            <span className="top-line"></span>#MP Performance
+           #MP Performance <span className="top-line"></span>
           </h1>
           <button className="view-more-news">Search Your MP</button>
         </div>

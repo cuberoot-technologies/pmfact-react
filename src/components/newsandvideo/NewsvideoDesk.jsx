@@ -66,7 +66,7 @@ const NewsvideoDesk = () => {
       <div className="mbt">
         <div className="container">
           <div className="newsandvideo">
-            <h1> <span className="top-line"></span>News & Videos</h1>
+            <h1> News & Videos <span className="top-line"></span></h1>
           </div>
           <div className="news-desk-slide-top">
             <div className="news-desk-slide">
@@ -162,7 +162,7 @@ const NewsvideoDesk = () => {
             <div className="news-and-videos-shorts">
               <div className="parlimentry-news">
                 <h1>
-                  <span className="top-line"></span>Parliamentary Shorts
+                 Parliamentary Shorts<span className="top-line"></span>
                 </h1>
                 <button className="view-more-news">View More</button>
               </div>

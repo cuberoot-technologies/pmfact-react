@@ -12,7 +12,7 @@ const Circles = () => {
       <div className="mps ">
         <div className="container res-desk">
         <div className="newsandvideo">
-          <h1> <span className="top-line"></span>Overall Performance</h1>
+          <h1> Overall Performance <span className="top-line"></span></h1>
           </div>
           <div className="circles" style={containerStyle}>
             <div className="all-cicle">

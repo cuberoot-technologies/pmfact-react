@@ -2435,11 +2435,10 @@ form input[type="text"] {
 
 .top-line {
   width: 100px;
-  height: 3px;
+  height: 4px;
   color: red;
   display: inherit;
   background-color: red;
-  margin-bottom: 10px;
 }
 
 .breaking-news-shorts-content h2 {
