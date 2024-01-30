@@ -195,7 +195,7 @@ const TopPerformerMps = () => {
               </div>
             </div>
           </Slider>
-          <Slider {...settings}>
+          <Slider {...settings} style={{marginTop:'1rem'}}>
             <div className="mp-performance-card">
               <div className="mp-performance-card-top">
                 <div className="mp-performance-card-left">
@@ -323,7 +323,7 @@ const TopPerformerMps = () => {
               </div>
             </div>
           </Slider>
-          <Slider {...settings}>
+          <Slider {...settings} style={{marginTop:'1rem'}}>
             <div className="mp-performance-card">
               <div className="mp-performance-card-top">
                 <div className="mp-performance-card-left">
