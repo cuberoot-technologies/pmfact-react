@@ -119,6 +119,7 @@ function Topbar() {
           </Slider>
           </div>
         </div>
+        
         <div className="date-icon" style={{flexDirection:'column'}}>
         <div className="socialIcons">
         <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
@@ -126,12 +127,11 @@ function Topbar() {
         <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
         <i className="bi bi-twitter-x" style={{ marginRight: "13px" }}></i>
         </div>
-        <div className="datecontainer">
-          <p style={{fontWeight:'bold',fontSize:'12px'}}>{currentDate}</p>
+      </div>
+      </div>
+      <div className="datecontainer">
+          <p style={{fontWeight:'bold',fontSize:'12px', marginLeft:'7.5rem'}}>{currentDate}</p>
         </div>
-      </div>
-      </div>
-
       <Navbar expand="lg" className="topbarimage d-flex justify-content-center">
         <Container fluid className="">
           <Navbar.Brand href="#" className="text-center w-100">
