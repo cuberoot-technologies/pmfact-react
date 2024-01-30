@@ -4768,13 +4768,13 @@ input{
   }
 
   .breaking-news-shorts img {
-    min-height: 440px;
+    min-height: 400px;
     width: 260px;
-    border-left: 1px solid #000;
+    border: 1px solid #000;
   }
 
   .breaking-news-shorts {
-    min-height: 500px;
+    min-height: 400px;
   }
 
   .breaking-news-shorts-content h2 {

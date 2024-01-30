@@ -52,7 +52,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.3,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
