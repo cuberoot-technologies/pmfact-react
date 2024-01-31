@@ -11,7 +11,7 @@ const SearchRateMp = () => {
     <>
       <div className="mps">
         <div className="container">
-          <div className="our-mps">
+          <div className="our-mps mt-3">
             <h1>Search Your Mps</h1>
             <div className="ourmps-form">
               <form action="">
