@@ -7,6 +7,7 @@ const OurExpert = () => {
     dots: false,
     infinite: true,
     speed: 500,
+    arrows:false,
     slidesToShow: 8.1,
     slidesToScroll: 2,
     initialSlide: 0,
@@ -49,8 +50,8 @@ const OurExpert = () => {
     <>
       <div className="container  mb-5">
         <div className="mp-performance">
-          <h1> <span className="top-line"></span>Our Experts</h1>
-          <p>View All</p>
+          <h1>Our Experts  <span className="top-line"></span></h1>
+         <button className="view-more-news">View All</button>
         </div>
         <Slider {...settings}>
           <div className="our-experts">

@@ -6,12 +6,13 @@ import profile from "../../assets/profile.jpg";
 const NewsvideoDesk = () => {
   var settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay:true,
+    arrows:false,
     autoplaySpeed:6000,
     responsive: [
       {
@@ -42,6 +43,7 @@ const NewsvideoDesk = () => {
   var settingsFirst = {
     dots: false,
     infinite: true,
+    arrows:false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -50,7 +52,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.3,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -64,7 +66,7 @@ const NewsvideoDesk = () => {
       <div className="mbt">
         <div className="container">
           <div className="newsandvideo">
-            <h1> <span className="top-line"></span>News & Videos</h1>
+            <h1> News & Videos <span className="top-line"></span></h1>
           </div>
           <div className="news-desk-slide-top">
             <div className="news-desk-slide">
@@ -160,7 +162,7 @@ const NewsvideoDesk = () => {
             <div className="news-and-videos-shorts">
               <div className="parlimentry-news">
                 <h1>
-                  <span className="top-line"></span>Parliamentary Shorts
+                 Parliamentary Shorts<span className="top-line"></span>
                 </h1>
                 <button className="view-more-news">View More</button>
               </div>

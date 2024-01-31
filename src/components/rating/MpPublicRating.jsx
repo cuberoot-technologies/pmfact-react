@@ -11,9 +11,9 @@ const MpPublicRating = () => {
   return (
     <>
       <div className="container">
-        <div className="mp-performance mt-2">
-          <h1> <span className="top-line"></span>#MPs Public Rating</h1>
-          <p>Rate Your MP</p>
+        <div className="mp-performance ">
+          <h1> #MPs Public Rating <span className="top-line"></span></h1>
+          <button className="view-more-news">Rate Your MP</button>
         </div>
         <div className="mp-public-rating-text">
           <p>
@@ -53,7 +53,8 @@ const MpPublicRating = () => {
             <div className="public-rating-card-right-dot">
               <BsThreeDotsVertical />
             </div>
-          </div><div className="public-rating-card">
+          </div>
+          <div className="public-rating-card">
             <div className="badges">4.3</div>
             <div className="public-rating-card-left">
               <img src={profile} alt="" />

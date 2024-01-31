@@ -10,7 +10,8 @@ const MPperformance = () => {
     autoplay:true,
     autoplaySpeed:5000,
     speed: 500,
-    slidesToShow: 4.9,
+    arrows: false,
+    slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 0,
@@ -18,7 +19,7 @@ const MPperformance = () => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 2.8,
+          slidesToShow: 4.2,
 
           slidesToScroll: 1,
           initialSlide: 2,
@@ -27,7 +28,7 @@ const MPperformance = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 3.5,
 
           slidesToScroll: 1,
         },
@@ -35,7 +36,7 @@ const MPperformance = () => {
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 2.8,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -43,7 +44,7 @@ const MPperformance = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.6,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -51,7 +52,7 @@ const MPperformance = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1.8,
           slidesToScroll: 1,
         },
       },
@@ -63,9 +64,9 @@ const MPperformance = () => {
         <div className="mp-performance">
           <h1>
             {" "}
-            <span className="top-line"></span>#MP Performance
+           #MP Performance <span className="top-line"></span>
           </h1>
-          <p>Search Your MP</p>
+          <button className="view-more-news">Search Your MP</button>
         </div>
         <div className="populer-performance">
           <p>Populer MP Performance</p>

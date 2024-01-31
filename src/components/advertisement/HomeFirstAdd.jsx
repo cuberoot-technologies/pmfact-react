@@ -11,6 +11,7 @@ const HomeFirstAdd = () => {
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay:true,
+    arrows:false,
     autoplaySpeed:3000,
     responsive: [
       {
