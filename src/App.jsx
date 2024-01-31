@@ -30,6 +30,7 @@ import FilterPage from "./components/filter/FilterPage";
 import MpSelected from "./components/mpselected/MpSelected";
 import ThankYou from "./components/thankyou/ThankYou";
 import Footer from "./Footer";
+// import appFooter from "./components/appfooter";
 
 const App = () => {
   return (
@@ -102,6 +103,7 @@ const App = () => {
 
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
+      {/* <appFooter /> */}
       <Footer />
 
     </>
