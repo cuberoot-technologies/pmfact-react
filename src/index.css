@@ -3890,6 +3890,7 @@ input.click-here {
   display: none;
 }
 
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .member-profile-img img {
@@ -3900,7 +3901,9 @@ input.click-here {
   .datecontainer{
     display:block;
   }
-  
+  .slider-textslider{
+    display: none;
+  }
 
   .mem-list {
     padding: 10px 0;
