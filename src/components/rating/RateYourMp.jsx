@@ -15,6 +15,7 @@ const RateYourMp = () => {
         <div className="container">
           <div className="rate-your-mp">
             <h1>#RateYourMP</h1>
+            {/* <p> Click to search your MP</p> */}
             <Link to="/search-our-mps">
               {" "}
               <button className="click-here">Click Here</button>

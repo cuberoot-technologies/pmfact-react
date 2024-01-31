@@ -11,7 +11,10 @@ const RateYourMpPage = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 5.5,
+    arrows:false,
+    autoplay:true,
+    autoplaySpeed:5000,
+    slidesToShow: 5.7,
     slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
@@ -77,12 +80,13 @@ const RateYourMpPage = () => {
 
   return (
     <>
-      <div className="mps">
+      <div className="wmps" style={{paddingBottom:'8px'}}>
         <div className="container">
-          <div className="gmps">
+          <div className="wmps">
             <div className="container">
               <div className="rate-your-mp">
                 <h1>#RateYourMP</h1>
+                {/* <p>Click to search your MP</p> */}
                 <Link to="/search-our-mps">
                   {" "}
                   <button className="click-here">Click Here</button>
@@ -90,8 +94,12 @@ const RateYourMpPage = () => {
               </div>
             </div>
           </div>
+          </div>
+          </div>
+          <div className="mps">
+            <div className="container">
           <div className="rate-your-mp-main">
-            <h1> <span className="top-line"></span>Top Rated MPs</h1>
+            <h1> Top Rated MPs <span className="top-line"></span></h1>
             <div className="populer-mp-performance">
               <Slider {...settings}>
                 <div className="mp-performance-card">
@@ -658,9 +666,11 @@ const RateYourMpPage = () => {
             </div>
           </div>
         </div>
+        </div>
+        <div className="wmps">
         <div className="container">
           <div className="mp-performance">
-            <h1><span className="top-line"></span>Top Party MPs</h1>
+            <h1>Top Party MPs<span className="top-line"></span></h1>
             <p>Search Your MP</p>
           </div>
           <div className="populer-performance">
@@ -3500,9 +3510,10 @@ const RateYourMpPage = () => {
           </div>
         </div>
       </div>
+      <div className="mps">
       <div className="container">
         <div className="mp-performance mb-3">
-          <h1><span className="top-line"></span>Top Woman MPs</h1>
+          <h1>Top Woman MPs<span className="top-line"></span></h1>
         </div>
         <div className="populer-mp-performance">
           <Slider {...settings}>
@@ -4069,9 +4080,10 @@ const RateYourMpPage = () => {
           </Slider>
         </div>
       </div>
+      </div>
       <div className="container">
         <div className="mp-performance mb-3">
-          <h1><span className="top-line"></span>Top Youth MPs</h1>
+          <h1>Top Youth MPs<span className="top-line"></span></h1>
         </div>
         <div className="populer-mp-performance">
           <Slider {...settings}>
@@ -4638,9 +4650,10 @@ const RateYourMpPage = () => {
           </Slider>
         </div>
       </div>
+      <div className="mps mt-4">
       <div className="container">
-        <div className="mp-performance mb-3">
-          <h1><span className="top-line"></span>Top Minister MPs</h1>
+        <div className="mp-performance mt-4 mb-3">
+          <h1>Top Minister MPs<span className="top-line"></span></h1>
         </div>
         <div className="populer-mp-performance">
           <Slider {...settings}>
@@ -5205,13 +5218,14 @@ const RateYourMpPage = () => {
               </div>
             </div>
           </Slider>
-        </div>
+        </div>      
         <div className="view-more">
           <Link to="/rate-your-mp-list">
             {" "}
             <button className="view-more-btn">View More</button>
           </Link>
         </div>
+      </div>
       </div>
     </>
   );

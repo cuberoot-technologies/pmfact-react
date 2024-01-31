@@ -105,7 +105,7 @@ p {
   color: #fff;
   border-radius: 5px;
   padding: 2px 20px;
-  margin-bottom: 2rem;
+  /* margin: 2rem; */
 }
 
 .view-more-news {
@@ -373,6 +373,7 @@ p.card-text {
 }
 
 .wmps {
+  
   padding: 5px 0 20px 0;
 
 }
@@ -625,7 +626,7 @@ p.card-text {
 }
 
 .rate-now-btn {
-  background-color: #C1C1C1;
+  background-color: #FFA200;
   color: #fff;
   outline: none;
   border: none;
@@ -2797,7 +2798,7 @@ form input[type="text"] {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #e0e0e0;
   border-radius: 25px;
 }
 
