@@ -1,35 +1,139 @@
-import React from "react";
-import ReactStars from "react-rating-stars-component";
-import profile from "../../assets/profile.jpg";
-import RateYourMpPage from "./RateYourMpPage";
+import React, { useState } from 'react';
+import ReactStars from 'react-rating-stars-component';
+import profile from '../../assets/profile.jpg';
+import RateYourMpPage from './RateYourMpPage';
+import { BsThreeDotsVertical } from 'react-icons/bs';
 
 const SearchRateMp = () => {
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
+
+  const stateList = [
+    'Andhra Pradesh',
+    'Arunachal Pradesh',
+    'Assam',
+    'Bihar',
+    'Chhattisgarh',
+    'Goa',
+    'Gujarat',
+    'Haryana',
+    'Himachal Pradesh',
+    'Jharkhand',
+    'Karnataka',
+    'Kerala',
+    'Madhya Pradesh',
+    'Maharashtra',
+    'Manipur',
+    'Meghalaya',
+    'Mizoram',
+    'Nagaland',
+    'Odisha',
+    'Punjab',
+    'Rajasthan',
+    'Sikkim',
+    'Tamil Nadu',
+    'Telangana',
+    'Tripura',
+    'Uttarakhand',
+    'Uttar Pradesh',
+    'West Bengal',
+    'Andaman and Nicobar Islands',
+    'Chandigarh',
+    'Dadra and Nagar Haveli and Daman & Diu',
+    'Delhi',
+    'Jammu & Kashmir',
+    'Ladakh',
+    'Lakshadweep',
+    'Puducherry',
+  ];
+
+  const [selectedState, setSelectedState] = useState('');
+  const [name, setName] = useState('');
+  const [searchBy, setSearchBy] = useState('');
+  const [constituency, setConstituency] = useState('');
+  const [place, setPlace] = useState('');
+
+  const handleSelectState = (e) => {
+    setSelectedState(e.target.value);
+    setName('');
+    setSearchBy('');
+    setConstituency('');
+    setPlace('');
+  };
+
+  const handleSearchByChange = (e) => {
+    setSearchBy(e.target.value);
+    setConstituency('');
+    setPlace('');
+  };
+
+  const handleConstituencyChange = (e) => {
+    setConstituency(e.target.value);
+    setPlace('');
+  };
+
+  const handlePlaceChange = (e) => {
+    setPlace(e.target.value);
+  };
+
+  const isSearchButtonEnabled = !!name || !!selectedState || !!searchBy || !!constituency || !!place;
+
   return (
     <>
       <div className="mps">
         <div className="container">
           <div className="our-mps mt-3">
-            <h1>Search Your Mps</h1>
+            <h1>Search Your MPs</h1>
             <div className="ourmps-form">
               <form action="">
                 <div className="form-top">
-                  <input type="text" placeholder="Type Name" />
-                  <input type="text" placeholder="Select State & UT" />
+                  <input type="text" placeholder="Type Name" value={name} onChange={(e) => setName(e.target.value)} />
+                  {/* <p style={{ textAlign: 'center', fontSize: '18px', margin: '0 1rem' }}>or</p> */}
+                  <div>
+                    <select
+                      value={selectedState}
+                      onChange={handleSelectState}
+                      style={{ appearance: 'menulist' }}
+                      className="selectbox"
+                    >
+                      <option value="" disabled>Select State or UT</option>
+                      {stateList.map((state, index) => (
+                        <option key={index} value={state}>
+                          {state}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                 </div>
-                <div className="form-bottom">
-                  <input type="text" placeholder="Search By" />
+                <p style={{fontSize:'18px', textAlign:'center', fontWeight:'bold'}}>or</p>
+                <div className="form-bottom mt-2">
                   <input
                     type="text"
-                    placeholder=" Select Consuitency / District"
+                    placeholder="Search By"
+                    value={searchBy}
+                    onChange={handleSearchByChange}
+                    disabled={!name && !selectedState}
                   />
-
-                  <input type="text" placeholder="Selct Place" />
+                  <input
+                    type="text"
+                    placeholder="Select Constituency or District"
+                    value={constituency}
+                    onChange={handleConstituencyChange}
+                    disabled={!name && !selectedState && !searchBy}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Select Place"
+                    value={place}
+                    onChange={handlePlaceChange}
+                    disabled={!name && !selectedState && !searchBy && !constituency}
+                  />
                 </div>
                 <div className="form-btn">
-                  <button className="submit-btn">Search</button>
+                  <button className="submit-btn" disabled={!isSearchButtonEnabled}>
+                    Search
+                  </button>
                 </div>
               </form>
             </div>
@@ -39,6 +143,73 @@ const SearchRateMp = () => {
       <div className="result-mps-card-bg">
         <div className="container">
           <div className="result-mps-card">
+            <h1>Select MP</h1>
+            <div className="public-rating-card">
+              <div className="badges">4.3</div>
+              <div className="public-rating-card-left">
+                <img src={profile} alt="" />
+              </div>
+              <div className="public-rating-card-middle">
+                <div className="mp-performance-card-body">
+                  <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+                  <p>
+                    BJP <span>Delhi</span>
+                  </p>
+                </div>
+              </div>
+              <div className="public-rating-card-right">
+                <ReactStars
+                  count={5}
+                  onChange={ratingChanged}
+                  size={24}
+                  isHalf={true}
+                  emptyIcon={<i className="far fa-star"></i>}
+                  halfIcon={<i className="fa fa-star-half-alt"></i>}
+                  fullIcon={<i className="fa fa-star"></i>}
+                  activeColor="#ffd700"
+                />
+                <div className="rate-now">
+                  <button className="view-rate-btn">Rate Now</button>
+                </div>
+              </div>
+              <div className="public-rating-card-right-dot">
+                <BsThreeDotsVertical />
+              </div>
+            </div>
+            <div className="public-rating-card">
+              <div className="badges">4.3</div>
+              <div className="public-rating-card-left">
+                <img src={profile} alt="" />
+              </div>
+              <div className="public-rating-card-middle">
+                <div className="mp-performance-card-body">
+                  <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+                  <p>
+                    BJP <span>Delhi</span>
+                  </p>
+                </div>
+              </div>
+              <div className="public-rating-card-right">
+                <ReactStars
+                  count={5}
+                  onChange={ratingChanged}
+                  size={24}
+                  isHalf={true}
+                  emptyIcon={<i className="far fa-star"></i>}
+                  halfIcon={<i className="fa fa-star-half-alt"></i>}
+                  fullIcon={<i className="fa fa-star"></i>}
+                  activeColor="#ffd700"
+                />
+                <div className="rate-now">
+                  <button className="view-rate-btn">Rate Now</button>
+                </div>
+              </div>
+              <div className="public-rating-card-right-dot">
+                <BsThreeDotsVertical />
+              </div>
+            </div>
+          </div>
+          {/* <div className="result-mps-card">
             <h1>Select MP</h1>
             <div className="result-mps-card-wrapper">
               <div className="result-mps-card-wrapper-img">
@@ -79,11 +250,11 @@ const SearchRateMp = () => {
                 <button className="rating-display">Rate Now</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="rate-mp-page">
-        <RateYourMpPage/>
+        <RateYourMpPage />
       </div>
     </>
   );

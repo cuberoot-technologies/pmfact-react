@@ -81,7 +81,7 @@ const RateYourMpPage = () => {
   return (
     <>
       <div className="wmps" style={{paddingBottom:'8px'}}>
-        <div className="container">
+        <div className="container mt-4">
           <div className="wmps">
             <div className="container">
               <div className="rate-your-mp">
@@ -671,7 +671,7 @@ const RateYourMpPage = () => {
         <div className="container">
           <div className="mp-performance">
             <h1>Top Party MPs<span className="top-line"></span></h1>
-            <p>Search Your MP</p>
+            <button className="view-more-news">Search Your MP</button>
           </div>
           <div className="populer-performance">
             <p>BJP</p>

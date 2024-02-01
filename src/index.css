@@ -3898,6 +3898,13 @@ input.click-here {
   justify-content: space-between;
 }
 
+.selectbox{
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 10px;
+}
 
 
 /* media query ******* */
