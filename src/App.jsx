@@ -35,8 +35,10 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <>
+    <div className="headerwrap">
       <Topbar />
       <Textbar />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route

@@ -3893,6 +3893,10 @@ input.click-here {
   display: none;
 }
 
+.headerwrap{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
@@ -3901,7 +3905,11 @@ input.click-here {
   .member-profile-img img {
     height: 80px;
     width: 80px;
-    
+  }
+
+  .headerwrap{
+    display: flex;
+    flex-direction: column;
   }
   .datecontainer{
     display:block;
