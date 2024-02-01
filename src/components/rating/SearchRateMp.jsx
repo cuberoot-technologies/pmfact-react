@@ -89,7 +89,7 @@ const SearchRateMp = () => {
               <form action="">
                 <div className="form-top">
                   <input type="text" placeholder="Type Name" value={name} onChange={(e) => setName(e.target.value)} />
-                  {/* <p style={{ textAlign: 'center', fontSize: '18px', margin: '0 1rem' }}>or</p> */}
+                  <p style={{ textAlign: 'center', fontSize: '18px', margin: '0 1rem' }}>or</p>
                   <div>
                     <select
                       value={selectedState}
@@ -106,7 +106,7 @@ const SearchRateMp = () => {
                     </select>
                   </div>
                 </div>
-                <p style={{fontSize:'18px', textAlign:'center', fontWeight:'bold'}}>or</p>
+                {/* <p style={{fontSize:'18px', textAlign:'center', fontWeight:'bold'}}>or</p> */}
                 <div className="form-bottom mt-2">
                   <input
                     type="text"
