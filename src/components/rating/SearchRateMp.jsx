@@ -3,6 +3,7 @@ import ReactStars from 'react-rating-stars-component';
 import profile from '../../assets/profile.jpg';
 import RateYourMpPage from './RateYourMpPage';
 import { BsThreeDotsVertical } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const SearchRateMp = () => {
   const ratingChanged = (newRating) => {
@@ -169,14 +170,16 @@ const SearchRateMp = () => {
                   activeColor="#ffd700"
                 />
                 <div className="rate-now">
-                  <button className="view-rate-btn">Rate Now</button>
+                <Link to="/searched-mp" className="view-rate-btn">
+                    Rate Now
+                  </Link>
                 </div>
               </div>
               <div className="public-rating-card-right-dot">
                 <BsThreeDotsVertical />
               </div>
             </div>
-            <div className="public-rating-card">
+            {/* <div className="public-rating-card">
               <div className="badges">4.3</div>
               <div className="public-rating-card-left">
                 <img src={profile} alt="" />
@@ -201,14 +204,16 @@ const SearchRateMp = () => {
                   activeColor="#ffd700"
                 />
                 <div className="rate-now">
-                  <button className="view-rate-btn">Rate Now</button>
+                  <Link to="/searched-mp" className="view-rate-btn">
+                    Rate Now
+                  </Link>
                 </div>
               </div>
               <div className="public-rating-card-right-dot">
                 <BsThreeDotsVertical />
               </div>
-            </div>
-          </div>
+            </div>*/}
+          </div> 
           {/* <div className="result-mps-card">
             <h1>Select MP</h1>
             <div className="result-mps-card-wrapper">
