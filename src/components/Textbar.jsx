@@ -44,7 +44,9 @@ const Textbar = () => {
   const linkStyle = {
     textDecoration: 'none',
     padding: '4px',
+    marginRight: '8px', 
     display: 'inline-block',
+    borderRight: '1px solid #ccc',
   };
 
   const dropdownStyle = {

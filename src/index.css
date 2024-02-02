@@ -250,8 +250,7 @@ p {
   font-size: 15px;
   padding: 0;
   text-align: center;
-  margin: 0;
-  margin-right: 1.3rem;
+ justify-content: space-between;
 }
 
 /* MEmber list**************************************** */
@@ -3922,7 +3921,6 @@ input.click-here {
   text-decoration: underline;
   text-decoration-color: red;
   text-align: center;
-  
 }
 
 
