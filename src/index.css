@@ -253,6 +253,10 @@ p {
  justify-content: space-between;
 }
 
+.profileoverview{
+  background: transparent linear-gradient(53deg, #faf8f8 0%, #d4eafc 100%) 0% 0% no-repeat;
+}
+
 /* MEmber list**************************************** */
 .member-profile-box {
   padding: 10px 5px;
@@ -3241,6 +3245,41 @@ input.search-text::-webkit-search-cancel-button {
   justify-content: center;
 }
 
+.performancecontainer{
+  display: flex;
+  justify-content: center;
+}
+
+.imagecontainer{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagecontainer img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.description h3{
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.description h6{
+  font-size: 14px;
+  text-align: left;
+  margin: 0;
+}
+
+.ratingcontainer{
+  margin: 2rem;
+  width: 90vw;
+}
+
 .pf-blog-profile-top-img {
   width: 70%;
   display: flex;
@@ -3910,10 +3949,11 @@ input.click-here {
   border-radius: 10px;
 }
 
-.carousel-box{
-  margin: 1rem 2rem;
+/* .carousel-box{
+  margin: 0rem 2rem;
+  padding-top: 1rem;
 
-}
+} */
 
 .carousel-box h1{
   font-size: 20px;
@@ -3923,12 +3963,38 @@ input.click-here {
   text-align: center;
 }
 
+.rating-no-searched-mp{
+  background-color: #E39A00;
+  height:30px;
+  width:70px;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.rating-no-searched-mp p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.ratings-searched-mp{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .member-profile-img img {
     height: 80px;
     width: 80px;
+  }
+
+  .ratingcontainer{
+    width:50vw;
+    align-items: center;
+    margin: 0 auto; 
   }
 
   .carousel-box h1{
