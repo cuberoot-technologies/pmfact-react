@@ -73,22 +73,22 @@ const SearchRateMp = () => {
     setPlace(e.target.value);
   };
 
-    const [searchPerformed, setSearchPerformed] = useState(false);
-    const [selectedState, setSelectedState] = useState('');
-    const [name, setName] = useState('');
-    const [searchBy, setSearchBy] = useState('');
-    const [constituency, setConstituency] = useState('');
-    const [place, setPlace] = useState('');
-  
-    // ... (other functions remain the same)
-  
-    const handleSearch = () => {
-      // Perform your search logic here
-      // For now, just set searchPerformed to true
-      setSearchPerformed(true);
-    };
-  
-    const isSearchButtonEnabled = !!name || !!selectedState || !!searchBy || !!constituency || !!place;
+  const [searchPerformed, setSearchPerformed] = useState(false);
+  const [selectedState, setSelectedState] = useState('');
+  const [name, setName] = useState('');
+  const [searchBy, setSearchBy] = useState('');
+  const [constituency, setConstituency] = useState('');
+  const [place, setPlace] = useState('');
+
+  // ... (other functions remain the same)
+
+  const handleSearch = () => {
+    // Perform your search logic here
+    // For now, just set searchPerformed to true
+    setSearchPerformed(true);
+  };
+
+  const isSearchButtonEnabled = !!name || !!selectedState || !!searchBy || !!constituency || !!place;
 
   return (
     <>
@@ -98,9 +98,9 @@ const SearchRateMp = () => {
             <h1>Search Your MPs</h1>
             <div className="ourmps-form">
               <form onSubmit={(e) => {
-    e.preventDefault(); 
-    handleSearch();
-}}>
+                e.preventDefault();
+                handleSearch();
+              }}>
                 <div className="form-top">
                   <input type="text" placeholder="Type Name" value={name} onChange={(e) => setName(e.target.value)} />
                   <p style={{ textAlign: 'center', fontSize: '18px', margin: '0 1rem' }}>or</p>
@@ -145,9 +145,9 @@ const SearchRateMp = () => {
                   />
                 </div>
                 <div className="form-btn">
-                <button className="submit-btn" onClick={handleSearch} disabled={!isSearchButtonEnabled}>
-   Search
-</button>
+                  <button className="submit-btn" onClick={handleSearch} disabled={!isSearchButtonEnabled}>
+                    Search
+                  </button>
                 </div>
               </form>
             </div>
@@ -155,45 +155,45 @@ const SearchRateMp = () => {
         </div>
       </div>
       {searchPerformed && (
-      <div className="result-mps-card-bg">
-        <div className="container">
-          <div className="result-mps-card">
-            <h1>Select MP</h1>
-            <div className="public-rating-card">
-              <div className="badges">4.3</div>
-              <div className="public-rating-card-left">
-                <img src={profile} alt="" />
-              </div>
-              <div className="public-rating-card-middle">
-                <div className="mp-performance-card-body">
-                  <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-                  <p>
-                    BJP <span>Delhi</span>
-                  </p>
+        <div className="result-mps-card-bg">
+          <div className="container">
+            <div className="result-mps-card">
+              <h1>Select MP</h1>
+              <div className="public-rating-card">
+                <div className="badges">4.3</div>
+                <div className="public-rating-card-left">
+                  <img src={profile} alt="" />
+                </div>
+                <div className="public-rating-card-middle">
+                  <div className="mp-performance-card-body">
+                    <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+                    <p>
+                      BJP <span>Delhi</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="public-rating-card-right">
+                  <ReactStars
+                    count={5}
+                    onChange={ratingChanged}
+                    size={24}
+                    isHalf={true}
+                    emptyIcon={<i className="far fa-star"></i>}
+                    halfIcon={<i className="fa fa-star-half-alt"></i>}
+                    fullIcon={<i className="fa fa-star"></i>}
+                    activeColor="#ffd700"
+                  />
+                  <div className="rate-now">
+                    <Link to="/searched-mp" className="view-rate-btn">
+                      Rate Now
+                    </Link>
+                  </div>
+                </div>
+                <div className="public-rating-card-right-dot">
+                  <BsThreeDotsVertical />
                 </div>
               </div>
-              <div className="public-rating-card-right">
-                <ReactStars
-                  count={5}
-                  onChange={ratingChanged}
-                  size={24}
-                  isHalf={true}
-                  emptyIcon={<i className="far fa-star"></i>}
-                  halfIcon={<i className="fa fa-star-half-alt"></i>}
-                  fullIcon={<i className="fa fa-star"></i>}
-                  activeColor="#ffd700"
-                />
-                <div className="rate-now">
-                <Link to="/searched-mp" className="view-rate-btn">
-            Rate Now
-          </Link>
-                </div>
-              </div>
-              <div className="public-rating-card-right-dot">
-                <BsThreeDotsVertical />
-              </div>
-            </div>
-            {/* <div className="public-rating-card">
+              {/* <div className="public-rating-card">
               <div className="badges">4.3</div>
               <div className="public-rating-card-left">
                 <img src={profile} alt="" />
@@ -227,8 +227,8 @@ const SearchRateMp = () => {
                 <BsThreeDotsVertical />
               </div>
             </div>*/}
-          </div> 
-          {/* <div className="result-mps-card">
+            </div>
+            {/* <div className="result-mps-card">
             <h1>Select MP</h1>
             <div className="result-mps-card-wrapper">
               <div className="result-mps-card-wrapper-img">
@@ -270,8 +270,8 @@ const SearchRateMp = () => {
               </div>
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
       )}
       <div className="rate-mp-page">
         <RateYourMpPage />
