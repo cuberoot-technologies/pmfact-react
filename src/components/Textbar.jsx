@@ -96,7 +96,7 @@ const Textbar = () => {
             Blogs
           </Link>
           <Link
-            to="/parliament-blog"
+            to="/parliament-performance"
             className="textbar-link"
             style={hoveredLink === 'Parliamentary Performance' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('Parliamentary Performance')}

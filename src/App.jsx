@@ -17,6 +17,7 @@ import PublicVoice from "./components/publicvoice/PublicVoice";
 import RateYourMp from "./components/rating/RateYourMp";
 import Textbar from "./components/Textbar";
 import Topbar from "./components/Topbar";
+import SearchedMp from "./components/rating/searchedmp";
 import WishYourMp from "./components/wishyourmp/WishYourMp";
 import BottomBar from "./components/float/BottomBar";
 import RatePopup from "./components/float/RatePopup";
@@ -104,6 +105,7 @@ const App = () => {
         {/* thankyou page ###^^^^^^&&&&&&&&&&&&&&&&&&&&&&&&&&&************ */}
 
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/searched-mp" element={<SearchedMp />} />
       </Routes>
       {/* <appFooter /> */}
       <Footer />

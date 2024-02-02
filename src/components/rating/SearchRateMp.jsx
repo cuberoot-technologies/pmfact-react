@@ -5,6 +5,7 @@ import RateYourMpPage from './RateYourMpPage';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
+
 const SearchRateMp = () => {
   const ratingChanged = (newRating) => {
     console.log(newRating);
@@ -49,12 +50,6 @@ const SearchRateMp = () => {
     'Puducherry',
   ];
 
-  const [selectedState, setSelectedState] = useState('');
-  const [name, setName] = useState('');
-  const [searchBy, setSearchBy] = useState('');
-  const [constituency, setConstituency] = useState('');
-  const [place, setPlace] = useState('');
-
   const handleSelectState = (e) => {
     setSelectedState(e.target.value);
     setName('');
@@ -78,7 +73,22 @@ const SearchRateMp = () => {
     setPlace(e.target.value);
   };
 
-  const isSearchButtonEnabled = !!name || !!selectedState || !!searchBy || !!constituency || !!place;
+    const [searchPerformed, setSearchPerformed] = useState(false);
+    const [selectedState, setSelectedState] = useState('');
+    const [name, setName] = useState('');
+    const [searchBy, setSearchBy] = useState('');
+    const [constituency, setConstituency] = useState('');
+    const [place, setPlace] = useState('');
+  
+    // ... (other functions remain the same)
+  
+    const handleSearch = () => {
+      // Perform your search logic here
+      // For now, just set searchPerformed to true
+      setSearchPerformed(true);
+    };
+  
+    const isSearchButtonEnabled = !!name || !!selectedState || !!searchBy || !!constituency || !!place;
 
   return (
     <>
@@ -141,6 +151,7 @@ const SearchRateMp = () => {
           </div>
         </div>
       </div>
+      {searchPerformed && (
       <div className="result-mps-card-bg">
         <div className="container">
           <div className="result-mps-card">
@@ -171,8 +182,8 @@ const SearchRateMp = () => {
                 />
                 <div className="rate-now">
                 <Link to="/searched-mp" className="view-rate-btn">
-                    Rate Now
-                  </Link>
+            Rate Now
+          </Link>
                 </div>
               </div>
               <div className="public-rating-card-right-dot">
@@ -258,6 +269,7 @@ const SearchRateMp = () => {
           </div> */}
         </div>
       </div>
+      )}
       <div className="rate-mp-page">
         <RateYourMpPage />
       </div>

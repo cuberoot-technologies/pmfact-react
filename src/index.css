@@ -362,6 +362,11 @@ p.card-text {
   background: #ebebeb 0% 0% no-repeat padding-box;
 }
 
+.profilecontainer{
+  padding: 5px 0 20px 0;
+  background: #ebebeb 0% 0% no-repeat padding-box;
+}
+
 .gmps {
   padding: 5px 0 20px 0;
   background: #ebebeb 0% 0% no-repeat padding-box;
@@ -3906,6 +3911,20 @@ input.click-here {
   border-radius: 10px;
 }
 
+.carousel-box{
+  margin: 1rem 2rem;
+
+}
+
+.carousel-box h1{
+  font-size: 20px;
+  color: #000;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-align: center;
+  
+}
+
 
 /* media query ******* */
 @media only screen and (min-width: 991px) {
@@ -3913,6 +3932,11 @@ input.click-here {
     height: 80px;
     width: 80px;
   }
+
+  .carousel-box h1{
+    font-size: 30px;
+  }
+  
 
   .headerwrap{
     display: flex;
@@ -4604,6 +4628,10 @@ input.click-here {
 
   .react-tabs__tab {
     width: 145px;
+  }
+
+  .profilecontainer{
+    padding: 5px 6rem 20px 6rem;
   }
 
   .group-attendence-card-top-heading h6 {
