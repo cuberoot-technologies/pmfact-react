@@ -257,6 +257,14 @@ p {
   background: transparent linear-gradient(53deg, #faf8f8 0%, #d4eafc 100%) 0% 0% no-repeat;
 }
 
+.questionheadings{
+  margin: 0 1.5rem;
+}
+
+.questionheadings p{
+  color:#646464;
+ 
+}
 /* MEmber list**************************************** */
 .member-profile-box {
   padding: 10px 5px;
@@ -3984,6 +3992,31 @@ input.click-here {
   justify-content: space-between;
 }
 
+.questionboxes{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.questionbox{
+  background-color: #FFFFFF;
+  width:80vw;
+  border-radius: 20px;
+  padding: 0.8rem;
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.textcontainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .member-profile-img img {
