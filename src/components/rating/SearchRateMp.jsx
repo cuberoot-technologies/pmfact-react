@@ -97,7 +97,10 @@ const SearchRateMp = () => {
           <div className="our-mps mt-3">
             <h1>Search Your MPs</h1>
             <div className="ourmps-form">
-              <form action="">
+              <form onSubmit={(e) => {
+    e.preventDefault(); 
+    handleSearch();
+}}>
                 <div className="form-top">
                   <input type="text" placeholder="Type Name" value={name} onChange={(e) => setName(e.target.value)} />
                   <p style={{ textAlign: 'center', fontSize: '18px', margin: '0 1rem' }}>or</p>
@@ -142,9 +145,9 @@ const SearchRateMp = () => {
                   />
                 </div>
                 <div className="form-btn">
-                  <button className="submit-btn" disabled={!isSearchButtonEnabled}>
-                    Search
-                  </button>
+                <button className="submit-btn" onClick={handleSearch} disabled={!isSearchButtonEnabled}>
+   Search
+</button>
                 </div>
               </form>
             </div>
