@@ -183,6 +183,7 @@ const SearchedMp = () => {
                     </div>
                     <div className="reviewerdetails">
                         <h2>Please fill out your details</h2>
+                        <div className="formcontainer">
                         <div style={{ display: 'flex',alignItems: 'center' }}>
                             <label style={{ display: 'flex', alignItems: 'center', margin: '0 10px' }}>
                                 <input
@@ -202,6 +203,23 @@ const SearchedMp = () => {
                                 />
                                 Female
                             </label>
+                        </div>
+                        <form action="">
+                <div className="form-box">
+                  <input type="text" placeholder="Type Name" />
+                  <input type="email" placeholder="Email" />
+                  <input type="number" placeholder="Mobile No." />
+                  <input
+                    type="text"
+                    placeholder="Select Age Category"
+                  />
+
+                  <input type="text" placeholder="Enter City/ District Name" />
+                </div>
+                <div className="form-btn mb-4">
+                  <button className="submit-btn">Submit</button>
+                </div>
+              </form>
                         </div>
                     </div>
 

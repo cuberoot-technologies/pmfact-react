@@ -31,6 +31,7 @@ import FilterPage from "./components/filter/FilterPage";
 import MpSelected from "./components/mpselected/MpSelected";
 import ThankYou from "./components/thankyou/ThankYou";
 import Footer from "./Footer";
+import SliderTextbar from "./components/textbarslider";
 // import appFooter from "./components/appfooter";
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
       <Topbar />
       <Textbar />
       </div>
+      <SliderTextbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
