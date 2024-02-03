@@ -8,7 +8,7 @@ const NewsvideoDesk = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay:true,
@@ -18,7 +18,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
         },
@@ -26,7 +26,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2.3,
           slidesToScroll: 1,
           initialSlide: 1,
         },
@@ -34,7 +34,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -70,7 +70,7 @@ const NewsvideoDesk = () => {
           </div>
           <div className="news-desk-slide-top">
             <div className="news-desk-slide">
-              <Slider {...settings}>
+              
                 <div className="news-desk">
                   <div className="news-desk-top">
                     <div className="news-desk-top-left">
@@ -94,36 +94,13 @@ const NewsvideoDesk = () => {
                     </div>
                   </div>
                 </div>
-                <div className="news-desk">
-                  <div className="news-desk-top">
-                    <div className="news-desk-top-left">
-                      <img src={profile} alt="" />
-                    </div>
-                    <div className="news-desk-top-right">
-                      <h1>
-                        इस मामले में ओवरसाइट कमेटी ने तीन बातें पाईं. यौन
-                        उत्पीडन की शिकायतों पर समाधान के लिए उचित फ़ोरम और
-                      </h1>
-                      <div className="news-desk-author">
-                        <h5>V1sh@l Singh </h5>
-                        <p>19/03/2023 - 10:48</p>
-                      </div>
-                      <p>
-                        रियो ओलंपिक की कांस्य पदक विजेता साक्षी मलिक ने कहा,
-                        ‘‘हम जंतर-मंतर से नहीं हटेंगे. यह लड़ाई नहीं रुकेगी.’’
-                        उन्होंने कहा,‘‘ लड़कियां (महिला पहलवान) समिति के सामने
-                        पेश हुई हैं, लेकिन रिपोर्ट नहीं आई है. महासंघ पहले की त
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Slider>
             </div>
             {/* <div className="news-desk-bottom">
               <div className="news-desk-bottom-add"></div>
             </div> */}
           </div>
-          <div className="home-news-grid">
+          <div >
+          <Slider {...settings}>
             <div className="parliament-news-video-mp-news-list">
               <img src={profile} alt="" />
               <div className="parliament-news-video-mp-news-list-content">
@@ -154,6 +131,7 @@ const NewsvideoDesk = () => {
                 </h2>
               </div>
             </div>
+            </Slider>
           </div>
         </div>
 
