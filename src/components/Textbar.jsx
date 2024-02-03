@@ -45,6 +45,7 @@ const Textbar = () => {
     textDecoration: 'none',
     padding: '4px',
     marginRight: '8px', 
+    paddingRight: '10px', 
     display: 'inline-block',
     borderRight: '1px solid #ccc',
   };
@@ -107,7 +108,7 @@ const Textbar = () => {
             Parliament Performance
           </Link>
           <NavDropdown className="custom-dropdown"
-            title={<p className="moredropdown">...</p>}
+            title={<p style={{fontSize:'20px'}} className="moredropdown">≡</p>}
             id="basic-nav-dropdown"
             style={dropdownStyle}
             onMouseEnter={() => setHoveredLink('MPs Section')}
