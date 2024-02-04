@@ -60,8 +60,7 @@ const MPperformance = () => {
     <>
       <div className="container">
         <div className="mp-performance">
-          <h1 style={{fontWeight:'700'}}>
-            {" "}
+          <h1 className="mainheading">
            #MP Performance
           </h1>
           <button className="view-more-news">Search Your MP</button>

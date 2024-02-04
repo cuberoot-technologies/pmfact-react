@@ -66,7 +66,7 @@ const NewsvideoDesk = () => {
       <div className="mbt">
         <div className="container">
           <div className="newsandvideo">
-            <h1 style={{fontWeight:'700'}}> News & Videos</h1>
+            <h1 className="mainheading"> News & Videos</h1>
           </div>
           <div className="news-desk-slide-top">
             <div className="news-desk-slide">
