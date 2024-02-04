@@ -51,7 +51,7 @@ const MPperformance = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1.8,
-          slidesToScroll: 1.5,
+          slidesToScroll: 1,
         },
       },
     ],

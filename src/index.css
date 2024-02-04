@@ -423,7 +423,7 @@ p.card-text {
 
 .mp-performance-card {
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  /* box-shadow: 0px 0px 20px #9d9d9d29; */
+  margin:0 10rem;
   border-radius: 16px;
   padding: 5px;
   width: 180px !important;
@@ -4272,6 +4272,7 @@ input.click-here {
 
   .mp-performance-card {
     width: 210px !important;
+    margin:0;
   }
 
   .mp-performance-card-left-content h6 {

@@ -27,7 +27,6 @@ const TopPerformerMps = () => {
         breakpoint: 991,
         settings: {
           slidesToShow: 3.5,
-
           slidesToScroll: 1,
         },
       },
