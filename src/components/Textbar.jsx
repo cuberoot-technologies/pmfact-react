@@ -158,6 +158,9 @@ const Textbar = () => {
           </Nav>
     </Navbar.Collapse>
 </Navbar>
+<div className="socialIcons2">
+<i class="bi bi-search"></i>
+</div>
     </>
   );
 };

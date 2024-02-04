@@ -4074,10 +4074,26 @@ input.click-here {
 .topbarcontainer{
   display: none;
 }
+.socialIcons2{
+  color: #1b316a;
+  font-size:20px;
+  cursor: pointer;
+  margin-right:1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  /* display: flex;
+  justify-content: space-around; */
+}
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .adtopbar{
     display: flex;
+  }
+
+  .socialIcons2{
+    display: none;
   }
 
   .topbarcontainer{
