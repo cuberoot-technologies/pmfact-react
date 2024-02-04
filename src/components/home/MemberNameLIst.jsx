@@ -25,9 +25,9 @@ const MemberNameLIst = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 3,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
       {
