@@ -223,7 +223,7 @@ p {
 
 .mem-list {
   background: #EBEBEB 0% 0% no-repeat padding-box;
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
 }
 
 
@@ -4089,6 +4089,10 @@ input.click-here {
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
+}
+
+.slider-textslider{
+  margin-top: 4.2rem;
 }
 
 /* media query ******* */
