@@ -58,6 +58,7 @@ const Textbar = () => {
 
   return (
     <>
+    <div className="second-navbar-container">
     <Navbar expand="lg" className="textslide textbar-container" style={{ zIndex: '3'}}>
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -158,6 +159,7 @@ const Textbar = () => {
           </Nav>
     </Navbar.Collapse>
 </Navbar>
+</div>
 <div className="socialIcons2">
 <i class="bi bi-search"></i>
 </div>

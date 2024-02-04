@@ -223,6 +223,7 @@ p {
 
 .mem-list {
   background: #EBEBEB 0% 0% no-repeat padding-box;
+  margin-top: 2.5rem;
 }
 
 
@@ -3959,6 +3960,11 @@ input.click-here {
 .headerwrap{
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .selectbox{
@@ -4083,14 +4089,31 @@ input.click-here {
   justify-content: center;
   align-items: center;
   margin-top: 0.5rem;
-  /* display: flex;
-  justify-content: space-around; */
 }
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .adtopbar{
     display: flex;
   }
+
+  /* .pflogo-container {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+  }
+  
+  .second-navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+  } */
 
   .socialIcons2{
     display: none;
@@ -4134,10 +4157,14 @@ input.click-here {
     font-size: 30px;
   }
   
-
   .headerwrap{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
   }
   .datecontainer{
     display:block;
@@ -4148,6 +4175,7 @@ input.click-here {
 
   .mem-list {
     padding: 10px 0;
+    margin-top: 11rem;
   }
 
   .member-profile-box p {
