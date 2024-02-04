@@ -161,7 +161,7 @@ const Textbar = () => {
 </Navbar>
 </div>
 <div className="socialIcons2">
-<i class="bi bi-search"></i>
+<i className="bi bi-search"></i>
 </div>
     </>
   );

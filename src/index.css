@@ -109,15 +109,14 @@ p {
 }
 
 .view-more-news {
-  font-size: 12px;
+  font-size: 10px;
   outline: none;
   color: #FB8179;
   margin: 0;
   margin-right: 3%;
   border: 1px solid;
-  /* padding: yellow; */
-  padding: 3px 18px !important;
-  padding: 26px;
+  padding: 3px 10px;
+  /* padding: 26px; */
   border-radius: 26px;
   background-color: transparent;
 }
@@ -984,6 +983,7 @@ input {
   font-weight: 600;
   margin-bottom: 10px;
   padding-bottom: 10px;
+  position: relative;
 }
 
 .news-desk-top-right {
@@ -994,6 +994,7 @@ input {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  position: relative;
 }
 
 .parliament-news-video-mp-news-list{
@@ -4604,6 +4605,7 @@ input.click-here {
 
   .view-more-news {
     font-size: 16px;
+     padding: 3px 18px;
   }
 
   .request-grid {
