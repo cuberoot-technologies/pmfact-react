@@ -48,60 +48,90 @@ const MemberNameLIst = () => {
           <Slider {...settings}>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="up-arrow">
+            <i className="bi bi-arrow-up-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="up-arrow">
+            <i className="bi bi-arrow-up-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="up-arrow">
+            <i className="bi bi-arrow-up-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="downarrow">
+            <i className="bi bi-arrow-down-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="up-arrow">
+            <i className="bi bi-arrow-up-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="downarrow">
+            <i className="bi bi-arrow-down-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+              <div className="up-arrow">
+            <i className="bi bi-arrow-up-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem' , fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+              <div className="downarrow">
+            <i className="bi bi-arrow-down-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="up-arrow">
+            <i className="bi bi-arrow-up-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
+            <div className="downarrow">
+            <i className="bi bi-arrow-down-circle-fill"></i>
+            </div>
               <img src={profile} alt="" />
             </div>
             <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
