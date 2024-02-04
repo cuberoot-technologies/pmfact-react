@@ -34,7 +34,7 @@ const NewsvideoDesk = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
+          slidesToShow:2,
           slidesToScroll: 1,
         },
       },
@@ -66,7 +66,7 @@ const NewsvideoDesk = () => {
       <div className="mbt">
         <div className="container">
           <div className="newsandvideo">
-            <h1> News & Videos <span className="top-line"></span></h1>
+            <h1 style={{fontWeight:'700'}}> News & Videos</h1>
           </div>
           <div className="news-desk-slide-top">
             <div className="news-desk-slide">
@@ -139,8 +139,8 @@ const NewsvideoDesk = () => {
           <div className="container">
             <div className="news-and-videos-shorts">
               <div className="parlimentry-news">
-                <h1>
-                 Parliamentary Shorts<span className="top-line"></span>
+                <h1 style={{fontWeight:'700'}}>
+                 Parliamentary Shorts
                 </h1>
                 <button className="view-more-news">View More</button>
               </div>

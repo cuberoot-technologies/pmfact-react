@@ -50,61 +50,61 @@ const MemberNameLIst = () => {
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem' , fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
           <div className="member-profile-box">
             <div className="member-profile-img">
               <img src={profile} alt="" />
             </div>
-            <p style={{lineHeight:'0.8rem'}}>Member Name Extend</p>
+            <p style={{lineHeight:'0.9rem', fontSize:'12px'}}>Member Name Extend</p>
           </div>
         </Slider>
         </div>

@@ -415,9 +415,9 @@ p.card-text {
 .populer-performance p {
   font-size: 12px;
   color: #000;
-  padding: 10px 0;
-  padding-left: 10px;
-  margin-top: 10px;
+  padding: 8px 0;
+  padding-left:0px;
+  margin-top: 4px;
   font-weight: 600;
 }
 
@@ -2456,6 +2456,7 @@ form input[type="text"] {
 .top-line {
   width: 100px;
   height: 4px;
+  /* margin-top: ; */
   color: red;
   display: inherit;
   background-color: red;

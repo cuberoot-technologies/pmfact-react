@@ -20,7 +20,6 @@ const MPperformance = () => {
         breakpoint: 1400,
         settings: {
           slidesToShow: 4.2,
-
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -29,7 +28,6 @@ const MPperformance = () => {
         breakpoint: 991,
         settings: {
           slidesToShow: 3.5,
-
           slidesToScroll: 1,
         },
       },
@@ -53,7 +51,7 @@ const MPperformance = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 1.8,
-          slidesToScroll: 1,
+          slidesToScroll: 1.5,
         },
       },
     ],
@@ -62,9 +60,9 @@ const MPperformance = () => {
     <>
       <div className="container">
         <div className="mp-performance">
-          <h1>
+          <h1 style={{fontWeight:'700'}}>
             {" "}
-           #MP Performance <span className="top-line"></span>
+           #MP Performance
           </h1>
           <button className="view-more-news">Search Your MP</button>
         </div>

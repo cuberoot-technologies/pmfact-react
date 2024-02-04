@@ -58,9 +58,9 @@ const TopPerformerMps = () => {
   };
   return (
     <>
-     <div className="container">
+     <div className="container" style={{background:'transparent linear-gradient rgba(0,0,0,0)'}}>
         <div className="mp-performance">
-          <h1>#TopMP Performance<span className="top-line"></span></h1>
+          <h1 style={{fontWeight:'700'}}>#TopMP Performance</h1>
           <button className="view-more-news">Search Your MP</button>
         </div>
         <div className="populer-performance">

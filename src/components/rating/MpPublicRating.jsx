@@ -12,7 +12,7 @@ const MpPublicRating = () => {
     <>
       <div className="container">
         <div className="mp-performance ">
-          <h1> #MPs Public Rating <span className="top-line"></span></h1>
+          <h1 style={{fontWeight:'700'}}> #MPs Public Rating</h1>
           <button className="view-more-news">Rate Your MP</button>
         </div>
         <div className="mp-public-rating-text">
