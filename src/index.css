@@ -4947,7 +4947,8 @@ input{
 .socialIcons{
   color: #1b316a;
   font-size:20px;
-   margin-right: 9.5rem;
+  cursor: pointer;
+  margin-right: 9.5rem;
   display: flex;
   justify-content: space-around;
 }
