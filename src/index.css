@@ -4061,8 +4061,20 @@ input.click-here {
 .parliament-news-video-mp-news-list-content h2{
   display: none;
 }
+
+.adtopbar{
+  width:95%;
+  height:115px;
+  background-color: rgb(27 49 106);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
 /* media query ******* */
 @media only screen and (min-width: 991px) {
+  .adtopbar{
+    display: flex;
+  }
   .member-profile-img img {
     height: 80px;
     width: 80px;
@@ -5003,15 +5015,6 @@ input{
   max-width: 400px;
 }
 
-.adtopbar{
-  width:95%;
-  height:115px;
-  background-color: rgb(27 49 106);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (max-width: 450px) {
 
   .slidercontent {
@@ -5032,9 +5035,6 @@ input{
   }
 
   .topbarcontainer{
-    display: none;
-  }
-  .adtopbar{
     display: none;
   }
 
