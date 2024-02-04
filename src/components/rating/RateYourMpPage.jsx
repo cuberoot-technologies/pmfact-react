@@ -14,9 +14,9 @@ const RateYourMpPage = () => {
     arrows:false,
     autoplay:true,
     autoplaySpeed:5000,
-    slidesToShow: 5.7,
+    slidesToShow: 5,
     slidesToScroll: 3,
-    initialSlide: 0,
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 1400,
@@ -60,7 +60,7 @@ const RateYourMpPage = () => {
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1.8,
+          slidesToShow: 1.6,
           slidesToScroll: 1,
         },
       },
