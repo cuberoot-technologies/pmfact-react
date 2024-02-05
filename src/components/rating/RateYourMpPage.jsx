@@ -60,7 +60,7 @@ const RateYourMpPage = () => {
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1.6,
+          slidesToShow: 1.65,
           slidesToScroll: 1,
         },
       },

@@ -87,7 +87,7 @@ const MPperformance = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+                <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -108,7 +108,7 @@ const MPperformance = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -129,7 +129,7 @@ const MPperformance = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -150,7 +150,7 @@ const MPperformance = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -171,7 +171,7 @@ const MPperformance = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -192,7 +192,7 @@ const MPperformance = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
