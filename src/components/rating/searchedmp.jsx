@@ -6,6 +6,7 @@ import profile from '../../assets/profile.jpg';
 import ParliamentBlogPerformance from "../pfblogs/ParliamentBlogPerformance";
 import ItemsCarousel from "react-items-carousel";
 import { Link } from "react-router-dom";
+import Modal from "react-modal";
 
 const SearchedMp = () => {
     const ratingChanged = (newRating) => {
@@ -16,6 +17,7 @@ const SearchedMp = () => {
     const [isChecked, setIsChecked] = useState(false);
     const [otpSent, setOtpSent] = useState(false);
     const [enteredOtp, setEnteredOtp] = useState('');
+    const [isRatingSubmitted, setIsRatingSubmitted] = useState(false);
 
     const handleGenderChange = (event) => {
         setSelectedGender(event.target.value);
@@ -34,16 +36,16 @@ const SearchedMp = () => {
     };
 
     const handleVerifyOtp = (e) => {
-        e.preventDefault(); // Prevent the default form submission behavior
+        e.preventDefault();
         console.log('Entered OTP:', enteredOtp);
-        // Additional logic for OTP verification
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default form submission behavior
-        console.log('Form submitted!');
-        // Additional logic for form submission
+        e.preventDefault();
+        setIsRatingSubmitted(true);
     };
+
+
 
     const chevronWidth = 0;
 
@@ -210,6 +212,47 @@ const SearchedMp = () => {
                             />
                         </div>
                     </div>
+
+                    {isRatingSubmitted && (
+                        <div className="modal-overlay">
+                            <div className="popup">
+                            <button className="close-btn" onClick={() => setIsRatingSubmitted(false)}>x</button>
+                                <h2 style={{marginTop:'20px', textDecoration:'underline',textDecorationColor:'red'}}>Thank You</h2>
+                                <p style={{fontSize:'14px'}}>Your rating has been successfully submitted. Share with your parliamentary constituency people to vote Shri Narendra Modi.</p>
+                                <div className="result-mps-card">
+                                    <div className="public-rating-card">
+                                        <div className="badges">4.8</div>
+                                        <div className="public-rating-card-left">
+                                            <img src={profile} alt="" />
+                                        </div>
+                                        <div className="public-rating-card-middle">
+                                            <div className="mp-performance-card-body">
+                                                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+                                                <p>
+                                                    BJP <span>Delhi</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className="public-rating-card-right">
+                                            <ReactStars
+                                                count={5}
+                                                onChange={ratingChanged}
+                                                size={20}
+                                                isHalf={true}
+                                                emptyIcon={<i className="far fa-star"></i>}
+                                                halfIcon={<i className="fa fa-star-half-alt"></i>}
+                                                fullIcon={<i className="fa fa-star"></i>}
+                                                activeColor="#ffd700"
+                                                value={4.8}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <button className="send-otp-button">Share</button>
+                            </div>
+                        </div>
+                    )}
+
                     <div className="reviewerdetails">
                         <h2>Please fill out your details</h2>
                         <div className="formcontainer">
@@ -285,13 +328,14 @@ const SearchedMp = () => {
                                 </div>
 
                                 <div className="form-btn mb-4">
-                                    <button className="submit-btn">Submit</button>
+                                    <button className="submit-btn" type="submit">Submit</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+
         </>
     );
 };
