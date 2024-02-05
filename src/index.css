@@ -3273,11 +3273,13 @@ input.search-text::-webkit-search-cancel-button {
 
 .performancecontainer{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .imagecontainer{
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3290,20 +3292,23 @@ input.search-text::-webkit-search-cancel-button {
 }
 .description h3{
   font-size: 18px;
-  text-align: left;
+  text-align: center;
   margin: 0;
   padding: 5px 0;
 }
 
 .description h6{
   font-size: 14px;
-  text-align: left;
+  text-align: center;
   margin: 0;
 }
 
 .ratingcontainer{
   margin: 2rem;
   width: 90vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .pf-blog-profile-top-img {
@@ -4002,6 +4007,7 @@ input.click-here {
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .rating-no-searched-mp p{
@@ -4012,7 +4018,8 @@ input.click-here {
 }
 .ratings-searched-mp{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .questionboxes{
@@ -4031,7 +4038,7 @@ input.click-here {
   margin-bottom: 2rem;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
 }
 
 .textcontainer {
@@ -4046,7 +4053,11 @@ input.click-here {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-
+  width: 100%;
+}
+.reviewcontainer{
+  text-align: center;
+  margin-top: 2.5rem;
 }
 .reviewerdetails{
   text-align: center;
@@ -4056,7 +4067,61 @@ input.click-here {
   flex-direction: column;
   justify-content: space-between;
   padding: 5px 0;
+  width: 100%;
 }
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.send-otp-button {
+  background-color: #0D2756;
+  padding: 5px 35px;
+  font-size: 14px;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.verify-button{
+  background-color: #0D2756;
+  padding: 4px 30px;
+  font-size: 14px;
+  outline: none;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  /* width: 40px; */
+}
+
+.send-otp-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.otp-verification-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.otp-verification-container button{
+  margin-top: 10px;
+}
+
+
+  /* display: flex; */
+  /* align-items: center;
+  margin-bottom: 10px; */
+  /* justify-content: space-between; */
+
+
 
 .form-box input{
   border-radius: 10px;
@@ -4102,12 +4167,27 @@ input.click-here {
 
 /* media query ******* */
 @media only screen and (min-width: 991px) {
+  .otp-verification-container{
+
+  }
   .adtopbar{
     display: flex;
+  }
+  .questionbox{
+    width:35vw
+  }
+  .performancecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #rateyourmppage{
     margin-top: 20.5rem ;
+  }
+
+  #searchedmppage{
+    margin-top: 21.5rem ;
   }
 
   #searchmppage{

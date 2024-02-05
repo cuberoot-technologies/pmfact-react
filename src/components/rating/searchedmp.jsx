@@ -11,16 +11,45 @@ const SearchedMp = () => {
     const ratingChanged = (newRating) => {
         console.log(newRating);
     };
+
     const [selectedGender, setSelectedGender] = useState('');
+    const [isChecked, setIsChecked] = useState(false);
+    const [otpSent, setOtpSent] = useState(false);
+    const [enteredOtp, setEnteredOtp] = useState('');
 
     const handleGenderChange = (event) => {
         setSelectedGender(event.target.value);
     };
-    const [activeItemIndex, setActiveItemIndex] = useState(0);
+
+    const handleCheckboxChange = () => {
+        setIsChecked(!isChecked);
+    };
+
+    const handleSendOtp = () => {
+        setOtpSent(true);
+    };
+
+    const handleOtpChange = (e) => {
+        setEnteredOtp(e.target.value);
+    };
+
+    const handleVerifyOtp = (e) => {
+        e.preventDefault(); // Prevent the default form submission behavior
+        console.log('Entered OTP:', enteredOtp);
+        // Additional logic for OTP verification
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Prevent the default form submission behavior
+        console.log('Form submitted!');
+        // Additional logic for form submission
+    };
+
     const chevronWidth = 0;
+
     return (
         <>
-            <div className="mps">
+            <div className="mps" id="searchedmppage">
                 <HomeFirstAdd />
             </div>
             <div className="profilecontainer">
@@ -31,8 +60,8 @@ const SearchedMp = () => {
             <div className="profileoverview ">
                 <div style={{ position: 'relative', top: '20px', padding: `0 ${chevronWidth}px` }} className="carousel-box">
                     <ItemsCarousel
-                        requestToChangeActive={setActiveItemIndex}
-                        activeItemIndex={activeItemIndex}
+                        requestToChangeActive={() => { }}
+                        activeItemIndex={0}
                         numberOfCards={2}
                         gutter={20}
                         outsideChevron
@@ -96,19 +125,19 @@ const SearchedMp = () => {
                 </div>
                 <div className="reviewcontainer">
                     <div className="questionheadings">
-                        <p ><b>Here you can rate your MP based on their work under the following 5 parameters</b></p>
+                        <p ><b>Here you can rate your MP by clicking on the stars based on their work under the following 5 parameters</b></p>
                         <p style={{ fontSize: '10px' }}>यहां आप निम्नलिखित 5 मापदंडों के तहत अपने सांसद को उनके काम के आधार पर रेटिंग दे सकते हैं</p>
                     </div>
                     <div className="questionboxes mt-4">
                         <div className="questionbox">
                             <div className="textcontainer">
-                                <h4 style={{ fontSize: '20px' }}>Contribution in development of Area</h4>
-                                <h6 style={{ fontSize: '13px' }}>क्षेत्र के विकास में योगदान</h6>
+                                <h4 style={{ fontSize: '15px' }}>Contribution in development of Area</h4>
+                                <h6 style={{ fontSize: '10px' }}>क्षेत्र के विकास में योगदान</h6>
                             </div>
                             <ReactStars
                                 count={5}
                                 onChange={ratingChanged}
-                                size={40}
+                                size={45}
                                 isHalf={true}
                                 emptyIcon={<i className="far fa-star"></i>}
                                 halfIcon={<i className="fa fa-star-half-alt"></i>}
@@ -118,13 +147,13 @@ const SearchedMp = () => {
                         </div>
                         <div className="questionbox">
                             <div className="textcontainer">
-                                <h4 style={{ fontSize: '20px' }}>How is the image among the public</h4>
-                                <h6 style={{ fontSize: '13px' }}>जनता के बीच छवि कैसी है</h6>
+                                <h4 style={{ fontSize: '15px' }}>How is the image among the public</h4>
+                                <h6 style={{ fontSize: '10px' }}>जनता के बीच छवि कैसी है</h6>
                             </div>
                             <ReactStars
                                 count={5}
                                 onChange={ratingChanged}
-                                size={40}
+                                size={45}
                                 isHalf={true}
                                 emptyIcon={<i className="far fa-star"></i>}
                                 halfIcon={<i className="fa fa-star-half-alt"></i>}
@@ -134,13 +163,13 @@ const SearchedMp = () => {
                         </div>
                         <div className="questionbox">
                             <div className="textcontainer">
-                                <h4 style={{ fontSize: '20px' }}>To deal with public problems</h4>
-                                <h6 style={{ fontSize: '13px' }}>जनता की समस्याओं से निपटने के लिए</h6>
+                                <h4 style={{ fontSize: '15px' }}>To deal with public problems</h4>
+                                <h6 style={{ fontSize: '10px' }}>जनता की समस्याओं से निपटने के लिए</h6>
                             </div>
                             <ReactStars
                                 count={5}
                                 onChange={ratingChanged}
-                                size={40}
+                                size={45}
                                 isHalf={true}
                                 emptyIcon={<i className="far fa-star"></i>}
                                 halfIcon={<i className="fa fa-star-half-alt"></i>}
@@ -150,13 +179,13 @@ const SearchedMp = () => {
                         </div>
                         <div className="questionbox">
                             <div className="textcontainer">
-                                <h4 style={{ fontSize: '20px' }}>Seriousness towards local issues</h4>
-                                <h6 style={{ fontSize: '13px' }}>स्थानीय मुद्दों के प्रति गंभीरता</h6>
+                                <h4 style={{ fontSize: '15px' }}>Seriousness towards local issues</h4>
+                                <h6 style={{ fontSize: '10px' }}>स्थानीय मुद्दों के प्रति गंभीरता</h6>
                             </div>
                             <ReactStars
                                 count={5}
                                 onChange={ratingChanged}
-                                size={40}
+                                size={45}
                                 isHalf={true}
                                 emptyIcon={<i className="far fa-star"></i>}
                                 halfIcon={<i className="fa fa-star-half-alt"></i>}
@@ -166,13 +195,13 @@ const SearchedMp = () => {
                         </div>
                         <div className="questionbox">
                             <div className="textcontainer">
-                                <h4 style={{ fontSize: '20px' }}>Raising impottant issues in parliament</h4>
-                                <h6 style={{ fontSize: '13px' }}>संसद में महत्वपूर्ण मुद्दे उठाना</h6>
+                                <h4 style={{ fontSize: '15px' }}>Raising important issues in parliament</h4>
+                                <h6 style={{ fontSize: '10px' }}>संसद में महत्वपूर्ण मुद्दे उठाना</h6>
                             </div>
                             <ReactStars
                                 count={5}
                                 onChange={ratingChanged}
-                                size={40}
+                                size={45}
                                 isHalf={true}
                                 emptyIcon={<i className="far fa-star"></i>}
                                 halfIcon={<i className="fa fa-star-half-alt"></i>}
@@ -184,50 +213,85 @@ const SearchedMp = () => {
                     <div className="reviewerdetails">
                         <h2>Please fill out your details</h2>
                         <div className="formcontainer">
-                        <div style={{ display: 'flex',alignItems: 'center' }}>
-                            <label style={{ display: 'flex', alignItems: 'center', margin: '0 10px' }}>
-                                <input
-                                    type="radio"
-                                    value="male"
-                                    checked={selectedGender === 'male'}
-                                    onChange={handleGenderChange}
-                                />
-                                Male
-                            </label>
-                            <label  style={{ display: 'flex', alignItems: 'center', margin: '0 10px' }}>
-                                <input
-                                    type="radio"
-                                    value="female"
-                                    checked={selectedGender === 'female'}
-                                    onChange={handleGenderChange}
-                                />
-                                Female
-                            </label>
-                        </div>
-                        <form action="">
-                <div className="form-box">
-                  <input type="text" placeholder="Type Name" />
-                  <input type="email" placeholder="Email" />
-                  <input type="number" placeholder="Mobile No." />
-                  <input
-                    type="text"
-                    placeholder="Select Age Category"
-                  />
+                            <div style={{ display: 'flex', alignItems: 'center' }}>
+                                <label style={{ display: 'flex', alignItems: 'center', margin: '0 10px' }}>
+                                    <input
+                                        type="radio"
+                                        value="male"
+                                        checked={selectedGender === 'male'}
+                                        onChange={handleGenderChange}
+                                    />
+                                    Male
+                                </label>
+                                <label style={{ display: 'flex', alignItems: 'center', margin: '0 10px' }}>
+                                    <input
+                                        type="radio"
+                                        value="female"
+                                        checked={selectedGender === 'female'}
+                                        onChange={handleGenderChange}
+                                    />
+                                    Female
+                                </label>
+                            </div>
+                            <form onSubmit={handleSubmit}>
+                                <div className="form-box">
+                                    <input type="text" placeholder="Type Name" />
+                                    <input type="email" placeholder="Email" />
+                                    <input type="number" placeholder="Mobile No." />
+                                    <input
+                                        type="text"
+                                        placeholder="Select Age Category"
+                                    />
 
-                  <input type="text" placeholder="Enter City/ District Name" />
-                </div>
-                <div className="form-btn mb-4">
-                  <button className="submit-btn">Submit</button>
-                </div>
-              </form>
+                                    <input type="text" placeholder="Enter City/ District Name" />
+                                </div>
+                                <div className="checkbox-container">
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            checked={isChecked}
+                                            onChange={handleCheckboxChange}
+                                        />
+                                        I agree to the Terms & Conditions
+                                    </label>
+                                </div>
+
+                                <div className="send-otp-container">
+                                    <button
+                                        onClick={handleSendOtp}
+                                        type="button"
+                                        className="send-otp-button"
+                                        disabled={!isChecked || otpSent}
+                                    >
+                                        Send OTP
+                                    </button>
+
+                                    {otpSent && (
+                                        <div className="otp-verification-container">
+                                            <label>
+                                                Enter OTP:
+                                                <input
+                                                    type="text"
+                                                    value={enteredOtp}
+                                                    onChange={handleOtpChange}
+                                                    maxLength={6}
+                                                />
+                                            </label>
+                                            <button className="verify-button" onClick={handleVerifyOtp} type="button">
+                                                Verify OTP
+                                            </button>
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div className="form-btn mb-4">
+                                    <button className="submit-btn">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
         </>
     );
 };
