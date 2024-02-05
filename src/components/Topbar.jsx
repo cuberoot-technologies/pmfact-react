@@ -122,11 +122,11 @@ function Topbar() {
 
         <div className="date-icon" style={{ flexDirection: 'column' }}>
           <div className="socialIcons">
+          <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-whatsapp" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-twitter-x" style={{ marginRight: "15px" }}></i>
-            <i className="bi bi-search" style={{ marginRight: "13px" }}></i>
           </div>
         </div>
       </div>

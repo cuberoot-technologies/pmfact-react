@@ -254,7 +254,7 @@ p {
 }
 
 .profileoverview{
-  background: transparent linear-gradient(53deg, #faf8f8 0%, #d4eafc 100%) 0% 0% no-repeat;
+  background: transparent linear-gradient(53deg, #faf8f8 0%, #e2edf7 100%) 0% 0% no-repeat;
 }
 
 .questionheadings{
@@ -425,10 +425,43 @@ p.card-text {
 .mp-performance-card {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   margin:0 10rem;
+  height: 240px;
   border-radius: 16px;
   padding: 5px;
   width: 180px !important;
   border: 2px solid #70707033;
+}
+
+.mp-performance-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.flipped .mp-performance-card-inner {
+  transform: rotateY(180deg);
+}
+
+.mp-performance-card-front,
+.mp-performance-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.mp-performance-card-back {
+  transform: rotateY(180deg);
+}
+
+.mp-performance-card-share {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mp-performance-card-top {
@@ -4178,6 +4211,7 @@ input.click-here {
   z-index: 1000;
 }
 
+
 .popup {
   background: #fff;
   padding: 20px;
@@ -4498,6 +4532,10 @@ input.click-here {
 
   .mp-performance-card-body {
     padding-top: 5px;
+  }
+
+  .mp-performance-card-right{
+    cursor: pointer;
   }
 
   .mp-performance-card-right svg {
