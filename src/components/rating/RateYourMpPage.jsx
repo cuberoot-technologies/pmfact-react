@@ -85,7 +85,7 @@ const RateYourMpPage = () => {
           <div className="wmps">
             <div className="container">
               <div className="rate-your-mp">
-                <h1>#RateYourMP</h1>
+                <h1>#ToSearchYourMP</h1>
                 {/* <p>Click to search your MP</p> */}
                 <Link to="/search-our-mps">
                   {" "}

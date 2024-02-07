@@ -25,7 +25,7 @@ const MemberNameLIst = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 6,
           slidesToScroll: 3,
           initialSlide: 1,
         },
@@ -33,7 +33,7 @@ const MemberNameLIst = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },

@@ -51,10 +51,10 @@ const SearchedMp = () => {
 
     return (
         <>
-            <div className="mps" id="searchedmppage">
+            {/* <div className="mps" id="searchedmppage">
                 <HomeFirstAdd />
-            </div>
-            <div className="profilecontainer">
+            </div> */}
+            <div className="profilecontainer" id="searchedmppage">
                 <ParliamentBlogProfile />
                 <ParliamentBlogPerformance />
             </div>
@@ -254,7 +254,7 @@ const SearchedMp = () => {
                     )}
 
                     <div className="reviewerdetails">
-                        <h2>Please fill out your details</h2>
+                        <h2>Please Fill your details</h2>
                         <div className="formcontainer">
                             <div style={{ display: 'flex', alignItems: 'center' }}>
                                 <label style={{ display: 'flex', alignItems: 'center', margin: '0 10px' }}>
