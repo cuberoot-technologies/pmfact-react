@@ -307,6 +307,11 @@ p {
 /* home-add-first********************* */
 .home-add-first {
   padding: 10px 0;
+  display: none;
+}
+
+.home-add-first2 {
+  padding: 10px 0;
 }
 
 /* .first-add img {
@@ -4351,6 +4356,11 @@ input.click-here {
 
   .home-add-first {
     padding: 20px 0;
+    display: block;
+  }
+  .home-add-first2 {
+    padding: 20px 0;
+    display: none;
   }
 
   .cards .card {

@@ -33,6 +33,43 @@ const HomeFirstAdd = () => {
       {
         breakpoint: 480,
         settings: {
+          slidesToShow: 1.05,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  var settings2 = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay:true,
+    arrows:false,
+    autoplaySpeed:3000,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2.3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.6,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
           slidesToShow: 1.1,
           slidesToScroll: 1,
         },
@@ -46,6 +83,25 @@ const HomeFirstAdd = () => {
   return (
     <>
       <div className="home-add-first">
+        <div className="container">
+          <Slider {...settings2} style={sliderStyle}>
+            <div className="first-add">
+              <img src="https://placehold.co/728x90" alt="" />
+            </div>
+            <div className="first-add">
+              <img src="https://placehold.co/728x90" alt="" />
+            </div>
+            <div className="first-add">
+              <img src="https://placehold.co/728x90" alt="" />
+            </div>
+            <div className="first-add">
+              <img src="https://placehold.co/728x90" alt="" />
+            </div>
+          </Slider>
+        </div>
+      </div>
+
+      <div className="home-add-first2">
         <div className="container">
           <Slider {...settings} style={sliderStyle}>
             <div className="first-add">
