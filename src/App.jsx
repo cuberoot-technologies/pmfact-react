@@ -7,6 +7,7 @@ import IndividualTopFull from "./components/homempperformance/individuals/Indivi
 import NewsAndVideoDetails from "./components/newsandvideo/NewsAndVideoDetails";
 import NewsAndVideos from "./components/newsandvideo/NewsAndVideos";
 import NewsVideoBar from "./components/newsandvideo/NewsVideoBar";
+import NewsAndVideosCategory from "./components/newsandvideo/NewsAndVideoCategory";
 import OurMps from "./components/ourmps/OurMps";
 import ParliamentPerformance from "./components/parliament/ParliamentPerformance";
 import InTheWell from "./components/performance/InTheWell";
@@ -17,6 +18,7 @@ import PublicVoice from "./components/publicvoice/PublicVoice";
 import RateYourMp from "./components/rating/RateYourMp";
 import Textbar from "./components/Textbar";
 import Topbar from "./components/Topbar";
+import SearchedMp from "./components/rating/searchedmp";
 import WishYourMp from "./components/wishyourmp/WishYourMp";
 import BottomBar from "./components/float/BottomBar";
 import RatePopup from "./components/float/RatePopup";
@@ -30,13 +32,18 @@ import FilterPage from "./components/filter/FilterPage";
 import MpSelected from "./components/mpselected/MpSelected";
 import ThankYou from "./components/thankyou/ThankYou";
 import Footer from "./Footer";
+import SliderTextbar from "./components/textbarslider";
+import NewsAndVideosPage from "./components/newsandvideo/NewsandVideoSingle";
 // import appFooter from "./components/appfooter";
 
 const App = () => {
   return (
     <>
-      <Topbar />
-      <Textbar />
+      <div className="headerwrap">
+        <Topbar />
+        <Textbar />
+      </div>
+      <SliderTextbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -63,8 +70,9 @@ const App = () => {
 
         {/*News and video********** */}
         <Route path="/news-and-videos-home" element={<NewsAndVideos />} />
-
+        <Route path="/news-and-videos-category" element={<NewsAndVideosCategory />} />
         <Route path="/news-and-videos" element={<NewsVideoBar />} />
+        <Route path="/news-and-videos-page" element={<NewsAndVideosPage />} />
         <Route
           path="/news-and-videos-details"
           element={<NewsAndVideoDetails />}
@@ -102,6 +110,7 @@ const App = () => {
         {/* thankyou page ###^^^^^^&&&&&&&&&&&&&&&&&&&&&&&&&&&************ */}
 
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/searched-mp" element={<SearchedMp />} />
       </Routes>
       {/* <appFooter /> */}
       <Footer />

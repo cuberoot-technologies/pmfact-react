@@ -44,7 +44,10 @@ const Textbar = () => {
   const linkStyle = {
     textDecoration: 'none',
     padding: '4px',
+    marginRight: '8px', 
+    paddingRight: '10px', 
     display: 'inline-block',
+    borderRight: '1px solid #ccc',
   };
 
   const dropdownStyle = {
@@ -55,6 +58,7 @@ const Textbar = () => {
 
   return (
     <>
+    <div className="second-navbar-container">
     <Navbar expand="lg" className="textslide textbar-container" style={{ zIndex: '3'}}>
     <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -96,7 +100,7 @@ const Textbar = () => {
             Blogs
           </Link>
           <Link
-            to="/parliament-blog"
+            to="/parliament-performance"
             className="textbar-link"
             style={hoveredLink === 'Parliamentary Performance' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('Parliamentary Performance')}
@@ -105,7 +109,7 @@ const Textbar = () => {
             Parliament Performance
           </Link>
           <NavDropdown className="custom-dropdown"
-            title={<p className="moredropdown">...</p>}
+            title={<p style={{fontSize:'20px'}} className="moredropdown">≡</p>}
             id="basic-nav-dropdown"
             style={dropdownStyle}
             onMouseEnter={() => setHoveredLink('MPs Section')}
@@ -155,24 +159,10 @@ const Textbar = () => {
           </Nav>
     </Navbar.Collapse>
 </Navbar>
-<div className="slider-textslider">
-<div className="textslide">
-<div className="container">
-  <Slider {...settings}>
-    <Link to="/">Home</Link>
-    <Link to="/parliament-performance">Parliament Performance</Link>
-    <Link to="/home-mp-performance">MPs Performance </Link>
-    <Link to="/rate-your-mp">Rate Your MPs </Link>{" "}
-    <Link to="/news-and-videos">News & Videos </Link>
-    <Link to="/public-voice">Public Voice </Link>
-    <Link to="/our-mps">Our MPs </Link>
-    <Link to="/our-expert">PF Experts </Link>
-    <Link to="/parliament-blog">Parliamentary blog</Link>
-    <Link to="/wish-your-mp">Wish your Mp</Link>
-  </Slider>
-  </div>
-  </div>
-  </div>
+</div>
+<div className="socialIcons2">
+<i className="bi bi-search"></i>
+</div>
     </>
   );
 };

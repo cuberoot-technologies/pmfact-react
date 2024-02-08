@@ -58,7 +58,7 @@ const PublicVoice = () => {
                   </div>
                   </form>
                   </div>
-                  <div className="kharch-form-second">
+                  <div className="kharch-form-second mt-4">
                   <form action="">
                     <input type="text" placeholder="Type Name" style={{marginBottom:'0.5rem'}} />
                     <input type="text" placeholder="Email" style={{marginBottom:'0.5rem'}} />

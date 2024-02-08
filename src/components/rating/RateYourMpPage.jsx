@@ -14,9 +14,9 @@ const RateYourMpPage = () => {
     arrows:false,
     autoplay:true,
     autoplaySpeed:5000,
-    slidesToShow: 5.7,
+    slidesToShow: 5,
     slidesToScroll: 3,
-    initialSlide: 0,
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 1400,
@@ -60,7 +60,7 @@ const RateYourMpPage = () => {
       {
         breakpoint: 400,
         settings: {
-          slidesToShow: 1.8,
+          slidesToShow: 1.65,
           slidesToScroll: 1,
         },
       },
@@ -80,12 +80,12 @@ const RateYourMpPage = () => {
 
   return (
     <>
-      <div className="wmps" style={{paddingBottom:'8px'}}>
-        <div className="container">
+      <div className="wmps" id="rateyourmppage" style={{paddingBottom:'8px'}}>
+        <div className="container mt-4">
           <div className="wmps">
             <div className="container">
               <div className="rate-your-mp">
-                <h1>#RateYourMP</h1>
+                <h1>#ToSearchYourMP</h1>
                 {/* <p>Click to search your MP</p> */}
                 <Link to="/search-our-mps">
                   {" "}
@@ -99,7 +99,7 @@ const RateYourMpPage = () => {
           <div className="mps">
             <div className="container">
           <div className="rate-your-mp-main">
-            <h1> Top Rated MPs <span className="top-line"></span></h1>
+            <h1 className="mainheading"> Top Rated MPs</h1>
             <div className="populer-mp-performance">
               <Slider {...settings}>
                 <div className="mp-performance-card">
@@ -670,8 +670,8 @@ const RateYourMpPage = () => {
         <div className="wmps">
         <div className="container">
           <div className="mp-performance">
-            <h1>Top Party MPs<span className="top-line"></span></h1>
-            <p>Search Your MP</p>
+            <h1  className="mainheading">Top Party MPs</h1>
+            <button className="view-more-news">Search Your MP</button>
           </div>
           <div className="populer-performance">
             <p>BJP</p>
@@ -3513,7 +3513,7 @@ const RateYourMpPage = () => {
       <div className="mps">
       <div className="container">
         <div className="mp-performance mb-3">
-          <h1>Top Woman MPs<span className="top-line"></span></h1>
+          <h1  className="mainheading">Top Woman MPs</h1>
         </div>
         <div className="populer-mp-performance">
           <Slider {...settings}>
@@ -4083,7 +4083,7 @@ const RateYourMpPage = () => {
       </div>
       <div className="container">
         <div className="mp-performance mb-3">
-          <h1>Top Youth MPs<span className="top-line"></span></h1>
+          <h1  className="mainheading">Top Youth MPs</h1>
         </div>
         <div className="populer-mp-performance">
           <Slider {...settings}>
@@ -4653,7 +4653,7 @@ const RateYourMpPage = () => {
       <div className="mps mt-4">
       <div className="container">
         <div className="mp-performance mt-4 mb-3">
-          <h1>Top Minister MPs<span className="top-line"></span></h1>
+          <h1  className="mainheading">Top Minister MPs</h1>
         </div>
         <div className="populer-mp-performance">
           <Slider {...settings}>

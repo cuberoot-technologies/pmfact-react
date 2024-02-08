@@ -20,7 +20,7 @@ function Topbar() {
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,
-    
+
     autoplaySpeed: 4000,
     arrows: true,
     responsive: [
@@ -90,58 +90,61 @@ function Topbar() {
       </div>
       <div className="topbarcontainer">
         <div className="slidercontent">
-        <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center",marginRight:"1rem" }}>
-          <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p> 
-        </div>
-        <div className="topbarslider" style={{margin:'0 8px'}}>
-          <style>
-            
-          </style>
-          <Slider {...settings}>
-            <div className="topbarslider-content">
-              <p>People Celebrate Diwali all across India on 22 January 2024</p>
-            </div>
-            <div className="topbarslider-content">
-              <p>The Ayodhya Blockbuster, Starring Amit Shah, Yogi Adityanath and many more</p>
-            </div>
-            <div className="topbarslider-content">
-              <p>"Let's Not Talk Of Ravan Today": Himanta Biswa Sarma's Swipe At Rahul Gandhi</p>
-            </div>
-            <div className="topbarslider-content">
-              <p>"Seek Lord Ram's Forgiveness, Because...": PM Modi On Ayodhya Temple</p>
-            </div>
-            <div className="topbarslider-content">
-              <p>Over 1,000 km From Ayodhya, Another Ram Temple Inaugurated</p>
-            </div>
-            <div className="topbarslider-content">
-              <p>Rahul Gandhi, Denied Entry In Temple, Asks "What Crime Have I Committed?"</p>
-            </div>
-          </Slider>
+          <div className="topbarbox" style={{ border: "none", background: "#1b316a", height: "2rem", width: "6rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", marginRight: "1rem" }}>
+            <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>
+          </div>
+          <div className="topbarslider" style={{ margin: '0 8px' }}>
+            <style>
+
+            </style>
+            <Slider {...settings}>
+              <div className="topbarslider-content">
+                <p>People Celebrate Diwali all across India on 22 January 2024</p>
+              </div>
+              <div className="topbarslider-content">
+                <p>The Ayodhya Blockbuster, Starring Amit Shah, Yogi Adityanath and many more</p>
+              </div>
+              <div className="topbarslider-content">
+                <p>"Let's Not Talk Of Ravan Today": Himanta Biswa Sarma's Swipe At Rahul Gandhi</p>
+              </div>
+              <div className="topbarslider-content">
+                <p>"Seek Lord Ram's Forgiveness, Because...": PM Modi On Ayodhya Temple</p>
+              </div>
+              <div className="topbarslider-content">
+                <p>Over 1,000 km From Ayodhya, Another Ram Temple Inaugurated</p>
+              </div>
+              <div className="topbarslider-content">
+                <p>Rahul Gandhi, Denied Entry In Temple, Asks "What Crime Have I Committed?"</p>
+              </div>
+            </Slider>
           </div>
         </div>
-        
-        <div className="date-icon" style={{flexDirection:'column'}}>
-        <div className="socialIcons">
-        <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
-        <i className="bi bi-whatsapp" style={{ marginRight: "15px" }}></i>
-        <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
-        <i className="bi bi-twitter-x" style={{ marginRight: "13px" }}></i>
+
+        <div className="date-icon" style={{ flexDirection: 'column' }}>
+          <div className="socialIcons">
+          <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-whatsapp" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-twitter-x" style={{ marginRight: "15px" }}></i>
+          </div>
         </div>
-      </div>
       </div>
       <div className="datecontainer">
-          <p style={{fontWeight:'bold',fontSize:'12px', marginLeft:'7.5rem'}}>{currentDate}</p>
-        </div>
+        <p style={{ fontWeight: 'bold', fontSize: '12px', marginLeft: '7.5rem' }}>{currentDate}</p>
+      </div>
       <Navbar expand="lg" className="topbarimage d-flex justify-content-center">
         <Container fluid className="">
           <Navbar.Brand href="#" className="text-center w-100">
             <div className="navbarbox">
-            <div className="d-flex align-items-end justify-content-center">
-              <img
-                src={pflogo}
-                alt=""
-                style={{ }}
-              />
+              <div className="d-flex align-items-end justify-content-center">
+                <div className="pflogo-container">
+                  <img
+                    src={pflogo}
+                    alt=""
+                    style={{}}
+                  />
+                </div>
               </div>
             </div>
             <div className="brandtextbox d-flex align-items-end justify-content-center">

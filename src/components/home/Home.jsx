@@ -30,9 +30,9 @@ const Home = () => {
         <MpPublicRating />
       </div>
      
-      <div className="wmps">
+      {/* <div className="wmps">
         <OurExperts />
-      </div>
+      </div> */}
         {/* <FollowUs /> */}
     </>
   );

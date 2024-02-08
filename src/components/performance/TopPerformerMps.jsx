@@ -27,7 +27,6 @@ const TopPerformerMps = () => {
         breakpoint: 991,
         settings: {
           slidesToShow: 3.5,
-
           slidesToScroll: 1,
         },
       },
@@ -58,9 +57,9 @@ const TopPerformerMps = () => {
   };
   return (
     <>
-     <div className="container">
+     <div className="container" style={{background:'transparent linear-gradient rgba(0,0,0,0)'}}>
         <div className="mp-performance">
-          <h1>#TopMP Performance<span className="top-line"></span></h1>
+          <h1 className="mainheading">#TopMP Performance</h1>
           <button className="view-more-news">Search Your MP</button>
         </div>
         <div className="populer-performance">
@@ -85,7 +84,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -106,7 +105,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -127,7 +126,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -148,7 +147,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -169,7 +168,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -190,135 +189,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
-                <img src={profile} alt="" />
-              </div>
-            </div>
-          </Slider>
-          <Slider {...settings} style={{marginTop:'1rem'}}>
-            <div className="mp-performance-card">
-              <div className="mp-performance-card-top">
-                <div className="mp-performance-card-left">
-                  <div className="mp-performance-card-left-box">000</div>
-                  <div className="mp-performance-card-left-content">
-                    <h6>National Rank :</h6>
-                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
-                  </div>
-                </div>
-                <div className="mp-performance-card-right">
-                  <BsThreeDotsVertical />
-                </div>
-              </div>
-              <div className="mp-performance-card-body">
-                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-              </div>
-              <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
-                <img src={profile} alt="" />
-              </div>
-            </div>
-            <div className="mp-performance-card">
-              <div className="mp-performance-card-top">
-                <div className="mp-performance-card-left">
-                  <div className="mp-performance-card-left-box">000</div>
-                  <div className="mp-performance-card-left-content">
-                    <h6>National Rank :</h6>
-                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
-                  </div>
-                </div>
-                <div className="mp-performance-card-right">
-                  <BsThreeDotsVertical />
-                </div>
-              </div>
-              <div className="mp-performance-card-body">
-                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-              </div>
-              <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
-                <img src={profile} alt="" />
-              </div>
-            </div>
-            <div className="mp-performance-card">
-              <div className="mp-performance-card-top">
-                <div className="mp-performance-card-left">
-                  <div className="mp-performance-card-left-box">000</div>
-                  <div className="mp-performance-card-left-content">
-                    <h6>National Rank :</h6>
-                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
-                  </div>
-                </div>
-                <div className="mp-performance-card-right">
-                  <BsThreeDotsVertical />
-                </div>
-              </div>
-              <div className="mp-performance-card-body">
-                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-              </div>
-              <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
-                <img src={profile} alt="" />
-              </div>
-            </div>
-            <div className="mp-performance-card">
-              <div className="mp-performance-card-top">
-                <div className="mp-performance-card-left">
-                  <div className="mp-performance-card-left-box">000</div>
-                  <div className="mp-performance-card-left-content">
-                    <h6>National Rank :</h6>
-                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
-                  </div>
-                </div>
-                <div className="mp-performance-card-right">
-                  <BsThreeDotsVertical />
-                </div>
-              </div>
-              <div className="mp-performance-card-body">
-                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-              </div>
-              <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
-                <img src={profile} alt="" />
-              </div>
-            </div>
-            <div className="mp-performance-card">
-              <div className="mp-performance-card-top">
-                <div className="mp-performance-card-left">
-                  <div className="mp-performance-card-left-box">000</div>
-                  <div className="mp-performance-card-left-content">
-                    <h6>National Rank :</h6>
-                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
-                  </div>
-                </div>
-                <div className="mp-performance-card-right">
-                  <BsThreeDotsVertical />
-                </div>
-              </div>
-              <div className="mp-performance-card-body">
-                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-              </div>
-              <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
-                <img src={profile} alt="" />
-              </div>
-            </div>
-            <div className="mp-performance-card">
-              <div className="mp-performance-card-top">
-                <div className="mp-performance-card-left">
-                  <div className="mp-performance-card-left-box">000</div>
-                  <div className="mp-performance-card-left-content">
-                    <h6>National Rank :</h6>
-                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
-                  </div>
-                </div>
-                <div className="mp-performance-card-right">
-                  <BsThreeDotsVertical />
-                </div>
-              </div>
-              <div className="mp-performance-card-body">
-                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
-              </div>
-              <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -341,7 +212,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -362,7 +233,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -383,7 +254,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -404,7 +275,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -425,7 +296,7 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
@@ -446,7 +317,135 @@ const TopPerformerMps = () => {
                 <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
               </div>
               <div className="mp-performance-card-body-bottom">
-                <h1>52.9%</h1>
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
+                <img src={profile} alt="" />
+              </div>
+            </div>
+          </Slider>
+          <Slider {...settings} style={{marginTop:'1rem'}}>
+            <div className="mp-performance-card">
+              <div className="mp-performance-card-top">
+                <div className="mp-performance-card-left">
+                  <div className="mp-performance-card-left-box">000</div>
+                  <div className="mp-performance-card-left-content">
+                    <h6>National Rank :</h6>
+                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
+                  </div>
+                </div>
+                <div className="mp-performance-card-right">
+                  <BsThreeDotsVertical />
+                </div>
+              </div>
+              <div className="mp-performance-card-body">
+                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+              </div>
+              <div className="mp-performance-card-body-bottom">
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
+                <img src={profile} alt="" />
+              </div>
+            </div>
+            <div className="mp-performance-card">
+              <div className="mp-performance-card-top">
+                <div className="mp-performance-card-left">
+                  <div className="mp-performance-card-left-box">000</div>
+                  <div className="mp-performance-card-left-content">
+                    <h6>National Rank :</h6>
+                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
+                  </div>
+                </div>
+                <div className="mp-performance-card-right">
+                  <BsThreeDotsVertical />
+                </div>
+              </div>
+              <div className="mp-performance-card-body">
+                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+              </div>
+              <div className="mp-performance-card-body-bottom">
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
+                <img src={profile} alt="" />
+              </div>
+            </div>
+            <div className="mp-performance-card">
+              <div className="mp-performance-card-top">
+                <div className="mp-performance-card-left">
+                  <div className="mp-performance-card-left-box">000</div>
+                  <div className="mp-performance-card-left-content">
+                    <h6>National Rank :</h6>
+                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
+                  </div>
+                </div>
+                <div className="mp-performance-card-right">
+                  <BsThreeDotsVertical />
+                </div>
+              </div>
+              <div className="mp-performance-card-body">
+                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+              </div>
+              <div className="mp-performance-card-body-bottom">
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
+                <img src={profile} alt="" />
+              </div>
+            </div>
+            <div className="mp-performance-card">
+              <div className="mp-performance-card-top">
+                <div className="mp-performance-card-left">
+                  <div className="mp-performance-card-left-box">000</div>
+                  <div className="mp-performance-card-left-content">
+                    <h6>National Rank :</h6>
+                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
+                  </div>
+                </div>
+                <div className="mp-performance-card-right">
+                  <BsThreeDotsVertical />
+                </div>
+              </div>
+              <div className="mp-performance-card-body">
+                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+              </div>
+              <div className="mp-performance-card-body-bottom">
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
+                <img src={profile} alt="" />
+              </div>
+            </div>
+            <div className="mp-performance-card">
+              <div className="mp-performance-card-top">
+                <div className="mp-performance-card-left">
+                  <div className="mp-performance-card-left-box">000</div>
+                  <div className="mp-performance-card-left-content">
+                    <h6>National Rank :</h6>
+                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
+                  </div>
+                </div>
+                <div className="mp-performance-card-right">
+                  <BsThreeDotsVertical />
+                </div>
+              </div>
+              <div className="mp-performance-card-body">
+                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+              </div>
+              <div className="mp-performance-card-body-bottom">
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
+                <img src={profile} alt="" />
+              </div>
+            </div>
+            <div className="mp-performance-card">
+              <div className="mp-performance-card-top">
+                <div className="mp-performance-card-left">
+                  <div className="mp-performance-card-left-box">000</div>
+                  <div className="mp-performance-card-left-content">
+                    <h6>National Rank :</h6>
+                    <p>Att + Qs + Dbt + Pmb + Mpf</p>
+                  </div>
+                </div>
+                <div className="mp-performance-card-right">
+                  <BsThreeDotsVertical />
+                </div>
+              </div>
+              <div className="mp-performance-card-body">
+                <h2>Neeraj Ram Mandola Choudheer Mandola</h2>
+              </div>
+              <div className="mp-performance-card-body-bottom">
+              <h1>52.9 <span style={{ fontSize: '1.5rem' }}>%</span></h1>
                 <img src={profile} alt="" />
               </div>
             </div>
