@@ -16,9 +16,9 @@ const NewsAndVideosCategory = () => {
                         alt=""
                     />
                 </div>
-                <div class="center-container">
-  <div class="categorytype">Politics</div>
-</div>
+                <div className="center-container">
+                    <div className="categorytype">Politics</div>
+                </div>
                 <div className="catergoryheading">
                     <h2>Italy Lombardia reports first
                         2 coronavirus deaths amid
@@ -86,11 +86,11 @@ const NewsAndVideosCategory = () => {
                                     <span>January 10,2023</span>
                                 </div>
                             </div>
-                            </div>
-                            <div className="adspace">
-                                <img src="https://placehold.co/300x250" alt="" />
-                            </div>
-                            <div className="adspace2">
+                        </div>
+                        <div className="adspace">
+                            <img src="https://placehold.co/300x250" alt="" />
+                        </div>
+                        <div className="adspace2">
                             <img src="https://placehold.co/700x80" alt="" />
                         </div>
 
