@@ -10,8 +10,8 @@ const NewsAndVideos = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    autoplay:true,
-    autoplaySpeed:4000,
+    autoplay: true,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
 
@@ -31,16 +31,17 @@ const NewsAndVideos = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    autoplay:true,
-    autoplaySpeed:4000,
+    autoplay: true,
+    autoplaySpeed: 4000,
     slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: false,
 
     responsive: [
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 1.2,
+          slidesToShow: 1.07,
           slidesToScroll: 1,
           infinite: true,
           dots: false,
@@ -50,8 +51,9 @@ const NewsAndVideos = () => {
   };
   return (
     <>
+      <HomeFirstAdd />
       <div className="mps-background">
-        <HomeFirstAdd />
+
         <div className="news-and-videos">
           <div className="news-and-videos-top">
             <Slider {...settings}>
@@ -139,7 +141,7 @@ const NewsAndVideos = () => {
 
           <div className="news-and-videos-parlimentry-news">
             <div className="parlimentry-news">
-              <h1 style={{color:'black', marginLeft:'3%',textDecoration:'underline', textDecorationColor:'red'}}>Parliamentry News</h1>
+              <h1 className="mainheading">Parliamentry News</h1>
               <button className="view-more-news">View More</button>
             </div>
             <div className="parlimentry-news-list">
@@ -180,7 +182,7 @@ const NewsAndVideos = () => {
         </div>
         <div className="news-and-videos-shorts">
           <div className="parlimentry-news">
-            <h1 style={{color:'black', marginLeft:'3%',textDecoration:'underline', textDecorationColor:'red'}}>Parliamentry Shorts</h1>
+            <h1 className="mainheading">Parliamentry Shorts</h1>
             <button className="view-more-news">View More</button>
           </div>
           <Slider {...settingsFirst}>
@@ -264,64 +266,64 @@ const NewsAndVideos = () => {
 
         <div className="parliament-news-video-mp-news">
           <div className="parlimentry-news">
-            <h1 style={{color:'black', marginLeft:'3%',textDecoration:'underline', textDecorationColor:'red'}}>MPs News</h1>
+            <h1 className="mainheading" style={{ marginLeft: '1rem', textAlign: 'center' }}>MPs News</h1>
             <button className="view-more-news">View More</button>
-            </div>
+          </div>
           <div className="news-pu">
-           
-              <div className="parliament-news-video-mp-news-list">
-                <img src={profile} alt="" />
-                <div className="parliament-news-video-mp-news-list-content">
-                  <p>Rahul on Bharat Jodo Yatra</p>
-                  <h2>
-                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
-                  </h2>
-                  <span>January 10,2023</span>
-                </div>
-            </div>
-           
-              <div className="parliament-news-video-mp-news-list">
-                <img src={profile} alt="" />
-                <div className="parliament-news-video-mp-news-list-content">
-                  <p>Rahul on Bharat Jodo Yatra</p>
-                  <h2>
-                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
-                  </h2>
-                  <span>January 10,2023</span>
-                </div>
-            </div>{" "}
-           
-              <div className="parliament-news-video-mp-news-list">
-                <img src={profile} alt="" />
-                <div className="parliament-news-video-mp-news-list-content">
-                  <p>Rahul on Bharat Jodo Yatra</p>
-                  <h2>
-                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
-                  </h2>
-                  <span>January 10,2023</span>
-                </div>
-            </div>{" "}
-           
-              <div className="parliament-news-video-mp-news-list">
-                <img src={profile} alt="" />
-                <div className="parliament-news-video-mp-news-list-content">
-                  <p>Rahul on Bharat Jodo Yatra</p>
-                  <h2>
-                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
-                  </h2>
-                  <span>January 10,2023</span>
-                </div>
+
+            <div className="parliament-news-video-mp-news-list">
+              <img src={profile} alt="" />
+              <div className="parliament-news-video-mp-news-list-content">
+                <p>Rahul on Bharat Jodo Yatra</p>
+                <h2>
+                  Italy Lombardia reports first 2 coronavirus deaths amid jump
+                  in cases
+                </h2>
+                <span>January 10,2023</span>
               </div>
             </div>
-            <div className="view-more p-3">
-              <button className="view-more-btn">View More</button>
+
+            <div className="parliament-news-video-mp-news-list">
+              <img src={profile} alt="" />
+              <div className="parliament-news-video-mp-news-list-content">
+                <p>Rahul on Bharat Jodo Yatra</p>
+                <h2>
+                  Italy Lombardia reports first 2 coronavirus deaths amid jump
+                  in cases
+                </h2>
+                <span>January 10,2023</span>
+              </div>
+            </div>{" "}
+
+            <div className="parliament-news-video-mp-news-list">
+              <img src={profile} alt="" />
+              <div className="parliament-news-video-mp-news-list-content">
+                <p>Rahul on Bharat Jodo Yatra</p>
+                <h2>
+                  Italy Lombardia reports first 2 coronavirus deaths amid jump
+                  in cases
+                </h2>
+                <span>January 10,2023</span>
+              </div>
+            </div>{" "}
+
+            <div className="parliament-news-video-mp-news-list">
+              <img src={profile} alt="" />
+              <div className="parliament-news-video-mp-news-list-content">
+                <p>Rahul on Bharat Jodo Yatra</p>
+                <h2>
+                  Italy Lombardia reports first 2 coronavirus deaths amid jump
+                  in cases
+                </h2>
+                <span>January 10,2023</span>
+              </div>
             </div>
           </div>
+          <div className="view-more p-3">
+            <button className="view-more-btn">View More</button>
+          </div>
         </div>
+      </div>
     </>
   );
 };

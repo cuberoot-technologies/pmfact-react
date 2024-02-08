@@ -7,6 +7,7 @@ import IndividualTopFull from "./components/homempperformance/individuals/Indivi
 import NewsAndVideoDetails from "./components/newsandvideo/NewsAndVideoDetails";
 import NewsAndVideos from "./components/newsandvideo/NewsAndVideos";
 import NewsVideoBar from "./components/newsandvideo/NewsVideoBar";
+import NewsAndVideosCategory from "./components/newsandvideo/NewsAndVideoCategory";
 import OurMps from "./components/ourmps/OurMps";
 import ParliamentPerformance from "./components/parliament/ParliamentPerformance";
 import InTheWell from "./components/performance/InTheWell";
@@ -32,14 +33,15 @@ import MpSelected from "./components/mpselected/MpSelected";
 import ThankYou from "./components/thankyou/ThankYou";
 import Footer from "./Footer";
 import SliderTextbar from "./components/textbarslider";
+import NewsAndVideosPage from "./components/newsandvideo/NewsandVideoSingle";
 // import appFooter from "./components/appfooter";
 
 const App = () => {
   return (
     <>
-    <div className="headerwrap">
-      <Topbar />
-      <Textbar />
+      <div className="headerwrap">
+        <Topbar />
+        <Textbar />
       </div>
       <SliderTextbar />
       <Routes>
@@ -68,8 +70,9 @@ const App = () => {
 
         {/*News and video********** */}
         <Route path="/news-and-videos-home" element={<NewsAndVideos />} />
-
+        <Route path="/news-and-videos-category" element={<NewsAndVideosCategory />} />
         <Route path="/news-and-videos" element={<NewsVideoBar />} />
+        <Route path="/news-and-videos-page" element={<NewsAndVideosPage />} />
         <Route
           path="/news-and-videos-details"
           element={<NewsAndVideoDetails />}
