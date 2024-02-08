@@ -141,7 +141,7 @@ const NewsAndVideos = () => {
 
           <div className="news-and-videos-parlimentry-news">
             <div className="parlimentry-news">
-              <h1 className="mainheading">Parliamentry News</h1>
+              <h3 className="mainheading" >Parliamentry News</h3>
               <button className="view-more-news">View More</button>
             </div>
             <div className="parlimentry-news-list">
@@ -182,7 +182,7 @@ const NewsAndVideos = () => {
         </div>
         <div className="news-and-videos-shorts">
           <div className="parlimentry-news">
-            <h1 className="mainheading">Parliamentry Shorts</h1>
+            <h3 className="mainheading">Parliamentry Shorts</h3>
             <button className="view-more-news">View More</button>
           </div>
           <Slider {...settingsFirst}>
@@ -266,7 +266,7 @@ const NewsAndVideos = () => {
 
         <div className="parliament-news-video-mp-news">
           <div className="parlimentry-news">
-            <h1 className="mainheading" style={{ marginLeft: '1rem', textAlign: 'center' }}>MPs News</h1>
+            <h3 className="mainheading" style={{ marginLeft: '1rem', textAlign: 'center' }}>MPs News</h3>
             <button className="view-more-news">View More</button>
           </div>
           <div className="news-pu">
