@@ -9,16 +9,16 @@ const NewsAndVideosCategory = () => {
             <div>
                 <HomeFirstAdd />
             </div>
-            <div className="mps">
-                <div className="categorytopimage">
+            <div className="mps" id="categorypage">
+                <div className="categorytopimage" id="categoryimg">
                     <img
                         src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
-                        width="100%"
-                        height={400}
                         alt=""
                     />
                 </div>
-                <div className="categorytype">Politics</div>
+                <div class="center-container">
+  <div class="categorytype">Politics</div>
+</div>
                 <div className="catergoryheading">
                     <h2>Italy Lombardia reports first
                         2 coronavirus deaths amid
@@ -39,7 +39,7 @@ const NewsAndVideosCategory = () => {
                         </div>
                         <div className="news-pu">
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -51,7 +51,7 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -63,7 +63,7 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>{" "}
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -75,7 +75,7 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>{" "}
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -85,12 +85,39 @@ const NewsAndVideosCategory = () => {
                                     </h2>
                                     <span>January 10,2023</span>
                                 </div>
+                            </div>
                             </div>
                             <div className="adspace">
                                 <img src="https://placehold.co/300x250" alt="" />
                             </div>
+                            <div className="adspace2">
+                            <img src="https://placehold.co/700x80" alt="" />
+                        </div>
 
-                            <div className="parliament-news-video-mp-news-list">
+                        <div className="news-pu">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
+                                <img src={profile} alt="" />
+                                <div className="parliament-news-video-mp-news-list-content">
+                                    <p>Rahul on Bharat Jodo Yatra</p>
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    <span>January 10,2023</span>
+                                </div>
+                            </div>
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
+                                <img src={profile} alt="" />
+                                <div className="parliament-news-video-mp-news-list-content">
+                                    <p>Rahul on Bharat Jodo Yatra</p>
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    <span>January 10,2023</span>
+                                </div>
+                            </div>
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -102,7 +129,7 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -114,7 +141,7 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>{" "}
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>
@@ -126,7 +153,7 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>{" "}
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <p>Rahul on Bharat Jodo Yatra</p>

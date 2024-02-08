@@ -4418,6 +4418,27 @@ input.click-here {
     padding: 0 2rem;
   }
 
+  #categorypage{
+    padding: 0 6rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Adjust the height as needed */
+  }
+  
+  #categoryimages img{
+    width: auto;
+  }
+
+  #categoryimg img{
+    height:80vh;
+    width: auto;
+  }
   .relatednews{
     padding: 0 0.5rem;
   }
