@@ -4321,6 +4321,10 @@ input.click-here {
   padding: 5px;
 }
 
+.adspace2{
+  display: none;
+}
+
 .categorynewssection {
   padding: 5px;
   margin: 20px;
@@ -4365,12 +4369,97 @@ input.click-here {
   margin-bottom: 5px;
 }
 
+#related-news{
+  display: none;
+}
+
+/* #readalso-content p{
+  display: none;
+} */
+
+#readalso-img2{
+  display: none;
+}
+
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .adtopbar {
     display: flex;
   }
 
+  #relatednewsheading h2{
+    font-size: 13px;
+  }
+
+  #readalso-img img{
+    width: auto;
+    height: 20vh;
+  }
+
+  #readalso-img2 img{
+    width: auto;
+    height: 20vh;
+  }
+
+  #readalso-img2{
+    display: flex;
+  }
+
+  .readalsobox{
+    display: flex;
+  }
+
+  .quotealsobox{
+    display: flex;
+  }
+
+  .quotes{
+    padding: 0 2rem;
+  }
+
+  .relatednews{
+    padding: 0 0.5rem;
+  }
+
+  #relatednewsheading span{
+    font-size: 12px;
+  }
+
+
+  .adspace{
+    display: none;
+  }
+
+  .adspace2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+  }
+
+  .adspace2 img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px;
+  }
+
+  #related-news{
+    display: block;
+    margin-top: 2rem;
+  }
+  #morenewscategory{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  #blogs{
+    padding: 0 7rem;
+    display: flex;
+  }
+
+  #category-section-news{
+    width: 20vw;
+  }
   .questionbox {
     width: 35vw
   }
