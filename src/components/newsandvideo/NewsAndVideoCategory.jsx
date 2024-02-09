@@ -21,7 +21,11 @@ const NewsAndVideosCategory = () => {
                         </div>
                     </div>
                 </div>
+                <div className="category-title">
+                    <p>Category title here, hello how are you?</p>
+                </div>
                 <div className="catergoryheading">
+
                     <h2>Italy Lombardia reports first
                         2 coronavirus deaths amid
                         jump in cases</h2>
@@ -53,17 +57,9 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                </div>
-                            </div>{" "}
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
 
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
@@ -76,6 +72,26 @@ const NewsAndVideosCategory = () => {
                                     <span>January 10,2023</span>
                                 </div>
                             </div>{" "}
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
+                                <img src={profile} alt="" />
+                                <div className="parliament-news-video-mp-news-list-content">
+                                    <p>Rahul on Bharat Jodo Yatra</p>
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    <span>January 10,2023</span>
+                                </div>
+                            </div>{" "}
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
 
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
@@ -108,16 +124,9 @@ const NewsAndVideosCategory = () => {
                                     <span>January 10,2023</span>
                                 </div>
                             </div>
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                </div>
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
                             </div>
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
@@ -129,6 +138,25 @@ const NewsAndVideosCategory = () => {
                                     </h2>
                                     <span>January 10,2023</span>
                                 </div>
+                            </div>
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
+                                <img src={profile} alt="" />
+                                <div className="parliament-news-video-mp-news-list-content">
+                                    <p>Rahul on Bharat Jodo Yatra</p>
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    <span>January 10,2023</span>
+                                </div>
+                            </div>
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
                             </div>
 
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
@@ -143,6 +171,10 @@ const NewsAndVideosCategory = () => {
                                 </div>
                             </div>{" "}
 
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
@@ -154,6 +186,10 @@ const NewsAndVideosCategory = () => {
                                     <span>January 10,2023</span>
                                 </div>
                             </div>{" "}
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
 
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
