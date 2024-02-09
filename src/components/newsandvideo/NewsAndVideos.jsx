@@ -514,47 +514,47 @@ const NewsAndVideos = () => {
 
           <div className="combinedbox">
             <div className="left-news-container">
-            <div className="parlimentry-news-list">
-                  <div className="parlimentry-news-list-left-side-left" id="catimg" >
-                    <div>
+              <div className="parlimentry-news-list">
+                <div className="parlimentry-news-list-left-side-left" id="catimg" >
+                  <div>
                     <img src={profile} alt="" />
-                    </div>
-                    <div>
-                    <div className="catergory-box">Video</div>
-                    <h1>
-                      Italy Lombardia reports first 2 coronavirus deaths amid jump
-                      in cases
-                    </h1>
-                    <button className="read-more">Read More</button>
-                    </div>
                   </div>
-                  <div className="parlimentry-news-list-left-side-left" id="catimg" >
-                    <div>
-                    <img src={profile} alt="" />
-                    </div>
-                    <div>
+                  <div>
                     <div className="catergory-box">Video</div>
                     <h1>
                       Italy Lombardia reports first 2 coronavirus deaths amid jump
                       in cases
                     </h1>
                     <button className="read-more">Read More</button>
-                    </div>
-                  </div>
-                  <div className="parlimentry-news-list-left-side-left" id="catimg" >
-                    <div>
-                    <img src={profile} alt="" />
-                    </div>
-                    <div>
-                    <div className="catergory-box">Video</div>
-                    <h1>
-                      Italy Lombardia reports first 2 coronavirus deaths amid jump
-                      in cases
-                    </h1>
-                    <button className="read-more">Read More</button>
-                    </div>
                   </div>
                 </div>
+                <div className="parlimentry-news-list-left-side-left" id="catimg" >
+                  <div>
+                    <img src={profile} alt="" />
+                  </div>
+                  <div>
+                    <div className="catergory-box">Video</div>
+                    <h1>
+                      Italy Lombardia reports first 2 coronavirus deaths amid jump
+                      in cases
+                    </h1>
+                    <button className="read-more">Read More</button>
+                  </div>
+                </div>
+                <div className="parlimentry-news-list-left-side-left" id="catimg" >
+                  <div>
+                    <img src={profile} alt="" />
+                  </div>
+                  <div>
+                    <div className="catergory-box">Video</div>
+                    <h1>
+                      Italy Lombardia reports first 2 coronavirus deaths amid jump
+                      in cases
+                    </h1>
+                    <button className="read-more">Read More</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="middle-news-container">
@@ -706,8 +706,12 @@ const NewsAndVideos = () => {
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                     in cases
                   </h2>
-                  <span>January 10,2023</span>
+                  {/* <span>January 10,2023</span> */}
                 </div>
+              </div>
+
+              <div className="mplinecontainer">
+                <hr className="mpline" />
               </div>
 
               <div className="parliament-news-video-mp-news-list">
@@ -718,9 +722,27 @@ const NewsAndVideos = () => {
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                     in cases
                   </h2>
-                  <span>January 10,2023</span>
+                  {/* <span>January 10,2023</span> */}
                 </div>
               </div>{" "}
+              <div className="mplinecontainer">
+                <hr className="mpline" />
+              </div>
+              <div className="parliament-news-video-mp-news-list">
+                <img src={profile} alt="" />
+                <div className="parliament-news-video-mp-news-list-content">
+                  <p>Rahul on Bharat Jodo Yatra</p>
+                  <h2>
+                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                    in cases
+                  </h2>
+                  {/* <span>January 10,2023</span> */}
+                </div>
+              </div>{" "}
+
+              <div className="mplinecontainer">
+                <hr className="mpline" />
+              </div>
 
               <div className="parliament-news-video-mp-news-list">
                 <img src={profile} alt="" />
@@ -730,22 +752,11 @@ const NewsAndVideos = () => {
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                     in cases
                   </h2>
-                  <span>January 10,2023</span>
-                </div>
-              </div>{" "}
-
-              <div className="parliament-news-video-mp-news-list">
-                <img src={profile} alt="" />
-                <div className="parliament-news-video-mp-news-list-content">
-                  <p>Rahul on Bharat Jodo Yatra</p>
-                  <h2>
-                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
-                  </h2>
-                  <span>January 10,2023</span>
+                  {/* <span>January 10,2023</span> */}
                 </div>
               </div>
             </div>
+
             <div className="view-more p-3">
               <button className="view-more-btn">View More</button>
             </div>
