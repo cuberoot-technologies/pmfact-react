@@ -38,7 +38,7 @@
 
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   margin-bottom: 0 !important;
   padding-bottom: 0;
@@ -4300,7 +4300,7 @@ input.click-here {
   cursor: pointer;
 }
 
-.categorytopimage {
+.categorytopimage img{
   /* padding: 10px; */
   margin-bottom: 1rem;
 }
@@ -4319,12 +4319,6 @@ input.click-here {
   color: #fff;
   /* display: flex; */
   border-radius: 3px;
-}
-
-.catergoryheading {
-  padding: 5px;
-  margin:5px;
-
 }
 
 .categorymetaheading {
@@ -4371,22 +4365,31 @@ input.click-here {
   margin: 5px;
 }
 
-.blogheading,
+/* .blogheading,
 .blogbody {
   padding: 5px;
   margin: 10px;
-}
+} */
 
 .blogbody p {
-  margin: 10px;
-  font-weight: 400;
+  /* margin: 10px; */
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .thick-hr {
-  height: 4px;
+  height: 3px;
   background-color: rgb(0, 0, 0);
   border: none;
   margin-top: 10px;
+}
+
+.blogintro{
+  margin-bottom: 1rem;
+}
+
+.para{
+  margin: 1rem 0;
 }
 
 .readalso {
@@ -4504,10 +4507,32 @@ input.click-here {
   padding: 10px;
 }
 
+.catergoryheading h2{
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.related-news-image{
+  margin: 1rem;
+}
+
+.related-news-image img{
+  width:300px;
+  height:140px
+}
+
+.relatednews{
+  max-width: 300px;
+}
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .adtopbar {
     display: flex;
+  }
+
+  #categtopimage img{
+    height: 60vh;
   }
 
   .mplinecontainer{
@@ -4699,20 +4724,14 @@ input.click-here {
     height: 400px;
   }
 
-  #relatednewsheading h2 {
-    font-size: 13px;
+  .relatednewsheading h2 {
+    font-size: 14px;
   }
 
   #readalso-img img {
-    width: auto;
-    height: 20vh;
+    width: 300px;
+    height: 100px;
   }
-
-  #readalso-img2 img {
-    width: auto;
-    height: 20vh;
-  }
-
   #readalso-img2 {
     display: flex;
   }
@@ -4760,7 +4779,7 @@ input.click-here {
     padding: 0 0.5rem;
   }
 
-  #relatednewsheading span {
+  .relatednewsheading span {
     font-size: 12px;
   }
 
@@ -4799,6 +4818,7 @@ input.click-here {
 
   #category-section-news {
     width: 20vw;
+    margin-left: 1rem;
   }
 
   .questionbox {
@@ -5318,9 +5338,11 @@ input.click-here {
   }
 
   .parliament-news-video-mp-news-list img {
-    height: 108px;
-    width: 50%;
+    height: 100px;
+    width: 80%;
   }
+
+
 
   .news-pu {
     grid-template-columns: auto auto;
