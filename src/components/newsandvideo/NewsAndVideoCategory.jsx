@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import profile from "../../assets/profile.jpg";
 import HomeFirstAdd from "../advertisement/HomeFirstAdd";
+import { Link } from "react-router-dom";
 
 const NewsAndVideosCategory = () => {
 
@@ -46,12 +47,14 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                    <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -62,28 +65,14 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
-                                </div>
-                            </div>{" "}
-
-                            <div className="mplinecontainer">
-                                <hr className="mpline" />
-                            </div>
-
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>{" "}
 
@@ -94,12 +83,32 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
+                                    </Link>
+                                </div>
+                            </div>{" "}
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
+                                <img src={profile} alt="" />
+                                <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
+                                    <p>Rahul on Bharat Jodo Yatra</p>
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -114,12 +123,14 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -129,12 +140,14 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -144,12 +157,14 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -160,28 +175,14 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
-                                </div>
-                            </div>{" "}
-
-                            <div className="mplinecontainer">
-                                <hr className="mpline" />
-                            </div>
-
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>{" "}
 
@@ -192,12 +193,32 @@ const NewsAndVideosCategory = () => {
                             <div className="parliament-news-video-mp-news-list" id="categoryimages">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page"className="custom-link">
                                     <p>Rahul on Bharat Jodo Yatra</p>
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
                                     <span>January 10,2023</span>
+                                    </Link>
+                                </div>
+                            </div>{" "}
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+
+                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
+                                <img src={profile} alt="" />
+                                <div className="parliament-news-video-mp-news-list-content">
+                                <Link to="/news-and-videos-page" className="custom-link">
+                                    <p>Rahul on Bharat Jodo Yatra</p>
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    <span>January 10,2023</span>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
