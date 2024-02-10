@@ -19,8 +19,8 @@ const NewsAndVideos = () => {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 1.06,
-          slidesToScroll: 1.05,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           autoplay: false,
           autoplaySpeed: 4000,
           infinite: true,
@@ -43,8 +43,9 @@ const NewsAndVideos = () => {
       {
         breakpoint: 991,
         settings: {
+          initialSlide:1,
           slidesToShow: 1.5,
-          slidesToScroll: 1,
+          slidesToScroll: 1.5,
           infinite: true,
           dots: false,
         },
@@ -82,7 +83,7 @@ const NewsAndVideos = () => {
                     </div>
                     <div className="text-news-container">
                       <div className="newsmainheading">
-                        <h2>Watch:10 days Later: What Italians Wish They Had Known</h2>
+                        <h1>Watch:10 days Later: What Italians Wish They Had Known</h1>
                       </div>
                       <div className="catergory-box">Video</div>
                       <div className="categorybox">
@@ -120,7 +121,7 @@ const NewsAndVideos = () => {
                     </div>
                     <div className="text-news-container">
                       <div className="newsmainheading">
-                        <h2>Watch:10 days Later: What Italians Wish They Had Known</h2>
+                        <h1>Watch:10 days Later: What Italians Wish They Had Known</h1>
                       </div>
                       <div className="catergory-box">Video</div>
                       <div className="categorybox">
@@ -158,7 +159,7 @@ const NewsAndVideos = () => {
                     </div>
                     <div className="text-news-container">
                       <div className="newsmainheading">
-                        <h2>Watch:10 days Later: What Italians Wish They Had Known</h2>
+                        <h1>Watch:10 days Later: What Italians Wish They Had Known</h1>
                       </div>
                       <div className="catergory-box">Video</div>
                       <div className="categorybox">
@@ -196,7 +197,7 @@ const NewsAndVideos = () => {
                     </div>
                     <div className="text-news-container">
                       <div className="newsmainheading">
-                        <h2>Watch:10 days Later: What Italians Wish They Had Known</h2>
+                        <h1>Watch:10 days Later: What Italians Wish They Had Known</h1>
                       </div>
                       <div className="catergory-box">Video</div>
                       <div className="categorybox">
@@ -215,10 +216,12 @@ const NewsAndVideos = () => {
             </div>
           </div>
 
+          <div className="newspagecontentcontainer">
+
           <div className="middle-news-box">
             <div className="news-and-videos-parlimentry-news">
               <div className="parlimentry-news">
-                <h4 className="mainheading" >Main News</h4>
+                <h5 className="mainheading" >Parliamentary News</h5>
                 <button className="view-more-news">View More</button>
               </div>
               <div className="parlimentry-news-list">
@@ -227,7 +230,7 @@ const NewsAndVideos = () => {
                   <div className="catergory-box">Video</div>
                   <h1>
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
+                    in cases in cases in cases
                   </h1>
                   <button className="read-more">Read More</button>
                 </div>
@@ -236,7 +239,7 @@ const NewsAndVideos = () => {
                   <div className="catergory-box">Video</div>
                   <h1>
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
+                    in cases in cases in cases
                   </h1>
                   <button className="read-more">Read More</button>
                 </div>
@@ -245,7 +248,7 @@ const NewsAndVideos = () => {
                   <div className="catergory-box">Video</div>
                   <h1>
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
+                    in cases in cases in cases
                   </h1>
                   <button className="read-more">Read More</button>
                 </div>
@@ -254,7 +257,7 @@ const NewsAndVideos = () => {
                   <div className="catergory-box">Video</div>
                   <h1>
                     Italy Lombardia reports first 2 coronavirus deaths amid jump
-                    in cases
+                    in cases in cases in cases
                   </h1>
                   <button className="read-more">Read More</button>
                 </div>
@@ -284,7 +287,7 @@ const NewsAndVideos = () => {
             <div className="middle-news-container">
               <div className="news-and-videos-parlimentry-news">
                 <div className="parlimentry-news">
-                  <h4 className="mainheading" >Main News</h4>
+                  <h5 className="mainheading" >Parliamentary News</h5>
                   <button className="view-more-news">View More</button>
                 </div>
                 <div className="parlimentry-news-list">
@@ -371,7 +374,7 @@ const NewsAndVideos = () => {
                 </div>
                 <div className="catergory-box">Video</div>
                 <div className="middleboxtext">
-                  <p style={{ fontSize: '13px' }}>Door slmas at the person in europe in geneva switzerland</p>
+                  <h6 >Door slmas at the person in europe in geneva switzerland</h6>
                   <p style={{ fontSize: '10px', color: '#444' }}>19-08-2002 - 10:49</p>
                 </div>
               </div>
@@ -381,7 +384,7 @@ const NewsAndVideos = () => {
                 </div>
                 <div className="catergory-box">Video</div>
                 <div className="middleboxtext">
-                  <p style={{ fontSize: '13px' }}>Door slmas at the person in europe in geneva switzerland</p>
+                  <h6>Door slmas at the person in europe in geneva switzerland</h6>
                   <p style={{ fontSize: '10px', color: '#444' }}>19-08-2002 - 10:49</p>
                 </div>
               </div>
@@ -391,7 +394,7 @@ const NewsAndVideos = () => {
                 </div>
                 <div className="catergory-box">Video</div>
                 <div className="middleboxtext">
-                  <p style={{ fontSize: '13px' }}>Door slmas at the person in europe in geneva switzerland</p>
+                  <h6>Door slmas at the person in europe in geneva switzerland</h6>
                   <p style={{ fontSize: '10px', color: '#444' }}>19-08-2002 - 10:49</p>
                 </div>
               </div>
@@ -401,7 +404,7 @@ const NewsAndVideos = () => {
                 </div>
                 <div className="catergory-box">Video</div>
                 <div className="middleboxtext">
-                  <p style={{ fontSize: '13px' }}>Door slmas at the person in europe in geneva switzerland</p>
+                  <h6>Door slmas at the person in europe in geneva switzerland</h6>
                   <p style={{ fontSize: '10px', color: '#444' }}>19-08-2002 - 10:49</p>
                 </div>
               </div>
@@ -411,7 +414,7 @@ const NewsAndVideos = () => {
                 </div>
                 <div className="catergory-box">Video</div>
                 <div className="middleboxtext">
-                  <p style={{ fontSize: '13px' }}>Door slmas at the person in europe in geneva switzerland</p>
+                  <h6>Door slmas at the person in europe in geneva switzerland</h6>
                   <p style={{ fontSize: '10px', color: '#444' }}>19-08-2002 - 10:49</p>
                 </div>
               </div>
@@ -440,7 +443,7 @@ const NewsAndVideos = () => {
             <div className="middle-news-container">
               <div className="news-and-videos-parlimentry-news">
                 <div className="parlimentry-news">
-                  <h4 className="mainheading" >Main News</h4>
+                  <h5 className="mainheading" >Parliamentary News</h5>
                   <button className="view-more-news">View More</button>
                 </div>
                 <div className="parlimentry-news-list">
@@ -603,10 +606,12 @@ const NewsAndVideos = () => {
 
         </div>
 
-        <div className="parliabox">
+        <div className="newspagecontentcontainer">
+
+        <div className="parliabox" style={{marginTop:'3rem'}}>
           <div className="news-and-videos-shorts">
             <div className="parlimentry-news">
-              <h4 className="mainheading">Parliamentry Shorts</h4>
+              <h5 className="mainheading" >Parliamentry Shorts</h5>
               <button className="view-more-news">View More</button>
             </div>
             <Slider {...settingsFirst}>
@@ -693,7 +698,7 @@ const NewsAndVideos = () => {
         <div className="parliabox">
           <div className="parliament-news-video-mp-news">
             <div className="parlimentry-news">
-              <h4 className="mainheading" style={{ marginLeft: '1rem', textAlign: 'center' }}>MPs News</h4>
+              <h4 className="mainheading" style={{textAlign: 'center' }}>MPs News</h4>
               <button className="view-more-news">View More</button>
             </div>
             <div className="news-pu">
@@ -762,6 +767,8 @@ const NewsAndVideos = () => {
             </div>
           </div>
         </div>
+      </div>
+      </div>
       </div>
 
     </>

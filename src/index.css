@@ -38,7 +38,7 @@
 
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   margin-bottom: 0 !important;
   padding-bottom: 0;
@@ -2399,7 +2399,7 @@ form input[type="text"] {
 
 .news-content-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -2426,7 +2426,7 @@ form input[type="text"] {
   bottom: 20px;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
   color: white;
 }
 
@@ -2479,6 +2479,7 @@ form input[type="text"] {
   column-gap: 20px;
   grid-template-columns: auto auto;
   row-gap: 10px;
+  
 }
 
 .parlimentry-news-list-left-side-left {
@@ -2486,10 +2487,17 @@ form input[type="text"] {
   margin-top: 30px;
 }
 
+.newspagecontentcontainer{
+  padding: 1rem;
+}
+
 .parlimentry-news-list-left-side-left img {
   height: 80px;
-  width: 100%;
-  object-fit: fill;
+  width: 90%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .parlimentry-news-list-left-side-left h1 {
@@ -2504,9 +2512,9 @@ form input[type="text"] {
   margin-top: 30px;
 } */
 
-.news-and-videos {
+/* .news-and-videos {
   padding: 10px;
-}
+} */
 
 .news-pu {
   display: grid;
@@ -2531,13 +2539,14 @@ form input[type="text"] {
 .breaking-news-shorts-content {
   position: absolute;
   padding: 30px 30px;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   z-index: 999;
   bottom: 35px;
   width: 220px;
-  height: 80%;
+  height: 70%;
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgb(56, 56, 56));
 }
 
@@ -2586,7 +2595,7 @@ form input[type="text"] {
   height: 100px;
   /* display: block; */
   /* margin: 0 11%; */
-  padding: 0 5px;
+  /* padding: 0 5px; */
 }
 
 .parliament-news-video-mp-news-list-content {
@@ -3230,7 +3239,7 @@ form input[type="text"] {
 h1,
 input {
   color: #444;
-  font-family: 'Poppins';
+  font-family: Poppins,'devanagari';
   font-weight: 300;
 }
 
@@ -4422,7 +4431,7 @@ input.click-here {
 }
 
 .image-container img {
-  height: 600px;
+  height: 500px;
   width: 100%;
   display: block;
 }
@@ -4433,8 +4442,8 @@ input.click-here {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 300px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  height: 600px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(1, 1, 1, 5) 100%);
   pointer-events: none;
 }
 
@@ -4529,6 +4538,14 @@ input.click-here {
 @media only screen and (min-width: 991px) {
   .adtopbar {
     display: flex;
+  }
+
+  .leftnewstext{
+    padding-right: 0.5rem;
+  }
+
+  .caption-news{
+    display: none;
   }
 
   #categtopimage img{
@@ -4641,23 +4658,30 @@ input.click-here {
     margin-bottom: 1rem;
   }
 
+  #categorysimages{
+    max-width: 90%;
+  }
+
   .combinedbox{
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
   }
   .right-news-container{
-    max-width: 20%;
+    max-width: 293px;
     display: block;
+    margin-right: 1rem;
   }
   .left-news-container{
-    max-width: 40%;
+    /* max-width: 40%; */
     display: block;
+    margin-right: 0.5rem;
   }
   
   .middle-news-container{
-    max-width: 25%;
+    max-width: 293px;
     display: block;
+    margin-right: 2rem;
   }
 
   .parlimentry-news-list{
@@ -4684,7 +4708,7 @@ input.click-here {
   }
 
   .categorytext p{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .categorybox{
@@ -4697,7 +4721,15 @@ input.click-here {
   }
 
   .text-news-container {
-    display: block;
+    display:flex;  
+    padding: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsmainheading h1{
+    font-weight: 700;
+    color: #000;
   }
 
 
@@ -5363,8 +5395,9 @@ input.click-here {
   }
 
   .view-more-news {
-    font-size: 16px;
-    padding: 3px 18px;
+    font-size: 12px;
+    padding: 2px 12px;
+    margin-left:0.5rem
   }
 
   .request-grid {
@@ -5435,13 +5468,13 @@ input.click-here {
   }
 
   .breaking-news-shorts img {
-    min-height: 200px;
+    min-height: 180px;
     width: 260px;
     border-left: 1px solid #000;
   }
 
   .breaking-news-shorts {
-    min-height: 200px;
+    min-height: 180px;
   }
 
   .support-karen-img img {
@@ -5843,13 +5876,13 @@ input.click-here {
   }
 
   .breaking-news-shorts img {
-    min-height: 200px;
+    min-height: 180px;
     width: 220px;
     border: 1px solid #000;
   }
 
   .breaking-news-shorts {
-    min-height: 200px;
+    min-height: 180px;
   }
 
   .breaking-news-shorts-content h2 {
