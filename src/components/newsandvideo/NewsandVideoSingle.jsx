@@ -3,7 +3,7 @@ import profile from "../../assets/profile.jpg";
 import HomeFirstAdd from "../advertisement/HomeFirstAdd";
 import Slider from "react-slick";
 
-const NewsAndVideosPage = () => {
+const NewsAndVideosSingle = () => {
 
     var settings = {
         dots: false,
@@ -471,4 +471,4 @@ const NewsAndVideosPage = () => {
     );
 };
 
-export default NewsAndVideosPage;
+export default NewsAndVideosSingle;
