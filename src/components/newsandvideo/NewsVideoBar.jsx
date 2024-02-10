@@ -23,7 +23,7 @@ const NewsVideoBar = () => {
   return (
     <>
       <div className="container">
-        <div className="wmps">
+        <div className="wmps" id="xmps">
           <div className="populer-mp-performance">
             <div style={{ padding: `0 ${chevronWidth}px` }}>
               <ItemsCarousel
@@ -43,7 +43,7 @@ const NewsVideoBar = () => {
               </ItemsCarousel>
               {renderData(
                 "button1",
-                <div className="wmps">
+                <div className="wmps" id="xmps">
                   < NewsAndVideos/>
                 </div>
               )}

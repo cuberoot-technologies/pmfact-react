@@ -3,7 +3,7 @@ import profile from "../../assets/profile.jpg";
 import HomeFirstAdd from "../advertisement/HomeFirstAdd";
 import Slider from "react-slick";
 
-const NewsAndVideosPage = () => {
+const NewsAndVideosSingle = () => {
 
     var settings = {
         dots: false,
@@ -35,7 +35,7 @@ const NewsAndVideosPage = () => {
             </div>
             <div className="wmps" id="blogs">
                 <div className="blogsection">
-                    <div className="categorytype">Politics</div>
+                    {/* <div className="categorytype">Politics</div> */}
                     <div className="catergoryheading">
                         <h2>Italy Lombardia reports first
                             2 coronavirus deaths amid
@@ -44,26 +44,32 @@ const NewsAndVideosPage = () => {
                     <div className="categorymetaheading">
                         <p>By <b>Neeraj Gupta</b></p>
                         <p>January 10, 2023</p>
-                        <p><i className="bi bi-eye-fill"></i> <span className="icon-text">2023</span></p>
-                        <p> <i className="bi bi-chat-fill"></i><span className="icon-text">2023</span></p>
+                        <p><i className="bi bi-share-fill" style={{color:'#e3a900'}}></i></p>
                     </div>
-                    <div className="categorytopimage">
+                    <div className="blogintro">
+                        <h6>
+                        Italy Lombardia reports first
+                            2 coronavirus deaths amid
+                            jump in cases. Italy Lombardia reports first
+                            2 coronavirus deaths amid
+                            jump in cases. Italy Lombardia reports first
+                            2 coronavirus deaths amid
+                            jump in cases
+                        </h6>
+                    </div>
+                    <div className="categorytopimage" id="categtopimage">
                         <img
                             src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
-                            width="100%"
                             alt=""
                         />
-                    </div>
-                    <div className="blogheading">
-                        <h6>Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.
-                        </h6>
+                         <div className="blogheading">
+                        <p style={{fontSize:'12px', color:'#444'}}>Italy Lombardia reports 2 first</p>
                         <hr className="thick-hr" />
                     </div>
+                    </div>
+                   
                     <div className="blogbody">
+                        <div className="para">
                         <p>
                             Italy Lombardia reports 2 first
                             coronavirus deaths amid jump in
@@ -77,117 +83,27 @@ const NewsAndVideosPage = () => {
                             coronavirus deaths amid jump in
                             cases Italy Lombardia reports first
                             2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
                             cases Italy.
                         </p>
-                        <div className="adspace">
-                            <img src="https://placehold.co/300x250" alt="" />
                         </div>
-                        <div className="adspace2">
-                            <img src="https://placehold.co/700x80" alt="" />
-                        </div>
-                        <p>
-                            Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy. Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy. Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy. Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy. Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.
-                        </p>
-                    </div>
-                    <div className="readalso">
-                        <h3 className="mainheading">Read Also</h3>
-                        <div className="readalsobox">
-                        <div className="parliament-news-video-mp-news-list" id="readalso-img">
-                            <img src={profile} alt="" />
-                            <div className="parliament-news-video-mp-news-list-content" id="readalso-content">
-                                <h2>
-                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases
-                                </h2>
-                                {/* <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases.  Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases</p> */}
-                                <span style={{textDecoration:'underline'}}>Read More</span>
-                            </div>
-                        </div>
-                        <div className="parliament-news-video-mp-news-list" id="readalso-img2">
-                            <img src={profile} alt="" />
-                            <div className="parliament-news-video-mp-news-list-content" id="readalso-content">
-                                <h2>
-                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases
-                                </h2>
-                                {/* <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases.  Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases</p> */}
-                                <span style={{textDecoration:'underline'}}>Read More</span>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div className="categorytopimage">
+                    <div className="subheading-blog">
+                        <h5> Italy Lombardia reports 2 first</h5>
+                        <div className="categorytopimage" id="categtopimage">
                         <img
                             src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
                             width="100%"
                             height={400}
                             alt=""
                         />
-                    </div>
-                    <div className="blogheading">
-                        <h6>Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.
-                        </h6>
+                         <div className="blogheading">
+                        <p style={{fontSize:'12px', color:'#444'}}>Italy Lombardia reports 2 first</p>
                         <hr className="thick-hr" />
                     </div>
-                    <div className="blogbody">
+                    </div>
+                    </div>
+                    <div className="para">
                         <p>
-                            Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
-                            coronavirus deaths amid jump in
-                            cases Italy Lombardia reports first
-                            2 coronavirus deaths amid jump in
-                            cases Italy.Italy Lombardia reports 2 first
+                    Italy Lombardia reports 2 first
                             coronavirus deaths amid jump in
                             cases Italy Lombardia reports first
                             2 coronavirus deaths amid jump in
@@ -212,48 +128,186 @@ const NewsAndVideosPage = () => {
                             cases Italy Lombardia reports first
                             2 coronavirus deaths amid jump in
                             cases Italy.
-                        </p>
+                            </p>
                     </div>
 
+                        <div className="adspace" style={{margin:'1rem 0'}}>
+                            <img src="https://placehold.co/300x250" alt="" />
+                        </div>
+                        <div className="adspace2" style={{margin:'1rem 0'}}>
+                            <img src="https://placehold.co/700x80" alt="" />
+                        </div>
+                        <div className="subheading-blog">
+                        <h5> Italy Lombardia reports 2 first</h5>
+                        <div className="categorytopimage" id="categtopimage">
+                        <img
+                            src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+                            width="100%"
+                            height={400}
+                            alt=""
+                        />
+                         <div className="blogheading">
+                        <p style={{fontSize:'12px', color:'#444'}}>Italy Lombardia reports 2 first</p>
+                        <hr className="thick-hr" />
+                    </div>
+                    </div>
+                    </div>
+                    <div className="para">
+                        <p>
+                    Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.
+                            </p>
+                    </div>
+                    </div>
+                    <hr/>
                     <div className="readalso">
-                        <h3 className="mainheading">Quotes</h3>
+                        <h5 className="mainheading">Read Also</h5>
+                        <div className="readalsobox">
+                        <div className="parliament-news-video-mp-news-list" id="readalso-img">
+                            <img src={profile} alt="" />
+                            <div className="parliament-news-video-mp-news-list-content" id="readalso-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases.  Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases</p> */}
+                                <span style={{textDecoration:'underline'}}>Read More</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="subheading-blog">
+                        <h5> Italy Lombardia reports 2 first</h5>
+                        <div className="categorytopimage" id="categtopimage">
+                        <img
+                            src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+                            width="100%"
+                            height={400}
+                            alt=""
+                        />
+                         <div className="blogheading">
+                        <p style={{fontSize:'12px', color:'#444'}}>Italy Lombardia reports 2 first</p>
+                        <hr className="thick-hr" />
+                    </div>
+                    </div>
+                    </div>
+                    <div className="blogbody">
+                    <div className="para">
+                        <p>
+                    Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.
+                            </p>
+                    </div>
+                    </div>
+
+                    <hr/>
+                    <div className="readalso">
+                        <h5 className="mainheading">Quotes</h5>
                         <div className="quotealsobox">
                         <div className="quotes">
                             <div className="parliament-news-video-mp-news-list">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
+                                        Neeraj Gupta
                                     </h2>
                                     <span>January 10,2023</span>
                                 </div>
                             </div>
-                            <h2 className="quotes-h2">Italy Lombardia reports 2 first
+                            <h6 className="quotes-h2"><i>"Italy Lombardia reports 2 first
                                 coronavirus deaths amid jump in
-                                cases.</h2>
+                                cases."</i></h6>
                         </div>
-                        <hr className="thin-hr" />
+                        <div className="mplinecontainer">
+                        <hr className="mpline" />
+                        </div>
                         <div className="quotes">
                             <div className="parliament-news-video-mp-news-list">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
                                     <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
+                                        Neeraj Gupta
                                     </h2>
                                     <span>January 10,2023</span>
                                 </div>
                             </div>
-                            <h2 className="quotes-h2">Italy Lombardia reports 2 first
+                            <h6 className="quotes-h2"><i>"Italy Lombardia reports 2 first
                                 coronavirus deaths amid jump in
-                                cases.</h2>
+                                cases."</i></h6>
                         </div>
                         </div>
+                        
                     </div>
+                    <hr />
 
-                    <div className="blogbody">
-                        <p>Italy Lombardia reports 2 first
+                    <div className="subheading-blog">
+                        <h5> Italy Lombardia reports 2 first</h5>
+                        <div className="categorytopimage" id="categtopimage">
+                        <img
+                            src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+                            width="100%"
+                            height={400}
+                            alt=""
+                        />
+                         <div className="blogheading">
+                        <p style={{fontSize:'12px', color:'#444'}}>Italy Lombardia reports 2 first</p>
+                        <hr className="thick-hr" />
+                    </div>
+                    </div>
+                    </div>
+                    <div className="para">
+                        <p>
+                    Italy Lombardia reports 2 first
                             coronavirus deaths amid jump in
                             cases Italy Lombardia reports first
                             2 coronavirus deaths amid jump in
@@ -278,11 +332,38 @@ const NewsAndVideosPage = () => {
                             cases Italy Lombardia reports first
                             2 coronavirus deaths amid jump in
                             cases Italy.
-                        </p>
+                            Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.
+                            Italy Lombardia reports 2 first
+                            coronavirus deaths amid jump in
+                            cases Italy Lombardia reports first
+                            2 coronavirus deaths amid jump in
+                            cases Italy.
+                            </p>
                     </div>
-
+                    <div className="keywords">
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    <button className="view-more-news" style={{margin:'1rem'}}>#Keyword</button>
+                    
+                    </div>
+                                    <hr className="thick-hr" />
                     <div className="readalso">
-                        <h3 className="mainheading">Related News</h3>
+                        <h5 className="mainheading">Related News</h5>
                         <Slider {...settings}>
                             <div className="relatednews">
                                 <div className="parliament-news-video-mp-news-list">
@@ -341,12 +422,12 @@ const NewsAndVideosPage = () => {
                 <div className="categorynewssection" id="category-section-news">
                     <div className="parliament-news-video-mp-news">
                         <div className="parlimentry-news">
-                            <h1 className="mainheading" style={{ marginLeft: '1rem', textAlign: 'center' }}>More News</h1>
+                            <h3 className="mainheading" style={{ textAlign: 'center' }}>More News</h3>
                             <button className="view-more-news">View More</button>
                         </div>
                         <div className="news-pu" id="morenewscategory">
 
-                            <div className="parliament-news-video-mp-news-list">
+                            <div className="parliament-news-video-mp-news-list" id="blogimg">
                                 <img src={profile} alt="" />
                                 <div className="parliament-news-video-mp-news-list-content">
 
@@ -404,7 +485,7 @@ const NewsAndVideosPage = () => {
                     </div>
                     <div className="parliament-news-video-mp-news" id="related-news">
                         <div className="parlimentry-news">
-                            <h1 className="mainheading" style={{ marginLeft: '1rem', textAlign: 'center' }}>Trending</h1>
+                            <h3 className="mainheading" style={{  textAlign: 'center' }}>Trending</h3>
                             <button className="view-more-news">View More</button>
                         </div>
                         <div className="news-pu" id="morenewscategory">
@@ -471,4 +552,4 @@ const NewsAndVideosPage = () => {
     );
 };
 
-export default NewsAndVideosPage;
+export default NewsAndVideosSingle;
