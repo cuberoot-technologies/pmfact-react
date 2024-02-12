@@ -3246,6 +3246,9 @@ form input[type="text"] {
 .contact a {
   color: #66b;
 }
+h2, h3, h4, h5, h6, p{
+  font-family: Poppins,'devanagari';
+}
 
 h1,
 input {
