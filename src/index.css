@@ -2437,7 +2437,6 @@ form input[type="text"] {
   bottom: 20px;
   left: 0;
   right: 0;
-
   color: white;
 }
 
@@ -4442,7 +4441,6 @@ input.click-here {
   display: block;
 }
 
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -4639,6 +4637,7 @@ input.click-here {
 
   .sliderbox{
     background-color: #d2d1d1;
+    height: 300px;
     /* width: 70%; */
   }
 
