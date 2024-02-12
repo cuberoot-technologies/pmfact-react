@@ -9,6 +9,7 @@ const CombineBox2 = () => {
             <div className="combinedbox">
 
                 <div className="left-news-container">
+                <h5 className="mainheading" >Parliamentary News</h5>
                     <div className="leftnewsimage">
                         <img src="https://placehold.co/500x300" />
                     </div>
@@ -28,8 +29,8 @@ const CombineBox2 = () => {
                 <div className="middle-news-container">
                     <div className="news-and-videos-parlimentry-news">
                         <div className="parlimentry-news">
-                            <h5 className="mainheading" >Parliamentary News</h5>
-                            <button className="view-more-news">View More</button>
+                            
+                            {/* <button className="view-more-news">View More</button> */}
                         </div>
                         <div className="parlimentry-news-list">
                             <div className="parlimentry-news-list-left-side-left" id="categorysimages" >
