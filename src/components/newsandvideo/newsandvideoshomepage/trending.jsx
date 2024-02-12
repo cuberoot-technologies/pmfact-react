@@ -34,6 +34,7 @@ const Trending = () => {
     <>
 
       <div className="news-and-videos-top">
+      <div className="trendingwrapper">
         <div className="sliderbox">
         <div className="trending" style={{zIndex:'4'}}>Trending</div>
           <Slider {...settings}>
@@ -72,43 +73,8 @@ const Trending = () => {
                       get the virus...</p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="breaking-news">
-              <div className="news-content-container">
-                <div className="news-image-container">
-                  {/* <div className="trending">Trending</div> */}
-                  <Link to="/news-and-videos-category">
-                    <div className="image-container">
-                      <img
-                        src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
-                        alt=""
-                      />
-                      <div className="overlay"></div>
-                      <div className="caption-news">
-                        <p><BsPlay /></p>
-                        <h6>Entertainment</h6>
-                        <h1>Italy Lombardia reports first 2 corona virus deaths mind</h1>
-                        <span>12 jan 2023</span>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="text-news-container">
-                  <div className="newsmainheading">
-                    <h1>Watch:10 days Later: What Italians Wish They Had Known</h1>
-                  </div>
-                  <div className="catergory-box">Video</div>
-                  <div className="categorybox">
-                    <p style={{ marginRight: '1rem' }}>Stephen Romero</p>
-                    <p>19/03/2020-10:48</p>
-                  </div>
-                  <div className="categorytext">
-                    <p>A supermarket worker was spat at by a customer attempting to
-                      stockpile Pot Noodles while another was told: "I hope you you
-                      get the virus...</p>
-                  </div>
+                <div className="adverbox">
+                        <img src="https://placehold.co/250x250" alt="" />
                 </div>
               </div>
             </div>
@@ -148,6 +114,9 @@ const Trending = () => {
                       get the virus...</p>
                   </div>
                 </div>
+                <div className="adverbox">
+                        <img src="https://placehold.co/250x250" alt="" />
+                </div>
               </div>
             </div>
 
@@ -185,10 +154,62 @@ const Trending = () => {
                       stockpile Pot Noodles while another was told: "I hope you you
                       get the virus...</p>
                   </div>
+                </div>
+                <div className="adverbox">
+                        <img src="https://placehold.co/250x250" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div className="breaking-news">
+              <div className="news-content-container">
+                <div className="news-image-container">
+                  {/* <div className="trending">Trending</div> */}
+                  <Link to="/news-and-videos-category">
+                    <div className="image-container">
+                      <img
+                        src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
+                        alt=""
+                      />
+                      <div className="overlay"></div>
+                      <div className="caption-news">
+                        <p><BsPlay /></p>
+                        <h6>Entertainment</h6>
+                        <h1>Italy Lombardia reports first 2 corona virus deaths mind</h1>
+                        <span>12 jan 2023</span>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+                <div className="text-news-container">
+                  <div className="newsmainheading">
+                    <h1>Watch:10 days Later: What Italians Wish They Had Known</h1>
+                  </div>
+                  <div className="catergory-box">Video</div>
+                  <div className="categorybox">
+                    <p style={{ marginRight: '1rem' }}>Stephen Romero</p>
+                    <p>19/03/2020-10:48</p>
+                  </div>
+                  <div className="categorytext">
+                    <p>A supermarket worker was spat at by a customer attempting to
+                      stockpile Pot Noodles while another was told: "I hope you you
+                      get the virus...</p>
+                  </div>
+                </div>
+                <div className="adverbox">
+                        <img src="https://placehold.co/250x250" alt="" />
                 </div>
               </div>
             </div>
           </Slider>
+        </div>
+
+        {/* <div className="advertisementcontainer">
+        <div className="adsbox">
+                        <img src="https://placehold.co/370x400" alt="" />
+                    </div>
+        </div> */}
+
         </div>
       </div>
     </>

@@ -2409,6 +2409,11 @@ form input[type="text"] {
   justify-content: space-between;
 }
 
+.adverbox {
+  margin-top: 3.5rem;
+  margin-right: 1rem ;
+  display: block;
+}
 .trending {
   position: absolute;
   font-size: 16px;
@@ -4553,11 +4558,25 @@ input.click-here {
   display: none;
 }
 
+.advertisementcontainer{
+  display: none;
+}
+
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .adtopbar {
     display: flex;
   }
+
+  /* .trendingwrapper{
+    display: flex;
+  } */
+
+  /* .advertisementcontainer{
+    max-width: 30%;
+    display: block;
+  } */
 
   p{
     font-size: 16px;
@@ -4602,6 +4621,7 @@ input.click-here {
 
   .sliderbox{
     background-color: #d2d1d1;
+    /* width: 70%; */
   }
 
   #catimg{
@@ -4764,7 +4784,7 @@ input.click-here {
 
   .text-news-container {
     display:flex;  
-    padding: 2rem;
+    padding: 1rem;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -4795,7 +4815,7 @@ input.click-here {
 
   .image-container img {
     width: auto;
-    height: 400px;
+    height: 350px;
   }
 
   .relatednewsheading h2 {
