@@ -8,7 +8,7 @@ const BelowSection = () => {
         <>
 
 <div className="combinedbox">
-            <div className="left-news-container">
+            <div className="left-news-container" style={{width:'500px'}}>
               <div className="parlimentry-news-list">
                 <div className="parlimentry-news-list-left-side-left" id="catimg" >
                   <div>

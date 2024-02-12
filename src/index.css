@@ -2412,7 +2412,7 @@ form input[type="text"] {
 .adverbox {
   margin-top: 3.5rem;
   margin-right: 1rem ;
-  display: block;
+  display: none;
 }
 .trending {
   position: absolute;
@@ -3245,6 +3245,9 @@ form input[type="text"] {
 
 .contact a {
   color: #66b;
+}
+h2, h3, h4, h5, h6, p{
+  font-family: Poppins,'devanagari';
 }
 
 h1,
@@ -4569,14 +4572,9 @@ input.click-here {
     display: flex;
   }
 
-  /* .trendingwrapper{
-    display: flex;
-  } */
-
-  /* .advertisementcontainer{
-    max-width: 30%;
+  .adverbox{
     display: block;
-  } */
+  }
 
   p{
     font-size: 16px;
@@ -4726,7 +4724,7 @@ input.click-here {
 
   .combinedbox{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 3rem;
   }
   .right-news-container{
@@ -4743,7 +4741,7 @@ input.click-here {
   .middle-news-container{
     max-width: 293px;
     display: block;
-    margin-right: 2rem;
+    margin: 0 2rem;
   }
 
   .parlimentry-news-list{
