@@ -60,7 +60,7 @@ const Trending = () => {
                 </div>
                 <div className="text-news-container">
                   <div className="newsmainheading">
-                    <h2>Watch:10 days Later: What Italians Wish They Had Known</h2>
+                    <h2>वायरस आधुनिक इतिहास की सबसे गंभीर चुनौतियों में से एक के साथ नेताओं का सामना करता है</h2>
                   </div>
                   <div className="catergory-box">Video</div>
                   <div className="categorybox">
@@ -68,9 +68,7 @@ const Trending = () => {
                     <p>19/03/2020-10:48</p>
                   </div>
                   <div className="categorytext">
-                    <p>A supermarket worker was spat at by a customer attempting to
-                      stockpile Pot Noodles while another was told: "I hope you you
-                      get the virus...</p>
+                    <p>पॉट नूडल्स इकट्ठा करने की कोशिश कर रहे एक ग्राहक ने एक सुपरमार्केट कर्मचारी पर थूक दिया था, जबकि दूसरे से कहा गया था: "मुझे आशा है कि आपमें वायरस आ जाएगा...</p>
                   </div>
                 </div>
                 <div className="adverbox">
