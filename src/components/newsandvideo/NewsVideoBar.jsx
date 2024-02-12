@@ -41,6 +41,7 @@ const NewsVideoBar = () => {
                   News
                 </button> */}
               </ItemsCarousel>
+              
               {renderData(
                 "button1",
                 <div className="wmps" id="xmps">

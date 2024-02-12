@@ -12,7 +12,7 @@ const NewsAndVideosCategory = () => {
             </div>
             <div className="xmps" id="categorypage">
                 <div className="category-wrapper">
-                    <div className="categorytopimage" id="categoryimg">
+                    <div id="categoryimg">
                         <img
                             src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
                             alt=""
@@ -44,73 +44,73 @@ const NewsAndVideosCategory = () => {
                         </div> */}
                         <div className="news-pu" id="category-page-news-pu">
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                    <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
+                        <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage" id="forty-image">
+                            <img src={profile} alt="" />
                             </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                <span>January 10,2023</span>
+                            </div>
+                        </div>
 
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
-                            </div>{" "}
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
+                            </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                <span>January 10,2023</span>
+                            </div>
+                        </div>
 
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
-                            </div>{" "}
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
+                            </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                <span>January 10,2023</span>
+                            </div>
+                        </div>
 
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
                             </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                
+                            </div>
+                        </div>
                         </div>
                         <div className="adspace">
                             <img src="https://placehold.co/300x250" alt="" />
@@ -120,107 +120,106 @@ const NewsAndVideosCategory = () => {
                         </div>
 
                         <div className="news-pu" id="category-page-news-pu">
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
+                        <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
                             </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>
 
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
                             </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>
 
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
                             </div>
-
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
-                            </div>{" "}
-
-                            <div className="mplinecontainer">
-                                <hr className="mpline" />
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
                             </div>
-
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page"className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
-                            </div>{" "}
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>
 
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list" id="categoryimages">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-                                <Link to="/news-and-videos-page" className="custom-link">
-                                    <p>Rahul on Bharat Jodo Yatra</p>
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span>January 10,2023</span>
-                                    </Link>
-                                </div>
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
                             </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
+                            </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>
                         </div>
                         <div className="view-more p-3">
                             <button className="view-more-btn">View More</button>

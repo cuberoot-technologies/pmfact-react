@@ -14,7 +14,9 @@ const MpsNews = () => {
                     <div className="news-pu">
 
                         <div className="parliament-news-video-mp-news-list">
+                            <div className="fortyimage">
                             <img src={profile} alt="" />
+                            </div>
                             <div className="parliament-news-video-mp-news-list-content">
                                 <p>Rahul on Bharat Jodo Yatra</p>
                                 <h2>
@@ -30,21 +32,9 @@ const MpsNews = () => {
                         </div>
 
                         <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
                             <img src={profile} alt="" />
-                            <div className="parliament-news-video-mp-news-list-content">
-                                <p>Rahul on Bharat Jodo Yatra</p>
-                                <h2>
-                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases
-                                </h2>
-                                {/* <span>January 10,2023</span> */}
                             </div>
-                        </div>{" "}
-                        <div className="mplinecontainer">
-                            <hr className="mpline" />
-                        </div>
-                        <div className="parliament-news-video-mp-news-list">
-                            <img src={profile} alt="" />
                             <div className="parliament-news-video-mp-news-list-content">
                                 <p>Rahul on Bharat Jodo Yatra</p>
                                 <h2>
@@ -54,13 +44,31 @@ const MpsNews = () => {
                                 {/* <span>January 10,2023</span> */}
                             </div>
                         </div>{" "}
+                        <div className="mplinecontainer">
+                            <hr className="mpline" />
+                        </div>
+                        <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
+                            <img src={profile} alt="" />
+                            </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                {/* <span>January 10,2023</span> */}
+                            </div>
+                        </div>{" "}
 
                         <div className="mplinecontainer">
                             <hr className="mpline" />
                         </div>
 
                         <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage">
                             <img src={profile} alt="" />
+                            </div>
                             <div className="parliament-news-video-mp-news-list-content">
                                 <p>Rahul on Bharat Jodo Yatra</p>
                                 <h2>

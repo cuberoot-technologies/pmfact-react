@@ -17,8 +17,7 @@ const BelowSection = () => {
                   <div>
                     <div className="catergory-box">Video</div>
                     <h1>
-                      Italy Lombardia reports first 2 coronavirus deaths amid jump
-                      in cases
+                    मामलों में उछाल के बीच इटली लोम्बार्डिया ने पहले 2 कोरोनोवायरस मौतों की रिपोर्ट दी
                     </h1>
                     <button className="read-more">Read More</button>
                   </div>
@@ -30,8 +29,7 @@ const BelowSection = () => {
                   <div>
                     <div className="catergory-box">Video</div>
                     <h1>
-                      Italy Lombardia reports first 2 coronavirus deaths amid jump
-                      in cases
+                    मामलों में उछाल के बीच इटली लोम्बार्डिया ने पहले 2 कोरोनोवायरस मौतों की रिपोर्ट दी
                     </h1>
                     <button className="read-more">Read More</button>
                   </div>
@@ -43,8 +41,7 @@ const BelowSection = () => {
                   <div>
                     <div className="catergory-box">Video</div>
                     <h1>
-                      Italy Lombardia reports first 2 coronavirus deaths amid jump
-                      in cases
+                    मामलों में उछाल के बीच इटली लोम्बार्डिया ने पहले 2 कोरोनोवायरस मौतों की रिपोर्ट दी
                     </h1>
                     <button className="read-more">Read More</button>
                   </div>
@@ -63,7 +60,7 @@ const BelowSection = () => {
                     <img src={profile} alt="" />
                   </div>
                   <div className="rightnewstext">
-                    <p style={{ fontSize: '13px' }}><b>Explains: Amazon confirms first known Coronavirus case in America</b></p>
+                    <p style={{ fontSize: '13px' }}><b>बताते हैं: अमेज़न ने अमेरिका में पहले ज्ञात कोरोना वायरस मामले की पुष्टि की</b></p>
                     <p style={{ fontSize: '10px', color: '#444' }}>19/03/2020 - 10:48</p>
                   </div>
                 </div>
@@ -73,7 +70,7 @@ const BelowSection = () => {
                     <img src={profile} alt="" />
                   </div>
                   <div className="rightnewstext">
-                    <p style={{ fontSize: '13px' }}><b>Explains: Amazon confirms first known Coronavirus case in America</b></p>
+                    <p style={{ fontSize: '13px' }}><b>बताते हैं: अमेज़न ने अमेरिका में पहले ज्ञात कोरोना वायरस मामले की पुष्टि की</b></p>
                     <p style={{ fontSize: '10px', color: '#444' }}>19/03/2020 - 10:48</p>
                   </div>
                 </div>
@@ -83,7 +80,7 @@ const BelowSection = () => {
                     <img src={profile} alt="" />
                   </div>
                   <div className="rightnewstext">
-                    <p style={{ fontSize: '13px' }}><b>Explains: Amazon confirms first known Coronavirus case in America</b></p>
+                    <p style={{ fontSize: '13px' }}><b>बताते हैं: अमेज़न ने अमेरिका में पहले ज्ञात कोरोना वायरस मामले की पुष्टि की</b></p>
                     <p style={{ fontSize: '10px', color: '#444' }}>19/03/2020 - 10:48</p>
                   </div>
                 </div>
