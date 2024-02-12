@@ -22,7 +22,7 @@ const NewsVideoBar = () => {
   };
   return (
     <>
-      <div className="scontainer">
+      <div className="container">
         <div className="wmps" id="xmps">
           <div className="populer-mp-performance">
             <div style={{ padding: `0 ${chevronWidth}px` }}>

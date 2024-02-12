@@ -9,7 +9,8 @@ const Trending = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    // autoplay: true,
+    // autoplaySpeed:4000,
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -34,11 +35,12 @@ const Trending = () => {
 
       <div className="news-and-videos-top">
         <div className="sliderbox">
+        <div className="trending" style={{zIndex:'4'}}>Trending</div>
           <Slider {...settings}>
             <div className="breaking-news">
               <div className="news-content-container">
                 <div className="news-image-container">
-                  <div className="trending">Trending</div>
+                  
                   <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
@@ -76,7 +78,7 @@ const Trending = () => {
             <div className="breaking-news">
               <div className="news-content-container">
                 <div className="news-image-container">
-                  <div className="trending">Trending</div>
+                  {/* <div className="trending">Trending</div> */}
                   <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
@@ -114,7 +116,7 @@ const Trending = () => {
             <div className="breaking-news">
               <div className="news-content-container">
                 <div className="news-image-container">
-                  <div className="trending">Trending</div>
+                  {/* <div className="trending">Trending</div> */}
                   <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
@@ -152,7 +154,7 @@ const Trending = () => {
             <div className="breaking-news">
               <div className="news-content-container">
                 <div className="news-image-container">
-                  <div className="trending">Trending</div>
+                  {/* <div className="trending">Trending</div> */}
                   <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
