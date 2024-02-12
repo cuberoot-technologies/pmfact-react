@@ -3,7 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+.scontainer, .scontainer-fluid, .scontainer-lg, .scontainer-md, .scontainer-sm, .scontainer-xl, .scontainer-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*  tags and common classs */
 
 
@@ -4501,9 +4508,9 @@ input.click-here {
   background: transparent linear-gradient(53deg, #e4e4e4 0%, #d8dcdf 100%) 0% 0% no-repeat;
 }
 
-.container{
+/* .container{
   padding: 0%;
-}
+} */
 
 #xmps{
   padding-bottom: 0;
