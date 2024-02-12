@@ -16,8 +16,6 @@ import CombineBox2 from "./newsandvideoshomepage/combinedBox";
 const NewsAndVideos = () => {
   return (
     <>
-      <HomeFirstAdd />
-
       <div className="news-and-videos">
         <div className="xmps">
         <Trending />
