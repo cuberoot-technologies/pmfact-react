@@ -4568,19 +4568,23 @@ input.click-here {
   padding: 1rem;
 }
 
-/* #categoryimg img{
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+
+.newswrapper{
+  display: flex;
 }
 
-#categoryimg{
-  position: relative;
-} */
-
-
+.pillarads{
+  display: none;
+}
 /* media query ******* */
 @media only screen and (min-width: 991px) {
+  #newscontent-container{
+    max-width: 78%;
+  }
+
+  .pillarads{
+    display: block;
+  }
 
   .fortyimage img{
     height: 25vh !important;
@@ -4812,7 +4816,7 @@ input.click-here {
     align-items: flex-start;
   }
 
-  .newsmainheading h2{
+  .newsmainheading h3{
     font-weight: 700;
     color: #000;
   }
