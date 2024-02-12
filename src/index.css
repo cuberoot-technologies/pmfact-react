@@ -2406,7 +2406,7 @@ form input[type="text"] {
 .news-content-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .adverbox {
@@ -2437,7 +2437,7 @@ form input[type="text"] {
   bottom: 20px;
   left: 0;
   right: 0;
-  /* background-color: rgba(0, 0, 0, 0.7); */
+
   color: white;
 }
 
@@ -2601,13 +2601,10 @@ form input[type="text"] {
   justify-content: center;
 }
 
-.parliament-news-video-mp-news-list img {
+/* .parliament-news-video-mp-news-list img {
   width: 250px;
   height: 100px;
-  /* display: block; */
-  /* margin: 0 11%; */
-  /* padding: 0 5px; */
-}
+} */
 
 .parliament-news-video-mp-news-list-content {
   width: 60%;
@@ -4508,14 +4505,13 @@ input.click-here {
 }
 
 #bgcolornews{
-  background: transparent linear-gradient(53deg, #faf8f8 0%, #e0e6ec 100%) 0% 0% no-repeat;
+  background: #f1f5f7;
   /* padding: 0%; */
 }
 
 #bgcolornew{
-  background: transparent linear-gradient(53deg, #e4e4e4 0%, #d8dcdf 100%) 0% 0% no-repeat;
+  background: #ecf1f5;
 }
-
 .container{
   padding: 0%;
 }
@@ -4563,6 +4559,16 @@ input.click-here {
 
 .advertisementcontainer{
   display: none;
+}
+
+.fortyimage{
+  width: 40%;
+}
+
+.fortyimage img{
+  width:100%;
+  height: 90px;
+  object-fit: cover;
 }
 
 
@@ -4708,18 +4714,17 @@ input.click-here {
     margin-bottom: 1rem;
     height: 150px;
   }
-
+/* 
   #categorysimages .catergory-box{
     align-self: flex-start;
     margin-left: 12px;
-  }
+  } */
 
   #categorysimages {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-  align-items: center;
-  
+  /* align-items: center; */
   }
 
   .combinedbox{
@@ -4730,7 +4735,7 @@ input.click-here {
   .right-news-container{
     max-width: 293px;
     display: block;
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
   .left-news-container{
     /* max-width: 40%; */
@@ -4783,11 +4788,13 @@ input.click-here {
   .text-news-container {
     display:flex;  
     padding: 1rem;
+    width: 40%;
     flex-direction: column;
+    margin-right: 4rem;
     align-items: flex-start;
   }
 
-  .newsmainheading h1{
+  .newsmainheading h2{
     font-weight: 700;
     color: #000;
   }
@@ -4813,7 +4820,7 @@ input.click-here {
 
   .image-container img {
     width: auto;
-    height: 350px;
+    height: 300px;
   }
 
   .relatednewsheading h2 {
@@ -5433,8 +5440,6 @@ input.click-here {
     height: 100px;
     width: 80%;
   }
-
-
 
   .news-pu {
     grid-template-columns: auto auto;
