@@ -259,10 +259,10 @@ const NewsAndVideosSingle = () => {
                         <div className="quotealsobox">
                             <div className="quotes">
                                 <div className="readalsobox">
-                                    <div className="read-also-image-box">
+                                    <div className="quote-image-box">
                                         <img src={profile} alt="" />
                                     </div>
-                                    <div className="read-also-text-box">
+                                    <div className="quote-text-box">
                                         <h2>
                                             Neeraj Gupta
                                         </h2>
@@ -278,10 +278,10 @@ const NewsAndVideosSingle = () => {
                             </div>
                             <div className="quotes">
                             <div className="readalsobox">
-                                    <div className="read-also-image-box">
+                                    <div className="quote-image-box">
                                         <img src={profile} alt="" />
                                     </div>
-                                    <div className="read-also-text-box">
+                                    <div className="quote-text-box">
                                         <h2>
                                             Neeraj Gupta
                                         </h2>

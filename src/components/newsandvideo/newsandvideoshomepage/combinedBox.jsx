@@ -60,7 +60,7 @@ const CombineBox2 = () => {
                         <img src="https://placehold.co/230x200" alt="" />
                     </div>
                     <h3>Virus Confronts</h3>
-                    <div className="rightnewsboxes">
+                    <div className="rightnewsboxes" id="right-news-container">
 
                         <div className="rightnewsbox">
                             <div className="rightnewsimage">

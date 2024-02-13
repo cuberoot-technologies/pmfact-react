@@ -54,7 +54,7 @@ const CombineBox = () => {
                 <div className="right-news-container">
                     <hr />
                     <h3>Virus Confronts</h3>
-                    <div className="rightnewsboxes">
+                    <div className="rightnewsboxes"  id="right-news-container">
 
                         <div className="rightnewsbox">
                             <div className="rightnewsimage">
