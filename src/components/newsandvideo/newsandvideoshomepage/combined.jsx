@@ -30,7 +30,7 @@ const CombineBox = () => {
 
                 <div className="middle-news-container">
                     <div className="news-and-videos-parlimentry-news">
-                        <div className="parlimentry-news-list">
+                        <div className="parlimentry-news-list" id="middle-news-image">
                             <div className="parlimentry-news-list-left-side-left" id="categorysimages" >
                                 <img src={profile} alt="" />
                                 <div className="catergory-box">Video</div>

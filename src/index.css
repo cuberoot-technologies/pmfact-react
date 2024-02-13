@@ -4338,8 +4338,8 @@ input.click-here {
 .categorymetaheading {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
-  margin: 20px;
+  /* padding: 5px;
+  margin: 20px; */
   text-align: center;
 }
 
@@ -4576,10 +4576,84 @@ input.click-here {
 .pillarads{
   display: none;
 }
+
+#categoryimg img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.parliament-news-video-mp-news-list-content p+h2+p{
+  display: none;
+}
+
+.read-also-image-box img{
+  width:130px;
+  object-fit: cover;
+  height:80px
+}
+
+.read-also-image-box{
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.readalsobox{
+  padding: 0.5rem;
+}
+
+.read-also-text-box{
+  width:60%;
+  margin-left:0.8rem
+}
+
+.read-also-text-box p{
+  color: red;
+}
+.readalsobox{
+  display: flex;
+}
+.read-also-text-box h2{
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.read-also-text-box span{
+  font-size: 13px;
+}
+
+.read-also-text-box p+h2+p{
+  display: none;
+}
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   #newscontent-container{
     max-width: 78%;
+  }
+
+  .read-also-image-box{
+    width: 20%;
+  }
+
+  .read-also-text-box p+h2+p{
+    display: block;
+    color: #222;
+  }
+
+  .read-also-image-box img{
+    width:150px;
+    height:100px;
+  }
+
+  .parliament-news-video-mp-news-list-content p+h2+p{
+      font-size: 16px;
+      color: #444;
+      margin:1rem 0;
+      width:60%;
+      display: block;
   }
 
   .pillarads{
@@ -4751,7 +4825,7 @@ input.click-here {
     margin-top: 3rem;
   }
   .right-news-container{
-    max-width: 293px;
+    max-width: 320px;
     display: block;
     margin-left: 1rem;
   }
@@ -4766,9 +4840,13 @@ input.click-here {
   }
   
   .middle-news-container{
-    max-width: 293px;
+    max-width: 320px !important;
     display: block;
-    margin: 0 2rem;
+    /* margin: 0 1rem; */
+  }
+
+  #middle-news-image img{
+    width:320px
   }
 
   .parlimentry-news-list{
@@ -4892,8 +4970,9 @@ input.click-here {
   }
 
   #categoryimg img {
-    height: 80vh;
+    height: 50vh;
     width: 100%;
+    object-fit: cover;
   }
 
   .relatednews {
