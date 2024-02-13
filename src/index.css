@@ -4697,7 +4697,6 @@ input.click-here {
 
 .singlepagelink h2{
   color: #000;
-  width: 60%;
   font-size: 16px !important;
 }
 
@@ -4705,6 +4704,10 @@ input.click-here {
 @media only screen and (min-width: 991px) {
   #newscontent-container{
     max-width: 78%;
+  }
+
+  .singlepagelink h2{
+    width: 60%;
   }
 
   #blog-page-container{
