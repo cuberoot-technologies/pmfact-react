@@ -4550,8 +4550,13 @@ input.click-here {
 
 #categorypage {
   padding: 1rem;
+  display: flex;
 }
 
+.category-page-trending{
+  display: none;
+  margin-left: 2rem;
+}
 
 .newswrapper{
   display: flex;
@@ -4704,6 +4709,15 @@ input.click-here {
 @media only screen and (min-width: 991px) {
   #newscontent-container{
     max-width: 78%;
+  }
+
+  .category-page-trending{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #category-page-box-news{
+    text-align: left !important;
   }
 
   .singlepagelink h2{
@@ -5042,18 +5056,10 @@ input.click-here {
     display: flex;
     flex-direction: column;
   }
-
-  #categorypage {
-    padding: 0 6rem;
-    /* text-align: center;
-    align-items: center; */
-  }
-
   .center-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; Adjust the height as needed */
   }
 
   #categoryimages{
