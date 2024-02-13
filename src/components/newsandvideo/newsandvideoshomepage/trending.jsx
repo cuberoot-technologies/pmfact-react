@@ -41,7 +41,7 @@ const Trending = () => {
               <div className="breaking-news">
                 <div className="news-content-container">
                   <div className="news-image-container">
-                    {/* <Link to="/news-and-videos-category"> */}
+                    <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
                         src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -55,7 +55,7 @@ const Trending = () => {
                         <span>12 jan 2023</span>
                       </div>
                     </div>
-                    {/* </Link> */}
+                    </Link>
                   </div>
                   <div className="text-news-container">
                     <div className="newsmainheading">
@@ -80,7 +80,7 @@ const Trending = () => {
                 <div className="news-content-container">
                   <div className="news-image-container">
 
-                    {/* <Link to="/news-and-videos-category"> */}
+                    <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
                         src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -94,7 +94,7 @@ const Trending = () => {
                         <span>12 jan 2023</span>
                       </div>
                     </div>
-                    {/* </Link> */}
+                    </Link>
                   </div>
                   <div className="text-news-container">
                     <div className="newsmainheading">
@@ -119,7 +119,7 @@ const Trending = () => {
                 <div className="news-content-container">
                   <div className="news-image-container">
 
-                    {/* <Link to="/news-and-videos-category"> */}
+                    <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
                         src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -133,7 +133,7 @@ const Trending = () => {
                         <span>12 jan 2023</span>
                       </div>
                     </div>
-                    {/* </Link> */}
+                    </Link>
                   </div>
                   <div className="text-news-container">
                     <div className="newsmainheading">
@@ -158,7 +158,7 @@ const Trending = () => {
                 <div className="news-content-container">
                   <div className="news-image-container">
 
-                    {/* <Link to="/news-and-videos-category"> */}
+                    <Link to="/news-and-videos-category">
                     <div className="image-container">
                       <img
                         src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -172,7 +172,7 @@ const Trending = () => {
                         <span>12 jan 2023</span>
                       </div>
                     </div>
-                    {/* </Link> */}
+                    </Link>
                   </div>
                   <div className="text-news-container">
                     <div className="newsmainheading">
