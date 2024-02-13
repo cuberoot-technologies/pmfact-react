@@ -12,13 +12,13 @@ const CombineBox2 = () => {
                 <h3  >Parliamentary News</h3>
                 <div className="totalleftside">
                     <div className="leftnewsimage">
-                        <img src="https://placehold.co/500x300" />
+                        <img src="https://placehold.co/450x250" />
                     </div>
 
                     <div className="catergory-box">Video</div>
 
                     <div className="leftnewstext">
-                        <h2>वायरस आधुनिक इतिहास की सबसे गंभीर चुनौतियों में से एक के साथ नेताओं का सामना करता है</h2>
+                        <h3>वायरस आधुनिक इतिहास की सबसे गंभीर चुनौतियों में से एक के साथ नेताओं का सामना करता है</h3>
                         <div className="leftnewspara">
                             <p style={{ marginRight: '1rem' }}><b>Stepher Romero</b></p>
                             <p>19/03/2020 - 10:49</p>
