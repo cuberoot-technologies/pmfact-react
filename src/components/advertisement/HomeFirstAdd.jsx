@@ -44,7 +44,7 @@ const HomeFirstAdd = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 1.5,
+    slidesToShow: 1.7,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay:true,
