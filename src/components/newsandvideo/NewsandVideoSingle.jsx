@@ -11,7 +11,7 @@ const NewsAndVideosSingle = () => {
         speed: 500,
         autoplay: true,
         autoplaySpeed: 4000,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
 
@@ -277,7 +277,7 @@ const NewsAndVideosSingle = () => {
                                 <hr className="mpline" />
                             </div>
                             <div className="quotes">
-                            <div className="readalsobox">
+                                <div className="readalsobox">
                                     <div className="quote-image-box">
                                         <img src={profile} alt="" />
                                     </div>
@@ -371,57 +371,65 @@ const NewsAndVideosSingle = () => {
                     <hr className="thick-hr" />
                     <div className="readalso">
                         <h5 className="mainheading">Related News</h5>
-                        <Slider {...settings}>
-                            <div className="relatednews">
-                                <div className="parliament-news-video-mp-news-list">
-                                    <img src={profile} alt="" />
-                                    <div className="parliament-news-video-mp-news-list-content" id="relatednewsheading">
-                                        <h2>
-                                            Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                            in cases
-                                        </h2>
-                                        <span style={{ textDecoration: 'underline' }}> Read More</span>
+                        <div className="related-news-slider-wrapper">
+                        <Slider {...settings} style={{maxWidth:'1100px'}}>
+                                <div className="trending-news" id="related-news-box">
+                                    <div className="relatednews-image">
+                                        <img src={profile} alt="" />
                                     </div>
-                                </div>
-                            </div>
-                            <div className="relatednews">
-                                <div className="parliament-news-video-mp-news-list">
-                                    <img src={profile} alt="" />
-                                    <div className="parliament-news-video-mp-news-list-content" id="relatednewsheading">
-                                        <h2>
-                                            Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                            in cases
-                                        </h2>
-                                        <span style={{ textDecoration: 'underline' }}>Read More</span>
-                                    </div>
-                                </div>
-                            </div>
+                                    <div className="relatednews-text">
 
-                            <div className="relatednews">
-                                <div className="parliament-news-video-mp-news-list">
-                                    <img src={profile} alt="" />
-                                    <div className="parliament-news-video-mp-news-list-content" id="relatednewsheading">
                                         <h2>
                                             Italy Lombardia reports first 2 coronavirus deaths amid jump
                                             in cases
                                         </h2>
-                                        <span style={{ textDecoration: 'underline' }}>Read More</span>
+                                        {/* <span>January 10,2023</span> */}
                                     </div>
                                 </div>
-                            </div>
-                            <div className="relatednews">
-                                <div className="parliament-news-video-mp-news-list">
-                                    <img src={profile} alt="" />
-                                    <div className="parliament-news-video-mp-news-list-content" id="relatednewsheading">
+
+                                <div className="trending-news" id="related-news-box">
+                                    <div className="relatednews-image">
+                                        <img src={profile} alt="" />
+                                    </div>
+                                    <div className="relatednews-text">
+
                                         <h2>
                                             Italy Lombardia reports first 2 coronavirus deaths amid jump
                                             in cases
                                         </h2>
-                                        <span style={{ textDecoration: 'underline' }}>Read More</span>
+                                        {/* <span>January 10,2023</span> */}
                                     </div>
                                 </div>
-                            </div>
+
+                                <div className="trending-news" id="related-news-box">
+                                    <div className="relatednews-image">
+                                        <img src={profile} alt="" />
+                                    </div>
+                                    <div className="relatednews-text">
+
+                                        <h2>
+                                            Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                            in cases
+                                        </h2>
+                                        {/* <span>January 10,2023</span> */}
+                                    </div>
+                                </div>
+
+                                <div className="trending-news" id="related-news-box">
+                                    <div className="relatednews-image">
+                                        <img src={profile} alt="" />
+                                    </div>
+                                    <div className="relatednews-text">
+
+                                        <h2>
+                                            Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                            in cases
+                                        </h2>
+                                    </div>
+                                </div>
+                          
                         </Slider>
+                        </div>
                     </div>
 
                 </div>
@@ -434,55 +442,58 @@ const NewsAndVideosSingle = () => {
                         </div>
                         <div className="news-pu" id="morenewscategory">
 
-                            <div className="parliament-news-video-mp-news-list" id="blogimg">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
+                                </div>
+                                <div className="morenews-trending-text">
 
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
-
+                                    {/* <span>January 10,2023</span> */}
                                 </div>
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
-
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
                                 </div>
-                            </div>{" "}
-
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
+                                <div className="morenews-trending-text">
 
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
-
+                                    {/* <span>January 10,2023</span> */}
                                 </div>
-                            </div>{" "}
+                            </div>
 
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
+                                </div>
+                                <div className="morenews-trending-text">
 
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
+                                    {/* <span>January 10,2023</span> */}
+                                </div>
+                            </div>
 
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
+                                </div>
+                                <div className="morenews-trending-text">
+
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
                                 </div>
                             </div>
                         </div>
@@ -497,55 +508,59 @@ const NewsAndVideosSingle = () => {
                         </div>
                         <div className="news-pu" id="morenewscategory">
 
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
+                                </div>
+                                <div className="morenews-trending-text">
 
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
-
+                                    {/* <span>January 10,2023</span> */}
                                 </div>
                             </div>
 
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
-
-                                    <h2>
-                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                        in cases
-                                    </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
-
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
                                 </div>
-                            </div>{" "}
-
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
+                                <div className="morenews-trending-text">
 
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
-
+                                    {/* <span>January 10,2023</span> */}
                                 </div>
-                            </div>{" "}
+                            </div>
 
-                            <div className="parliament-news-video-mp-news-list">
-                                <img src={profile} alt="" />
-                                <div className="parliament-news-video-mp-news-list-content">
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
+                                </div>
+                                <div className="morenews-trending-text">
 
                                     <h2>
                                         Italy Lombardia reports first 2 coronavirus deaths amid jump
                                         in cases
                                     </h2>
-                                    <span style={{ textDecoration: 'underline' }}> Read More</span>
+                                    {/* <span>January 10,2023</span> */}
+                                </div>
+                            </div>
 
+                            <div className="trending-news">
+                                <div className="morenews-trending-image">
+                                    <img src={profile} alt="" />
+                                </div>
+                                <div className="morenews-trending-text">
+
+                                    <h2>
+                                        Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                        in cases
+                                    </h2>
+                                    {/* <span>January 10,2023</span> */}
                                 </div>
                             </div>
                         </div>
