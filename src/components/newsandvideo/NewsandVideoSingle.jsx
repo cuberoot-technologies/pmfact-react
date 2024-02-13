@@ -33,7 +33,7 @@ const NewsAndVideosSingle = () => {
             <div>
                 <HomeFirstAdd />
             </div>
-            <div className="wmps" id="blogs">
+            <div className="container" id="blog-page-container">
                 <div className="blogsection">
                     <div className="catergoryheading">
                         <h2>Italy Lombardia reports first
@@ -352,20 +352,20 @@ const NewsAndVideosSingle = () => {
                         </p>
                     </div>
                     <div className="keywords">
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
-                        <button className="view-more-news" style={{ margin: '1rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
+                        <button className="view-more-news" style={{ margin: '0.5rem' }}>#Keyword</button>
 
                     </div>
                     <hr className="thick-hr" />

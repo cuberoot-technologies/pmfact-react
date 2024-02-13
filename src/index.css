@@ -4369,22 +4369,6 @@ input.click-here {
   display: none;
 }
 
-/* .categorynewssection {
-  padding: 5px;
-  margin: 20px;
-} */
-
-.blogsection {
-  padding: 5px;
-  margin: 5px;
-}
-
-/* .blogheading,
-.blogbody {
-  padding: 5px;
-  margin: 10px;
-} */
-
 .blogbody p {
   /* margin: 10px; */
   font-size: 13px;
@@ -4700,13 +4684,31 @@ input.click-here {
 .related-news-slider-wrapper {
   display: flex;
   justify-content: center;
-  /* padding-left: 4rem; */
+}
+
+#blog-page-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.blogsection{
+  padding: 0.6rem;
+}
+
+.singlepagelink h2{
+  color: #000;
+  width: 60%;
+  font-size: 16px !important;
 }
 
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   #newscontent-container{
     max-width: 78%;
+  }
+
+  #blog-page-container{
+    flex-direction: row;
   }
 
   .relatednews-image img{
@@ -4733,9 +4735,9 @@ input.click-here {
   }
 
   .parliament-news-video-mp-news-list-content p+h2+p{
-      font-size: 16px;
+      font-size: 15px;
       color: #444;
-      margin:1rem 0;
+      margin:0.5rem 0;
       width:60%;
       display: block;
   }
