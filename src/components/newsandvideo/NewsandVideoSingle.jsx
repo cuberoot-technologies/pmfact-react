@@ -88,7 +88,7 @@ const NewsAndVideosSingle = () => {
                             </p>
                         </div>
                         <div className="subheading-blog">
-                            <h5> Italy Lombardia reports 2 first</h5>
+                            <h4> Italy Lombardia reports 2 first</h4>
                             <div className="categorytopimage" id="categtopimage">
                                 <img
                                     src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -139,7 +139,7 @@ const NewsAndVideosSingle = () => {
                             <img src="https://placehold.co/700x80" alt="" />
                         </div>
                         <div className="subheading-blog">
-                            <h5> Italy Lombardia reports 2 first</h5>
+                            <h4> Italy Lombardia reports 2 first</h4>
                             <div className="categorytopimage" id="categtopimage">
                                 <img
                                     src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -209,7 +209,7 @@ const NewsAndVideosSingle = () => {
                     </div>
                     <hr />
                     <div className="subheading-blog">
-                        <h5> Italy Lombardia reports 2 first</h5>
+                        <h4> Italy Lombardia reports 2 first</h4>
                         <div className="categorytopimage" id="categtopimage">
                             <img
                                 src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
@@ -300,7 +300,7 @@ const NewsAndVideosSingle = () => {
                     <hr />
 
                     <div className="subheading-blog">
-                        <h5> Italy Lombardia reports 2 first</h5>
+                        <h4> Italy Lombardia reports 2 first</h4>
                         <div className="categorytopimage" id="categtopimage">
                             <img
                                 src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg"
