@@ -10,7 +10,8 @@ const NewsAndVideosCategory = () => {
             <div>
                 <HomeFirstAdd />
             </div>
-            <div className="xmps" id="categorypage">
+            <div className="container" id="categorypage">
+                
                 <div className="category-wrapper">
                     <div id="categoryimg">
                         <img
@@ -22,7 +23,7 @@ const NewsAndVideosCategory = () => {
                         </div>
                     </div>
                 </div>
-                <div className="category-title">
+                <div className="category-title" style={{fontSize:'17px', marginTop:'1rem', fontWeight:'600'}}>
                     <p>Category title here, hello how are you?</p>
                 </div>
                 <div className="catergoryheading">
@@ -54,6 +55,11 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
                                 <span>January 10,2023</span>
                             </div>
                         </div>
@@ -63,7 +69,7 @@ const NewsAndVideosCategory = () => {
                             </div>
 
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -72,6 +78,11 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
                                 <span>January 10,2023</span>
                             </div>
                         </div>
@@ -81,7 +92,7 @@ const NewsAndVideosCategory = () => {
                             </div>
 
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -90,6 +101,11 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
                                 <span>January 10,2023</span>
                             </div>
                         </div>
@@ -99,7 +115,7 @@ const NewsAndVideosCategory = () => {
                             </div>
 
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -108,7 +124,12 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
-                                
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
                             </div>
                         </div>
                         </div>
@@ -120,8 +141,8 @@ const NewsAndVideosCategory = () => {
                         </div>
 
                         <div className="news-pu" id="category-page-news-pu">
-                        <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="parliament-news-video-mp-news-list" id="category-boxes">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -130,7 +151,12 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
-                                {/* <span>January 10,2023</span> */}
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
                             </div>
                         </div>
 
@@ -138,7 +164,7 @@ const NewsAndVideosCategory = () => {
                                 <hr className="mpline" />
                             </div>
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -147,7 +173,12 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
-                                {/* <span>January 10,2023</span> */}
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
                             </div>
                         </div>
 
@@ -155,7 +186,7 @@ const NewsAndVideosCategory = () => {
                                 <hr className="mpline" />
                             </div>
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -164,7 +195,12 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
-                                {/* <span>January 10,2023</span> */}
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
                             </div>
                         </div>
                             <div className="mplinecontainer">
@@ -172,7 +208,7 @@ const NewsAndVideosCategory = () => {
                             </div>
 
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -181,25 +217,12 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
-                                {/* <span>January 10,2023</span> */}
-                            </div>
-                        </div>
-
-                            <div className="mplinecontainer">
-                                <hr className="mpline" />
-                            </div>
-
-                            <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
-                            <img src={profile} alt="" />
-                            </div>
-                            <div className="parliament-news-video-mp-news-list-content">
-                                <p>Rahul on Bharat Jodo Yatra</p>
-                                <h2>
-                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
-                                    in cases
-                                </h2>
-                                {/* <span>January 10,2023</span> */}
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
                             </div>
                         </div>
 
@@ -208,7 +231,7 @@ const NewsAndVideosCategory = () => {
                             </div>
 
                             <div className="parliament-news-video-mp-news-list">
-                        <div className="fortyimage">
+                        <div className="fortyimage" id="forty-image">
                             <img src={profile} alt="" />
                             </div>
                             <div className="parliament-news-video-mp-news-list-content">
@@ -217,7 +240,35 @@ const NewsAndVideosCategory = () => {
                                     Italy Lombardia reports first 2 coronavirus deaths amid jump
                                     in cases
                                 </h2>
-                                {/* <span>January 10,2023</span> */}
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
+                            </div>
+                        </div>
+
+                            <div className="mplinecontainer">
+                                <hr className="mpline" />
+                            </div>
+
+                            <div className="parliament-news-video-mp-news-list">
+                        <div className="fortyimage" id="forty-image">
+                            <img src={profile} alt="" />
+                            </div>
+                            <div className="parliament-news-video-mp-news-list-content">
+                                <p>Rahul on Bharat Jodo Yatra</p>
+                                <h2>
+                                    Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases
+                                </h2>
+                                <p> Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in cases. Italy Lombardia reports first 2 coronavirus deaths amid jump
+                                    in...</p>
+                                <span>January 10,2023</span>
                             </div>
                         </div>
                         </div>

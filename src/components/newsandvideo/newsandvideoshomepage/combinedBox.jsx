@@ -34,7 +34,7 @@ const CombineBox2 = () => {
                             
                             {/* <button className="view-more-news">View More</button> */}
                         </div>
-                        <div className="parlimentry-news-list">
+                        <div className="parlimentry-news-list" id="middle-news-image">
                             <div className="parlimentry-news-list-left-side-left" id="categorysimages" >
                                 <img src={profile} alt="" />
                                 <div className="catergory-box">Video</div>
