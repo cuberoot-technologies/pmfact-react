@@ -11,7 +11,7 @@ const NewsAndVideosSingle = () => {
         speed: 500,
         autoplay: true,
         autoplaySpeed: 4000,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
 
@@ -371,8 +371,7 @@ const NewsAndVideosSingle = () => {
                     <hr className="thick-hr" />
                     <div className="readalso">
                         <h5 className="mainheading">Related News</h5>
-                        <div className="related-news-slider-wrapper">
-                        <Slider {...settings} style={{maxWidth:'1100px'}}>
+                        <Slider {...settings}>
                                 <div className="trending-news" id="related-news-box">
                                     <div className="relatednews-image">
                                         <img src={profile} alt="" />
@@ -429,7 +428,6 @@ const NewsAndVideosSingle = () => {
                                 </div>
                           
                         </Slider>
-                        </div>
                     </div>
 
                 </div>
