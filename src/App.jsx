@@ -34,6 +34,7 @@ import MpSelected from "./components/mpselected/MpSelected";
 import ThankYou from "./components/thankyou/ThankYou";
 import Footer from "./Footer";
 import SliderTextbar from "./components/textbarslider";
+import NewsAndVideosMain from "./components/newsandvideo/NewsandVideosmain";
 
 // import appFooter from "./components/appfooter";
 
@@ -74,6 +75,7 @@ const App = () => {
         <Route path="/news-and-videos-category" element={<NewsAndVideosCategory />} />
         <Route path="/news-and-videos" element={<NewsVideoBar />} />
         <Route path="/news-and-videos-page" element={<NewsAndVideosSingle />} />
+        <Route path="/news-and-videos-home-main" element={<NewsAndVideosMain />} />
         <Route
           path="/news-and-videos-details"
           element={<NewsAndVideoDetails />}

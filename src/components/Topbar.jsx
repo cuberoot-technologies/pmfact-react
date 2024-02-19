@@ -94,9 +94,6 @@ function Topbar() {
             <p style={{ fontSize: "11px", fontWeight: "bold", color: "#fff" }}>TRENDING NOW</p>
           </div>
           <div className="topbarslider" style={{ margin: '0 8px' }}>
-            <style>
-
-            </style>
             <Slider {...settings}>
               <div className="topbarslider-content">
                 <p>People Celebrate Diwali all across India on 22 January 2024</p>
@@ -120,7 +117,7 @@ function Topbar() {
           </div>
         </div>
 
-        <div className="date-icon" style={{ flexDirection: 'column' }}>
+        {/* <div className="date-icon" style={{ flexDirection: 'column' }}>
           <div className="socialIcons">
           <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
@@ -128,12 +125,15 @@ function Topbar() {
             <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-twitter-x" style={{ marginRight: "15px" }}></i>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="datecontainer">
+      {/* <div className="datecontainer">
         <p style={{ fontWeight: 'bold', fontSize: '12px', marginLeft: '7.5rem' }}>{currentDate}</p>
-      </div>
+      </div> */}
       <Navbar expand="lg" className="topbarimage d-flex justify-content-center">
+      <div className="datecontainer">
+        <p style={{ fontWeight: 'bold', fontSize: '16px', marginLeft: '7.5rem' }}>{currentDate}</p>
+      </div>
         <Container fluid className="">
           <Navbar.Brand href="#" className="text-center w-100">
             <div className="navbarbox">
@@ -152,6 +152,16 @@ function Topbar() {
             </div>
           </Navbar.Brand>
         </Container>
+
+        <div className="date-icon" style={{ flexDirection: 'column' }}>
+          <div className="socialIcons">
+          <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-whatsapp" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
+            <i className="bi bi-twitter-x" style={{ marginRight: "15px" }}></i>
+          </div>
+        </div>
       </Navbar>
     </>
   );
