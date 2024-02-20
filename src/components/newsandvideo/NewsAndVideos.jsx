@@ -6,7 +6,7 @@ import HomeFirstAdd from "../advertisement/HomeFirstAdd";
 import { BsPlay } from "react-icons/bs";
 import BelowSection from "./newsandvideoshomepage/belowsection";
 import CombineBox from "./newsandvideoshomepage/combined";
-import ExtraNews from "./newsandvideoshomepage/extranews";
+import ExtraNews from "./newsandvideosmain/extranews";
 import MpsNews from "./newsandvideoshomepage/mpsnews";
 import NewsShorts from "./newsandvideoshomepage/parliamentryshorts";
 import ParliamentaryNews from "./newsandvideoshomepage/parliamentrynews";
