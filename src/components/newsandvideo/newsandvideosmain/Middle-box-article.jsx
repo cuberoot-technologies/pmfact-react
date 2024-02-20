@@ -4,7 +4,7 @@ const MiddleBoxArticle = () => {
 
     return (
         <>
-        <div className="aside-box-article" style={{ marginLeft: '3rem' }}>
+        <div className="aside-box-article">
 
             <div class="news-block">
                 <img src="https://placehold.co/300x200" alt="" />

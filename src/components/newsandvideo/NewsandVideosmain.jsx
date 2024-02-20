@@ -19,11 +19,15 @@ const NewsAndVideosMain = () => {
                     <div className="layout2-pre">
                         <h3 className="layout-heading">Parliamentary News</h3>
                         <div className="layout2">
+                        <div className="aside-box-container">
                             <MainBoxArticle />
-
+                            </div>
+                            <div className="aside-box-container">
                             <MiddleBoxArticle />
-
+                            </div>
+                            <div className="aside-box-container">
                             <AsideBoxArticle />
+                            </div>
                         </div>
                     </div>
 
@@ -38,9 +42,12 @@ const NewsAndVideosMain = () => {
                     <div className="layout2-pre">
                         <h3 className="layout-heading">Parliamentary News</h3>
                         <div className="layout2">
+                        <div className="aside-box-container">
                             <MainBoxArticle />
-
+                            </div>
+                            <div className="aside-box-container">
                             <MiddleBoxArticle />
+                            </div>
                             <div className="aside-ad-contentbox">
                                 <div className="aside-content">
                                     <div class="advertisement square-ad">
@@ -58,8 +65,12 @@ const NewsAndVideosMain = () => {
                     <div className="layout2-pre">
                         <h3 className="layout-heading">Parliamentary News</h3>
                         <div className="layout2">
+                        
+                        <div className="aside-box-container">
                             <NewsBoxArticle />
-                            <div className="aside-ad-contentbox" style={{marginLeft:'3rem'}}>
+                            </div>
+                         
+                            <div className="aside-ad-contentbox">
                                 <div className="aside-content">
                                     <div class="advertisement square-ad">
                                         <img src="https://placehold.co/300x250" alt="" />

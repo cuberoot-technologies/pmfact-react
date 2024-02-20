@@ -4,6 +4,7 @@
   --vertical-ad-width: 160px;
   --vertical-ad-height: 600px;
   --gutter-size: 10px;
+  --gap:calc(2 * var(--gutter-size));
   --square-ad-width: 300px;
   --square-ad-height: 250px;
   --fs--2: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
@@ -4874,8 +4875,13 @@ input.click-here {
 
 .main-box-article{
   padding-block: var(--gutter-size);
-  max-width: 440px;
-  margin: 0 0.5rem;
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-box-container{
+  margin-inline:var(--gap);
 }
 
 .news-block {
@@ -4911,11 +4917,15 @@ input.click-here {
   padding-block: var(--gutter-size);
   width: calc(2 * var(--gutter-size) + var(--square-ad-width));
   flex-shrink: 0;
-  margin: 0 0.5rem;
+ display: flex;
+  flex-direction: column;
+  
+  /* margin-inline:var(--gap); */
 }
 
 .aside-ad-contentbox{
   padding-block: var(--gutter-size);
+  margin-inline:var(--gap);
 }
 
 .extranews-content{
