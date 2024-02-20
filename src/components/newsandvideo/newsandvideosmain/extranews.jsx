@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profile from "../../../assets/profile.jpg";
+import Images from "../../../assets/Images.jpeg";
 
 
 const ExtraNews = () => {
@@ -11,52 +11,52 @@ const ExtraNews = () => {
                 <div className="middleboxes">
                     <div className="middlebox">
                         <div className="middleboximage">
-                            <img src="https://placehold.co/200x150" alt="" />
+                            <img src={Images} alt="" />
                         </div>
                         <div className="category-label">Video</div>
                         <div className="middleboxtext">
-                            <h3 className="extranews-heading" >Door slmas at the person in europe in geneva switzerland</h3>
-                            <p className="date-extranews">19-08-2002 - 10:49</p>
+                            <h3 className="extranews-heading" >कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली</h3>
+                            <p className="date-extranews">Read More</p>
                         </div>
                     </div>
                     <div className="middlebox">
                         <div className="middleboximage">
-                            <img src="https://placehold.co/200x150" alt="" />
+                            <img src={Images} alt="" />
                         </div>
                         <div className="category-label">Video</div>
                         <div className="middleboxtext">
-                            <h3 className="extranews-heading" >Door slmas at the person in europe in geneva switzerland</h3>
-                            <p className="date-extranews">19-08-2002 - 10:49</p>
+                            <h3 className="extranews-heading" >कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली</h3>
+                            <p className="date-extranews">Read More</p>
                         </div>
                     </div>
                     <div className="middlebox">
                         <div className="middleboximage">
-                            <img src="https://placehold.co/200x150" alt="" />
+                            <img src={Images} alt="" />
                         </div>
                         <div className="category-label">Video</div>
                         <div className="middleboxtext">
                             <h3 className="extranews-heading" >Door slmas at the person in europe in geneva switzerland</h3>
-                            <p className="date-extranews">19-08-2002 - 10:49</p>
+                            <p className="date-extranews">Read More</p>
                         </div>
                     </div>
                     <div className="middlebox">
                         <div className="middleboximage">
-                            <img src="https://placehold.co/200x150" alt="" />
+                            <img src={Images} alt="" />
                         </div>
                         <div className="category-label">Video</div>
                         <div className="middleboxtext">
                             <h3 className="extranews-heading" >Door slmas at the person in europe in geneva switzerland</h3>
-                            <p className="date-extranews">19-08-2002 - 10:49</p>
+                            <p className="date-extranews">Read More</p>
                         </div>
                     </div>
                     <div className="middlebox">
                         <div className="middleboximage">
-                            <img src="https://placehold.co/200x150" alt="" />
+                            <img src={Images} alt="" />
                         </div>
                         <div className="category-label">Video</div>
                         <div className="middleboxtext">
                             <h3 className="extranews-heading" >Door slmas at the person in europe in geneva switzerland</h3>
-                            <p className="date-extranews">19-08-2002 - 10:49</p>
+                            <p className="date-extranews">Read More</p>
                         </div>
                     </div>
                 </div>

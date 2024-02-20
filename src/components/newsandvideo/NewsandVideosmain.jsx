@@ -16,32 +16,36 @@ const NewsAndVideosMain = () => {
 
                 <div className="content">
                     <Toplayout1 />
-                    <div className="layout2-pre">
-                        <h3 className="layout-heading">Parliamentary News</h3>
+                    
+                        
                         <div className="layout2">
+                            
                         <div className="aside-box-container mobile">
+                        <h3 className="layout-heading" style={{marginInline:'10px'}}>Parliamentary News</h3>
                             <MainBoxArticle />
                             </div>
-                            <div className="aside-box-container mobile">
+                            <div className="aside-box-container mobile" style={{marginTop:'4.7rem'}}>
+                            {/* <h3 className="layout-heading">News</h3> */}
                             <MiddleBoxArticle />
                             </div>
-                            <div className="aside-box-container">
+                            <div className="aside-box-container" style={{paddingInlineEnd:'10px'}}>
+                            <h3 className="layout-heading">Virus Confronts</h3>
                             <AsideBoxArticle />
                             </div>
-                        </div>
+                        
                     </div>
 
                     <div className="adbox" >
                         <img src="https://placehold.co/700x80" alt="" />
                     </div>
 
-                    <div className="layout3">
+                    <div className="layout3" style={{marginTop:'2rem'}}>
                         <ExtraNews />
                     </div>
 
-                    <div className="layout2-pre">
-                        <h3 className="layout-heading">Parliamentary Shorts</h3>
-                        <div className="layout2">
+                    <div className="layout2-pre shorts">
+                    <h3 className="layout-heading" style={{marginInline:'10px'}}>Parliamentary News</h3>
+                        <div className="layout2 shorts">
                         <div className="aside-box-container mobile">
                             <MainBoxArticle />
                             </div>
@@ -63,7 +67,7 @@ const NewsAndVideosMain = () => {
                     </div>
 
                     <div className="layout2-pre">
-                        <h3 className="layout-heading">MPs News</h3>
+                        <h3 className="layout-heading" style={{marginInline:'10px'}}>MPs News</h3>
                         <div className="layout2">
                         
                         <div className="aside-box-container mobile">
@@ -80,9 +84,6 @@ const NewsAndVideosMain = () => {
                             </div>
                         </div>
                     </div>
-
-
-
 
                 </div>
 

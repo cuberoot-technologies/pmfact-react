@@ -1,4 +1,5 @@
 import React from "react";
+import Images from "../../../assets/Images.jpeg"
 
 const AsideBoxArticle = () => {
 
@@ -6,24 +7,37 @@ const AsideBoxArticle = () => {
         <>
 
             <div className="aside-box-article" >
-            <hr />
-                    <h3 style={{fontWeight:'600'}}>Virus Confronts</h3>
+                <div className="heading-aside-box-mobile">
+            {/* <hr /> */}
+                    </div>
                 <div class="news-block view2">
-                    <img src="https://placehold.co/100x75" alt="" />
+                    <img src={Images} alt="" />
+                    <h3 class="aside-heading">अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च इस सीट </h3>
+                </div>
+                <div className="mplinecontainer">
+                            <hr className="mpline" />
+                        </div>
+                <div class="news-block view2">
+                    <img src={Images} alt="" />
+                    <h3 class="aside-heading">अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च इस सीट </h3>
+                </div>
+                <div className="mplinecontainer">
+                            <hr className="mpline" />
+                        </div>
+                <div class="news-block view2">
+                    <img src={Images} alt="" />
                     <h3 class="aside-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
                 </div>
+                <div className="mplinecontainer">
+                            <hr className="mpline" />
+                        </div>
                 <div class="news-block view2">
-                    <img src="https://placehold.co/100x75" alt="" />
+                    <img src={Images} alt="" />
                     <h3 class="aside-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
                 </div>
-                <div class="news-block view2">
-                    <img src="https://placehold.co/100x75" alt="" />
-                    <h3 class="aside-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
-                </div>
-                <div class="news-block view2">
-                    <img src="https://placehold.co/100x75" alt="" />
-                    <h3 class="aside-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
-                </div>
+                <div className="mplinecontainer">
+                            <hr className="mpline" />
+                        </div>
             </div>
 
         </>

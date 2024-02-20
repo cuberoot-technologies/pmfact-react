@@ -1,34 +1,36 @@
 import React from "react";
+import Images from "../../../assets/Images.jpeg"
+
 
 const NewsBoxArticle = () => {
 
     return (
         <>
 
-<div className="main-box-article">
+<div className="main-box-article newsbox">
                 <div class="extranews-block">
-                    <img src="https://placehold.co/200x150" alt="" />
+                    <img src={Images} alt="" />
+                    <div className="extranews-content">
+                    <span class="category-label">Video</span>
+                    <h3 class="extranews-heading">कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली मानी जाती है रायबरेली  </h3>
+                    </div>
+                </div>
+                <div class="extranews-block">
+                    <img src={Images} alt="" />
+                    <div className="extranews-content">
+                    <span class="category-label">Video</span>
+                    <h3 class="extranews-heading">कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली मानी जाती है रायबरेली </h3>
+                    </div>
+                </div>
+                <div class="extranews-block">
+                    <img src={Images}alt="" />
                     <div className="extranews-content">
                     <span class="category-label">Video</span>
                     <h3 class="extranews-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
                     </div>
                 </div>
                 <div class="extranews-block">
-                    <img src="https://placehold.co/200x150" alt="" />
-                    <div className="extranews-content">
-                    <span class="category-label">Video</span>
-                    <h3 class="extranews-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
-                    </div>
-                </div>
-                <div class="extranews-block">
-                    <img src="https://placehold.co/200x150" alt="" />
-                    <div className="extranews-content">
-                    <span class="category-label">Video</span>
-                    <h3 class="extranews-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
-                    </div>
-                </div>
-                <div class="extranews-block">
-                    <img src="https://placehold.co/200x150" alt="" />
+                    <img src={Images} alt="" />
                     <div className="extranews-content">
                     <span class="category-label">Video</span>
                     <h3 class="extranews-heading">Watch: 10 Days Later: What Italians Wish They Had Known</h3>
