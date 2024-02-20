@@ -19,10 +19,10 @@ const NewsAndVideosMain = () => {
                     <div className="layout2-pre">
                         <h3 className="layout-heading">Parliamentary News</h3>
                         <div className="layout2">
-                        <div className="aside-box-container">
+                        <div className="aside-box-container mobile">
                             <MainBoxArticle />
                             </div>
-                            <div className="aside-box-container">
+                            <div className="aside-box-container mobile">
                             <MiddleBoxArticle />
                             </div>
                             <div className="aside-box-container">
@@ -40,12 +40,12 @@ const NewsAndVideosMain = () => {
                     </div>
 
                     <div className="layout2-pre">
-                        <h3 className="layout-heading">Parliamentary News</h3>
+                        <h3 className="layout-heading">Parliamentary Shorts</h3>
                         <div className="layout2">
-                        <div className="aside-box-container">
+                        <div className="aside-box-container mobile">
                             <MainBoxArticle />
                             </div>
-                            <div className="aside-box-container">
+                            <div className="aside-box-container mobile">
                             <MiddleBoxArticle />
                             </div>
                             <div className="aside-ad-contentbox">
@@ -63,10 +63,10 @@ const NewsAndVideosMain = () => {
                     </div>
 
                     <div className="layout2-pre">
-                        <h3 className="layout-heading">Parliamentary News</h3>
+                        <h3 className="layout-heading">MPs News</h3>
                         <div className="layout2">
                         
-                        <div className="aside-box-container">
+                        <div className="aside-box-container mobile">
                             <NewsBoxArticle />
                             </div>
                          

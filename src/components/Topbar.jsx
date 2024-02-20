@@ -153,7 +153,7 @@ function Topbar() {
           </Navbar.Brand>
         </Container>
 
-        <div className="date-icon" style={{ flexDirection: 'column' }}>
+        <div className="date-icon" style={{zIndex:'0'}}>
           <div className="socialIcons">
           <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
             <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
