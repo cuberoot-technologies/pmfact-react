@@ -35,6 +35,8 @@ import ThankYou from "./components/thankyou/ThankYou";
 import Footer from "./Footer";
 import SliderTextbar from "./components/textbarslider";
 import NewsAndVideosMain from "./components/newsandvideo/NewsandVideosmain";
+import NewsAndVideoCategories from "./components/newsandvideo/NewsAndVideosMainCategory";
+import NewsAndVideoSinglePageBlog from "./components/newsandvideo/NewsandVideosSinglePageBlog";
 
 // import appFooter from "./components/appfooter";
 
@@ -76,6 +78,8 @@ const App = () => {
         <Route path="/news-and-videos" element={<NewsVideoBar />} />
         <Route path="/news-and-videos-page" element={<NewsAndVideosSingle />} />
         <Route path="/news-and-videos-home-main" element={<NewsAndVideosMain />} />
+        <Route path="/news-and-videos-home-main-category" element={<NewsAndVideoCategories />} />
+        <Route path="/news-and-videos-home-main-page" element={<NewsAndVideoSinglePageBlog />} />
         <Route
           path="/news-and-videos-details"
           element={<NewsAndVideoDetails />}

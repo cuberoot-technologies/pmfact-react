@@ -132,7 +132,7 @@ function Topbar() {
       </div> */}
       <Navbar expand="lg" className="topbarimage d-flex justify-content-center">
       <div className="datecontainer">
-        <p style={{ fontWeight: 'bold', fontSize: '16px', marginLeft: '7.5rem' }}>{currentDate}</p>
+        <p style={{fontSize: '15px', marginLeft: '7.5rem' }}>{currentDate}</p>
       </div>
         <Container fluid className="">
           <Navbar.Brand href="#" className="text-center w-100">

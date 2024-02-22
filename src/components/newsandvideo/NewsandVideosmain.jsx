@@ -21,15 +21,15 @@ const NewsAndVideosMain = () => {
                         <div className="layout2">
                             
                         <div className="aside-box-container mobile">
-                        <h3 className="layout-heading" style={{marginInline:'10px'}}>Parliamentary News</h3>
+                        <h3 className="layout-heading" >Parliamentary News</h3>
                             <MainBoxArticle />
                             </div>
-                            <div className="aside-box-container mobile" style={{marginTop:'4.7rem'}}>
+                            <div className="aside-box-container mobile" style={{marginTop:'5.3rem'}}>
                             {/* <h3 className="layout-heading">News</h3> */}
                             <MiddleBoxArticle />
                             </div>
-                            <div className="aside-box-container" style={{paddingInlineEnd:'10px'}}>
-                            <h3 className="layout-heading">Virus Confronts</h3>
+                            <div className="aside-box-container" >
+                            <h3 className="layout-heading">MPs News</h3>
                             <AsideBoxArticle />
                             </div>
                         
@@ -44,7 +44,7 @@ const NewsAndVideosMain = () => {
                     </div>
 
                     <div className="layout2-pre shorts">
-                    <h3 className="layout-heading" style={{marginInline:'10px'}}>Parliamentary News</h3>
+                    <h3 className="layout-heading" style={{marginInline:'var(--gutter-size)'}}>Parliamentary News</h3>
                         <div className="layout2 shorts">
                         <div className="aside-box-container mobile">
                             <MainBoxArticle />
@@ -67,7 +67,7 @@ const NewsAndVideosMain = () => {
                     </div>
 
                     <div className="layout2-pre">
-                        <h3 className="layout-heading" style={{marginInline:'10px'}}>MPs News</h3>
+                        <h3 className="layout-heading" style={{marginInline:'var(--gutter-size)'}}>MPs News</h3>
                         <div className="layout2">
                         
                         <div className="aside-box-container mobile">

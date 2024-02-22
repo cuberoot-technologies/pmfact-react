@@ -24,11 +24,11 @@ const Toplayout1 = () => {
                             <span className="date">19/03/2020 - 10:48</span>
                         </div>
                         <p class="excerpt">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, incidunt sequi repellat atque rerum
+                        अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च इस सीट अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च इस सीट अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च इस सीट अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च इस सीट
                         </p>
                     </div>
                 </div>
-                <div className="aside-content">
+                <div className="aside-content" style={{marginLeft:''}}>
                     <div class="advertisement square-ad">
                         <img src="https://placehold.co/300x250" alt="" />
                     </div>
