@@ -57,7 +57,7 @@ const SliderTextbar = () => {
             <div><Link to="/parliament-performance" style={linkStyle}>Parliament Performance</Link></div>
             <div><Link to="/home-mp-performance" style={linkStyle}>MPs Performance</Link></div>
             <div><Link to="/rate-your-mp" style={linkStyle}>Rate Your MPs</Link></div>
-            <div><Link to="/news-and-videos" style={linkStyle}>News & Videos</Link></div>
+            <div><Link to="/news-and-videos-home-main" style={linkStyle}>News & Videos</Link></div>
             <div><Link to="/public-voice" style={linkStyle}>Public Voice</Link></div>
             <div><Link to="/our-mps" style={linkStyle}>Our MPs</Link></div>
             <div><Link to="/our-expert" style={linkStyle}>PF Experts</Link></div>
