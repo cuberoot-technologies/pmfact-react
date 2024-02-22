@@ -7,7 +7,7 @@ const BlogPageContent = () => {
 
         <div className="blog-page-main-content">
             <p className="blog-para-excerpt">
-           Italy Lombardia Reports first 2 coronavirus deaths amid jump. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump
+            दिल्ली कैपिटल्स अपना शुरुआती दो मैच विशाखापत्तनम में खेलेगी। महिला प्रीमियर लीग का फाइनल दिल्ली में खेला जाएगा, उसके तुरंत बाद मैदान को आईपीएल के लिए तैयार करने में समय लगेगा। इस कारण दिल्ली के शुरुआती दो मैच विशाखापत्तन में होंगे। देश में इस साल होने वाले आम चुनावों के कारण आईपीएल का पूरा शेड्यूल जारी नहीं हुआ है। अभी 17 दिनों का कार्यक्रम सामने आया है। लोकसभा चुनाव की तारीखों के एलान के बाद बाकी बचे मैचों का शेड्यूल जारी किया जाएगा।
             </p>
         </div>
             
