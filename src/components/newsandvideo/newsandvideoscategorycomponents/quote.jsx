@@ -7,7 +7,7 @@ const Quotes = () => {
     return (
         <>
             <div className="readalso">
-                <h5 className="layout-heading">Quotes</h5>
+                <h5 className="layout-heading" style={{marginBlockStart:'0', paddingTop:'0'}}>Quotes</h5>
                 <div className="quotealsobox">
                     <div className="quotes">
                         <div className="readalsobox">

@@ -4977,6 +4977,10 @@ color: red;
     font-size: var(--fs--3) !important;
   }
 
+  .subheading-single-blog-page{
+    font-size: var(--fs--1);
+  }
+
   .news-block.view2 img {
     height: 75px;
     width: 100px
@@ -5134,7 +5138,7 @@ color: red;
   }
 
   .single-page-read-also-image-box {
-    height: 150px;
+    /* height: 150px; */
     width: 200px
   }
 
@@ -5148,6 +5152,15 @@ color: red;
     margin-inline-end: var(--gutter-size) !important;
   }
 
+  .layout5-category-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .blog-page-share-options i{
+    margin-inline: var(--gutter-size);
+  }
   /* media query ******* */
   @media only screen and (min-width: 991px) {
     #newscontent-container {
