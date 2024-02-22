@@ -36,8 +36,12 @@ const NewsAndVideoCategories = () => {
                         </div>
 
                         <div className="layout2-category">
-                            <div className="aside-box-container" >
-                                <h3 className="layout-heading">Trending News</h3>
+                        <div className="aside-ad-contentbox">
+                                <div className="aside-content" style={{paddingBlockStart:'0'}}>
+                                    <div class="advertisement square-ad">
+                                        <img src="https://placehold.co/300x250" alt="" />
+                                    </div>
+                                </div>
                                 <AsideBoxArticle />
                             </div>
 
