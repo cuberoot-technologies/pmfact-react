@@ -8,7 +8,7 @@ const Readalso = () => {
         <>
 
             <div className="readalso">
-                <h5 className="layout-heading">Read Also</h5>
+                <h5 className="layout-heading" style={{marginBlock:'0'}}>Read Also</h5>
                 <div className="readalsobox">
                     <div className="single-page-read-also-image-box">
                         <img src={Images} alt="" />

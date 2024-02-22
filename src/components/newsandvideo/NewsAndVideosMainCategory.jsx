@@ -33,6 +33,10 @@ const NewsAndVideoCategories = () => {
 
                         <div className="layout1-category">
                             <CategoryContent />
+                            <div className="adbox" style={{ marginBlock: 'var(--gutter-size)' }}>
+                        <img src="https://placehold.co/700x80" alt="" />
+                    </div>
+                    <CategoryContent />
                         </div>
 
                         <div className="layout2-category">
@@ -42,6 +46,27 @@ const NewsAndVideoCategories = () => {
                                         <img src="https://placehold.co/300x250" alt="" />
                                     </div>
                                 </div>
+                                <h3 className="layout-heading" style={{marginBlockStart:'0'}}>MPs News</h3>
+                                <AsideBoxArticle />
+                            </div>
+
+                            <div className="aside-ad-contentbox">
+                                <div className="aside-content" style={{paddingBlockStart:'0'}}>
+                                    <div class="advertisement square-ad">
+                                        <img src="https://placehold.co/300x250" alt="" />
+                                    </div>
+                                </div>
+                                <h3 className="layout-heading" style={{marginBlockStart:'0'}}>MPs News</h3>
+                                <AsideBoxArticle />
+                            </div>
+
+                            <div className="aside-ad-contentbox">
+                                <div className="aside-content" style={{paddingBlockStart:'0'}}>
+                                    <div class="advertisement square-ad">
+                                        <img src="https://placehold.co/300x250" alt="" />
+                                    </div>
+                                </div>
+                                <h3 className="layout-heading" style={{marginBlockStart:'0'}}>MPs News</h3>
                                 <AsideBoxArticle />
                             </div>
 
@@ -49,10 +74,10 @@ const NewsAndVideoCategories = () => {
                     </div>
 
 
-                    <div className="adbox" style={{ marginBlock: 'var(--gutter-size)' }}>
+                    {/* <div className="adbox" style={{ marginBlock: 'var(--gutter-size)' }}>
                         <img src="https://placehold.co/700x80" alt="" />
-                    </div>
-
+                    </div> */}
+{/* 
                     <div className="layout-category-wrap">
 
                         <div className="layout1-category">
@@ -66,7 +91,7 @@ const NewsAndVideoCategories = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
 
