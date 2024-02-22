@@ -21,10 +21,10 @@ const NewsAndVideoCategories = () => {
                     <div className="layout1-category-headings">
                         <h6>Category title here, hello how are you?</h6>
                         <h3 className="section-heading">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
-                        <div className="layout1-category-date"><span className="author category">Stephan Romero </span>
-                            <span className="date" style={{color:'black'}}>|</span>
-                            <span className="date"> 9/03/2020 - 10:48 Read More</span>
-                            <span className="date" style={{color:'black'}}>|</span>
+                        <div className="layout1-category-date"><span className="date category">Stephan Romero </span>
+                            <span className="date" style={{ fontWeight:'700'}}>|</span>
+                            <span className="date"> 9/03/2020 - 10:48</span>
+                            <span className="date" style={{ fontWeight:'700'}}>|</span>
                             <span className="date" style={{color:'red'}}>Read More</span></div>
 
                     </div>
