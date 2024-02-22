@@ -67,20 +67,22 @@ const NewsAndVideosMain = () => {
                     </div>
 
                     <div className="layout2-pre">
-                        <h3 className="layout-heading" style={{marginInline:'var(--gutter-size)'}}>MPs News</h3>
+                        
                         <div className="layout2">
                         
                         <div className="aside-box-container mobile">
+                        <h3 className="layout-heading" >MPs News</h3>
                             <NewsBoxArticle />
                             </div>
                          
-                            <div className="aside-ad-contentbox">
-                                <div className="aside-content">
-                                    <div class="advertisement square-ad">
-                                        <img src="https://placehold.co/300x250" alt="" />
-                                    </div>
-                                </div>
-                                <AsideBoxArticle />
+                            <div className="aside-box-container" >
+                            <h3 className="layout-heading">MPs News</h3>
+                            <AsideBoxArticle />
+                            </div>
+
+                            <div className="aside-box-container" >
+                            <h3 className="layout-heading">MPs News</h3>
+                            <AsideBoxArticle />
                             </div>
                         </div>
                     </div>

@@ -33,7 +33,7 @@ const Toplayout1 = () => {
                 </div>
                 
                 <div className="aside-content" >
-                    <div class="advertisement square-ad">
+                    <div class="toplayout square-ad ">
                         <img src="https://placehold.co/300x250" alt="" />
                     </div>
                 </div>
