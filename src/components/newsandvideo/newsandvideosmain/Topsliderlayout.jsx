@@ -1,12 +1,15 @@
 import React from "react";
 import Images from "../../../assets/Images.jpeg"
+import { Link } from "react-router-dom";
 
 
 const Toplayout1 = () => {
 
     return (
         <>
+         <Link to="/news-and-videos-home-main-category" style={{textDecoration:'none', color:'#212529'}}>
             <div className="layout1">
+           
                 <div className="image-box-layout1">
                 <img src={Images} alt="" />
                 </div>
@@ -28,13 +31,14 @@ const Toplayout1 = () => {
                         </p>
                     </div>
                 </div>
-                <div className="aside-content" style={{marginLeft:''}}>
+                
+                <div className="aside-content" >
                     <div class="advertisement square-ad">
                         <img src="https://placehold.co/300x250" alt="" />
                     </div>
                 </div>
             </div>
-
+            </Link>
         </>
 
     );

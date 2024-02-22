@@ -116,20 +116,8 @@ function Topbar() {
             </Slider>
           </div>
         </div>
-
-        {/* <div className="date-icon" style={{ flexDirection: 'column' }}>
-          <div className="socialIcons">
-          <i className="bi bi-search" style={{ marginRight: "15px" }}></i>
-            <i className="bi bi-facebook" style={{ marginRight: "15px" }}></i>
-            <i className="bi bi-whatsapp" style={{ marginRight: "15px" }}></i>
-            <i className="bi bi-linkedin" style={{ marginRight: "15px" }}></i>
-            <i className="bi bi-twitter-x" style={{ marginRight: "15px" }}></i>
-          </div>
-        </div> */}
       </div>
-      {/* <div className="datecontainer">
-        <p style={{ fontWeight: 'bold', fontSize: '12px', marginLeft: '7.5rem' }}>{currentDate}</p>
-      </div> */}
+      
       <Navbar expand="lg" className="topbarimage d-flex justify-content-center">
       <div className="datecontainer">
         <p style={{fontSize: '15px', marginLeft: '7.5rem' }}>{currentDate}</p>

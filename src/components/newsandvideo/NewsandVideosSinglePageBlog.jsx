@@ -25,14 +25,6 @@ const NewsAndVideoSinglePageBlog = () => {
                         <p className="extranews-heading">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus.</p>
                     </div>
 
-                    {/* <div className="main-category-page-image">
-                        <img src={Images} alt="" />
-                        <div className="blogheading-single-page">
-                            <p className="excerpt" style={{ color: '#444' }}>Italy Lombardia reports 2 first</p>
-                            <hr className="thick-hr" />
-                        </div>
-                    </div> */}
-
 
                     <div className="layout-singlepage-wrap">
 

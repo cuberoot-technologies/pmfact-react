@@ -73,7 +73,7 @@ const Textbar = () => {
             Home
           </Link>
           <Link
-            to="/news-and-videos"
+            to="/news-and-videos-home-main"
             className="textbar-link"
             style={hoveredLink === 'News & Videos' ? { ...linkStyle, color: 'rgb(27, 49, 106)', fontSize: '15px', fontWeight: 'bold' } : { ...linkStyle, fontWeight: 'bold' }}
             onMouseEnter={() => setHoveredLink('News & Videos')}
