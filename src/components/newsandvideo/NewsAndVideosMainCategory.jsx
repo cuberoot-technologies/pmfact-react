@@ -19,8 +19,8 @@ const NewsAndVideoCategories = () => {
                         <img src={Images} alt="" />
                     </div>
                     <div className="layout1-category-headings">
-                        <h6>Category title here, hello how are you?</h6>
-                        <h3 className="section-heading">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
+                        <h6>सोनिया गांधी ने 2004 में पहली बार रायबरेली से लड़ा चुनाव</h6>
+                        <h3 className="section-heading"> कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली </h3>
                         <div className="layout1-category-date"><span className="date category">Stephan Romero </span>
                             <span className="date" style={{ fontWeight:'700'}}>|</span>
                             <span className="date"> 9/03/2020 - 10:48</span>

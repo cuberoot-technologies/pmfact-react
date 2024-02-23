@@ -10,7 +10,7 @@ const NewsAndVideosMain = () => {
   return (
     <>
       <div className="main-news-and-videos-coverage">
-        <div className="pillarads">
+        <div className="pillarads right">
           <img src="https://placehold.co/160x600" alt="" />
         </div>
         <div style={{ position: "relative" }}>
@@ -80,7 +80,7 @@ const NewsAndVideosMain = () => {
             </div>
           </div>
         </div>
-        <div className="pillarads">
+        <div className="pillarads left">
           <img src="https://placehold.co/160x600" alt="" />
         </div>
       </div>
