@@ -4914,7 +4914,6 @@ font-size: var(--fs--2);
   }
 
   .advertisement:before {
-    /* width:320px !important; */
     position: absolute;
     content: "- Advertisement -";
     color: #999;
