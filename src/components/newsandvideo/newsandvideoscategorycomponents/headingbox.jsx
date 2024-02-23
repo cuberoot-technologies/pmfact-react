@@ -9,11 +9,11 @@ const Headingblock = () => {
                 <div className="layout5-category-date"><span className="date">भार्गवी शर्मा</span>
                     <span className="date">19/03/2020 - 10:48</span>
                     <div className="blog-page-share-options">
-                        <i className="bi bi-share-fill" style={{ color: '#e3a900' }}></i>
-                        <i className="bi bi-facebook" style={{ color: '#e3a900' }} ></i>
-                        <i className="bi bi-whatsapp" style={{ color: '#e3a900' }} ></i>
-                        <i className="bi bi-linkedin" style={{ color: '#e3a900' }}></i>
-                        <i className="bi bi-twitter-x" style={{ color: '#e3a900' }} ></i>
+                        <i className="bi bi-share-fill" style={{ color: 'rgb(27 49 106)' }}></i>
+                        <i className="bi bi-facebook" style={{ color: 'rgb(27 49 106)' }} ></i>
+                        <i className="bi bi-whatsapp" style={{ color: 'rgb(27 49 106)' }} ></i>
+                        <i className="bi bi-linkedin" style={{ color: 'rgb(27 49 106)' }}></i>
+                        <i className="bi bi-twitter-x" style={{ color: 'rgb(27 49 106)' }} ></i>
                     </div>
 
                 </div>

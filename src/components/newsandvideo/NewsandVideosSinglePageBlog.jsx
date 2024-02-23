@@ -41,10 +41,13 @@ const NewsAndVideoSinglePageBlog = () => {
                             <hr />
                             <Keywords />
                             <hr className="thick-hr" />
+                            <h3 className="layout-heading" style={{marginBlock:'20px', paddingTop:'0'}}>More News</h3>
                             <CategoryContent />
                         </div>
 
                         <div className="layout2-category">
+
+                           
 
                             <div className="aside-box-container" >
                                 <h3 className="layout-heading" style={{ marginBlockStart: '0', paddingTop: '0' }}>Trending News</h3>

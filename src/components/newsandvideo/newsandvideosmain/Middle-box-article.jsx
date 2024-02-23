@@ -13,6 +13,7 @@ const MiddleBoxArticle = () => {
                 <h3 class="aside-heading middle">कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली जाती है रायबरेली जाती है रायबरेली</h3>
                 <span class="date">Read More</span>
             </div>
+            <hr/>
             <div class="news-block">
                 <img src={Images} alt="" />
                 <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>Rahul on Bharat Jodo</h6>

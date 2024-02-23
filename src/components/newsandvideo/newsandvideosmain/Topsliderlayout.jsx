@@ -14,10 +14,6 @@ const Toplayout1 = () => {
                 <img src={Images} alt="" />
                 </div>
 
-                <div className="sliderimagebox">
-                <img src="https://placehold.co/200" alt="" />
-                </div>
-          
                 <div className="layout1-content">
                     <div className="article">
                         <h3 className="section-heading"> मामलों में उछाल के बीच इटली लोम्बार्डिया ने पहले 2 कोरोनोवायरस मौतों की रिपोर्ट दी कोरोनोवायरस मौतों की रिपोर्ट दी</h3>

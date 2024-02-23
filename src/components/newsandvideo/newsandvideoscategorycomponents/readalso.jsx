@@ -14,8 +14,8 @@ const Readalso = () => {
                         <img src={Images} alt="" />
                     </div>
                     <div className="read-also-text-box">
-                        <p>Rahul on Bharat Jodo Yatra</p>
-                        <h3 className="extranews-heading" style={{ paddingTop: '0', marginBottom: '0' }}>
+                        <p className="redheading">Rahul on Bharat Jodo Yatra</p>
+                        <h3 className="readalso-heading" style={{ paddingTop: '0', marginBottom: '0' }}>
                             Italy Lombardia reports first 2 coronavirus deaths amid jump
                             in cases
                         </h3>
