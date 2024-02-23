@@ -12,9 +12,9 @@ const CategoryContent = () => {
                 <div className="layout1-category-content-box">
                     <img src={Images} alt="" />
                     <div className="layout1-category-content-box-headings">
-                        <h6 className="redheading">Rahul on Bharat Jodo</h6>
-                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
-                        <p className="excerpt category">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</p>
+                        <h6 className="redheading">भारत जोड़ो पर राहुल</h6>
+                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च सकता है लॉन्च</h3>
+                        <p className="excerpt category" style={{marginTop:'10px'}}>रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. </p>
                         <span className="date">Read More</span>
                     </div>
                 </div>
@@ -28,9 +28,9 @@ const CategoryContent = () => {
                 <div className="layout1-category-content-box">
                     <img src={Images} alt="" />
                     <div className="layout1-category-content-box-headings">
-                        <h6 className="redheading">Rahul on Bharat Jodo</h6>
-                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
-                        <p className="excerpt category">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</p>
+                        <h6 className="redheading">भारत जोड़ो पर राहुल</h6>
+                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च सकता है लॉन्च</h3>
+                        <p className="excerpt category" style={{marginTop:'10px'}}>रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. </p>
                         <span className="date">Read More</span>
                     </div>
                 </div>
@@ -44,9 +44,9 @@ const CategoryContent = () => {
                 <div className="layout1-category-content-box">
                     <img src={Images} alt="" />
                     <div className="layout1-category-content-box-headings">
-                        <h6 className="redheading">Rahul on Bharat Jodo</h6>
-                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
-                        <p className="excerpt category">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</p>
+                        <h6 className="redheading">भारत जोड़ो पर राहुल</h6>
+                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च सकता है लॉन्च</h3>
+                        <p className="excerpt category" style={{marginTop:'10px'}}>रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. </p>
                         <span className="date">Read More</span>
                     </div>
                 </div>
@@ -59,9 +59,9 @@ const CategoryContent = () => {
                 <div className="layout1-category-content-box">
                     <img src={Images} alt="" />
                     <div className="layout1-category-content-box-headings">
-                        <h6 className="redheading">Rahul on Bharat Jodo</h6>
-                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
-                        <p className="excerpt category">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</p>
+                        <h6 className="redheading">भारत जोड़ो पर राहुल</h6>
+                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च सकता है लॉन्च</h3>
+                        <p className="excerpt category" style={{marginTop:'10px'}}>रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. </p>
                         <span className="date">Read More</span>
                     </div>
                 </div>
@@ -75,9 +75,9 @@ const CategoryContent = () => {
                 <div className="layout1-category-content-box">
                     <img src={Images} alt="" />
                     <div className="layout1-category-content-box-headings">
-                        <h6 className="redheading">Rahul on Bharat Jodo</h6>
-                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
-                        <p className="excerpt category">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases. Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</p>
+                        <h6 className="redheading">भारत जोड़ो पर राहुल</h6>
+                        <h3 className="category-main-heading" style={{ marginBlock: '0', paddingTop: '0' }}> अब प्रियंका गांधी को इस सीट से किया जा सकता है लॉन्च सकता है लॉन्च</h3>
+                        <p className="excerpt category" style={{marginTop:'10px'}}>रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. </p>
                         <span className="date">Read More</span>
                     </div>
                 </div>

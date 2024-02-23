@@ -14,10 +14,9 @@ const Readalso = () => {
                         <img src={Images} alt="" />
                     </div>
                     <div className="read-also-text-box">
-                        <p className="redheading">Rahul on Bharat Jodo Yatra</p>
+                        <p className="redheading">भारत जोड़ो पर राहुल</p>
                         <h3 className="readalso-heading" style={{ paddingTop: '0', marginBottom: '0' }}>
-                            Italy Lombardia reports first 2 coronavirus deaths amid jump
-                            in cases
+                        सोनिया गांधी ने 2004 में पहली बार रायबरेली से लड़ा चुनाव
                         </h3>
                         <span className="date">Read More</span>
                     </div>

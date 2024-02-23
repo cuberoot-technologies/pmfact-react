@@ -4885,6 +4885,13 @@ font-size: var(--fs--2);
     white-space: normal;
   }
 
+  .excerpt.mainblock{
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+  }
+
   .excerpt.img-desc{
     font-size: var(--fs--3);
     color: #646464;

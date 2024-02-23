@@ -9,7 +9,7 @@ const Title = () => {
             <div className="main-blog-page-image">
                 <img src={Images} alt="" />
                 <div className="blogheading-single-page">
-                    <p className="excerpt img-desc">Italy Lombardia reports 2 first</p>
+                    <p className="excerpt img-desc">भारत जोड़ो पर राहुल</p>
                     <hr />
                 </div>
             </div>
