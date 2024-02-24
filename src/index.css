@@ -78,7 +78,7 @@
   p {
     font-size: 12px;
     color: #000;
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
     padding-bottom: 0;
   }
 
@@ -5124,8 +5124,6 @@ font-size: var(--fs--2);
 
   .layout2-category {
     width: 350px;
-
-    /* margin-block-start: calc(9*var(--gutter-size)); */
   }
 
   .layout1-category-headings {
@@ -5138,7 +5136,6 @@ font-size: var(--fs--2);
     font-size: var(--fs--1);
     text-overflow: ellipsis;
     line-height: var(--fs-1);
-    /* margin-block-end: var(--gutter-size); */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
