@@ -30,15 +30,30 @@ const NewsAndVideosMain = () => {
                 <AsideBoxArticle />
               </div>
             </div>
+          </div>
+        </div>
+        <div className="pillarads left">
+          <img src="https://placehold.co/160x600" alt="" />
+        </div>
+      </div>
 
-            <div className="adbox">
-              <img src="https://placehold.co/700x80" alt="" />
-            </div>
 
-            <div className="layout3" style={{ marginTop: '2rem' }}>
-              <ExtraNews />
-            </div>
 
+      <div className="adbox">
+        <img src="https://placehold.co/700x80" alt="" />
+      </div>
+
+      <div className="layout3" style={{ marginTop: '2rem' }}>
+        <div className="layout-3background">
+          <div className="layout-3content">
+            <ExtraNews />
+          </div>
+        </div>
+      </div>
+
+      <div className="main-news-and-videos-coverage">
+        <div style={{ position: "relative" }}>
+          <div className="content">
             <div className="layout2-pre shorts">
               <h3 className="layout-heading" style={{ marginInline: 'var(--gutter-size)' }}>Parliamentary News</h3>
               <div className="layout2 shorts">
@@ -58,10 +73,15 @@ const NewsAndVideosMain = () => {
                 </div>
               </div>
             </div>
-            <div className="adbox">
-              <img src="https://placehold.co/700x80" alt="" />
-            </div>
-
+          </div>
+        </div>
+      </div>
+      <div className="adbox">
+        <img src="https://placehold.co/700x80" alt="" />
+      </div>
+      <div className="main-news-and-videos-coverage">
+        <div style={{ position: "relative" }}>
+          <div className="content">
             <div className="layout2-pre">
               <div className="layout2">
                 <div className="aside-box-container mobile">
@@ -80,10 +100,8 @@ const NewsAndVideosMain = () => {
             </div>
           </div>
         </div>
-        <div className="pillarads left">
-          <img src="https://placehold.co/160x600" alt="" />
-        </div>
       </div>
+
     </>
   );
 };

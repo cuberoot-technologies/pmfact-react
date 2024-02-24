@@ -13,7 +13,7 @@ const NewsAndVideoSinglePageBlog = () => {
     return (
         <>
             <div className="main-news-and-videos-coverage">
-                <div className="pillarads">
+            <div className="pillarads left">
                     <img src="https://placehold.co/160x600" alt="" />
                 </div>
 
@@ -80,9 +80,9 @@ const NewsAndVideoSinglePageBlog = () => {
 
                 </div>
 
-                <div className="pillarads">
-                    <img src="https://placehold.co/160x600" alt="" />
-                </div>
+                <div className="pillarads right">
+          <img src="https://placehold.co/160x600" alt="" />
+        </div>
 
             </div>
 
