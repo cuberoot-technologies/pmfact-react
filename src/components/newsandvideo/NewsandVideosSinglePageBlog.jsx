@@ -17,7 +17,7 @@ const NewsAndVideoSinglePageBlog = () => {
                     <img src="https://placehold.co/160x600" alt="" />
                 </div>
 
-                <div className="content">
+                <div className="content singlepage">
                     <Headingblock />
                     <hr />
 

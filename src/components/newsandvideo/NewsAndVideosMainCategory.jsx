@@ -51,7 +51,7 @@ const NewsAndVideoCategories = () => {
                             </div>
 
                             <div className="aside-ad-contentbox">
-                                <div className="aside-content" style={{paddingBlockStart:'0'}}>
+                                <div className="aside-content" style={{paddingBlock:'0'}}>
                                     <div class="advertisement square-ad">
                                         <img src="https://placehold.co/300x250" alt="" />
                                     </div>
