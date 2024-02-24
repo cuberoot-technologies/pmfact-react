@@ -5129,7 +5129,7 @@ font-size: var(--fs--2);
   }
 
   .layout1-category-headings {
-    margin-block: calc(2* var(--gutter-size));
+    margin-block: calc(1.5* var(--gutter-size));
     padding-inline: var(--gutter-size);
   }
 
@@ -5137,8 +5137,8 @@ font-size: var(--fs--2);
     color: red;
     font-size: var(--fs--1);
     text-overflow: ellipsis;
-    line-height: var(--fs-0);
-    margin-block: var(--gutter-size);
+    line-height: var(--fs-1);
+    /* margin-block-end: var(--gutter-size); */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
