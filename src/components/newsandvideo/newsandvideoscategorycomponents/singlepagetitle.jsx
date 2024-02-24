@@ -6,11 +6,11 @@ const Title = () => {
 
     return (
         <>
-            <div className="main-category-page-image">
+            <div className="main-blog-page-image">
                 <img src={Images} alt="" />
                 <div className="blogheading-single-page">
-                    <p className="excerpt" style={{ color: '#444' }}>Italy Lombardia reports 2 first</p>
-                    <hr className="thick-hr" />
+                    <p className="excerpt img-desc">भारत जोड़ो पर राहुल</p>
+                    <hr />
                 </div>
             </div>
             <BlogPageContent />

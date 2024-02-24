@@ -8,7 +8,7 @@ import { BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <div className="footer" style={{zIndex:'15'}}>
+      <div className="footer" style={{zIndex:'999'}}>
         <div className="container">
           <div className="footer-wrapper">
             <div className="footer-wrapper-left">

@@ -8,9 +8,9 @@ const NewsAndVideoCategories = () => {
     return (
         <>
             <div className="main-news-and-videos-coverage">
-                <div className="pillarads">
-                    <img src="https://placehold.co/160x600" alt="" />
-                </div>
+            <div className="pillarads right">
+          <img src="https://placehold.co/160x600" alt="" />
+        </div>
 
                 <div className="content">
 
@@ -19,8 +19,8 @@ const NewsAndVideoCategories = () => {
                         <img src={Images} alt="" />
                     </div>
                     <div className="layout1-category-headings">
-                        <h6>Category title here, hello how are you?</h6>
-                        <h3 className="section-heading">Italy Lombardia Reports first 2 coronavirus deaths amid jump in cases</h3>
+                        <h6>सोनिया गांधी ने 2004 में पहली बार रायबरेली से लड़ा चुनाव</h6>
+                        <h3 className="section-heading"> कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली </h3>
                         <div className="layout1-category-date"><span className="date category">Stephan Romero </span>
                             <span className="date" style={{ fontWeight:'700'}}>|</span>
                             <span className="date"> 9/03/2020 - 10:48</span>
@@ -51,7 +51,7 @@ const NewsAndVideoCategories = () => {
                             </div>
 
                             <div className="aside-ad-contentbox">
-                                <div className="aside-content" style={{paddingBlockStart:'0'}}>
+                                <div className="aside-content" style={{paddingBlock:'0'}}>
                                     <div class="advertisement square-ad">
                                         <img src="https://placehold.co/300x250" alt="" />
                                     </div>
@@ -72,32 +72,12 @@ const NewsAndVideoCategories = () => {
 
                         </div>
                     </div>
-
-
-                    {/* <div className="adbox" style={{ marginBlock: 'var(--gutter-size)' }}>
-                        <img src="https://placehold.co/700x80" alt="" />
-                    </div> */}
-{/* 
-                    <div className="layout-category-wrap">
-
-                        <div className="layout1-category">
-                            <CategoryContent />
-                        </div>
-
-                        <div className="layout2-category">
-                            <div className="aside-box-container" >
-                                <h3 className="layout-heading">MPs News</h3>
-                                <AsideBoxArticle />
-                            </div>
-
-                        </div>
-                    </div> */}
                 </div>
 
 
-                <div className="pillarads">
-                    <img src="https://placehold.co/160x600" alt="" />
-                </div>
+                <div className="pillarads left">
+          <img src="https://placehold.co/160x600" alt="" />
+        </div>
 
             </div>
 

@@ -13,11 +13,11 @@ const NewsAndVideoSinglePageBlog = () => {
     return (
         <>
             <div className="main-news-and-videos-coverage">
-                <div className="pillarads">
+            <div className="pillarads left">
                     <img src="https://placehold.co/160x600" alt="" />
                 </div>
 
-                <div className="content">
+                <div className="content singlepage">
                     <Headingblock />
                     <hr />
 
@@ -41,10 +41,13 @@ const NewsAndVideoSinglePageBlog = () => {
                             <hr />
                             <Keywords />
                             <hr className="thick-hr" />
+                            <h3 className="layout-heading" style={{marginBlock:'20px', paddingTop:'0'}}>More News</h3>
                             <CategoryContent />
                         </div>
 
                         <div className="layout2-category">
+
+                           
 
                             <div className="aside-box-container" >
                                 <h3 className="layout-heading" style={{ marginBlockStart: '0', paddingTop: '0' }}>Trending News</h3>
@@ -77,9 +80,9 @@ const NewsAndVideoSinglePageBlog = () => {
 
                 </div>
 
-                <div className="pillarads">
-                    <img src="https://placehold.co/160x600" alt="" />
-                </div>
+                <div className="pillarads right">
+          <img src="https://placehold.co/160x600" alt="" />
+        </div>
 
             </div>
 
