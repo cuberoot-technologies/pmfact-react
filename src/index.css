@@ -4608,10 +4608,6 @@
   .newswrapper {
     display: flex;
   }
-/* 
-  .pillarads {
-    display: none;
-  } */
 
   #categoryimg img {
     height: 50vh;
@@ -4768,14 +4764,15 @@ font-size: var(--fs--2);
     flex-wrap: wrap;
   }
 
-  .pillarads {
-    position: fixed;
-    z-index: 998;
-  }
   .content.singlepage {
     box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.219); 
 }
 
+  .pillarads {
+    position: fixed;
+    display: none;
+    z-index: 998;
+  }
   
   .pillarads.left {
     left: 0;
@@ -4790,8 +4787,6 @@ font-size: var(--fs--2);
     width: 160px; 
     height: 700px;
   }
-
-
 
   .layout1 {
     display: flex;
@@ -5253,110 +5248,115 @@ font-size: var(--fs--2);
     margin-inline: auto;
   }
 
+  #newscontent-container {
+    max-width: 78%;
+  }
+
+  .main-box-article.newsbox {
+    width: 460px
+  }
+
+  .heading-aside-box-mobile {
+    display: block;
+  }
+
+  .layout2.shorts,
+  .layout2-pre.shorts {
+    background: #fff;
+  }
+
+  .layout1 img {
+    display: flex;
+  }
+
+  .sliderimagebox {
+    display: none;
+  }
+
+  .socialIcons {
+    display: flex;
+  }
+
+  .date-icon {
+    display: flex;
+  }
+
+  .aside-content {
+    padding-block: var(--gutter-size);
+    width: calc(var(--gutter-size) + var(--square-ad-width));
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  .aside-box-container.mobile {
+    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layout1-content {
+    display: flex;
+    flex-direction: column;
+    /* margin-block: auto; */
+    margin-block-start: 1rem;
+    margin-inline-start: 1rem;
+  }
+
+  .content {
+    width: min(100vw - 2 * var(--vertical-ad-width), var(--content-width));
+  }
+
+  .content {
+    /* background: #c9c9c9; */
+    min-height: 100vh;
+    /* padding: var(--gutter-size); */
+  }
+
+  .category-page-trending {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #category-page-box-news {
+    text-align: left !important;
+  }
+
+  .singlepagelink h2 {
+    width: 60%;
+  }
+
+  #blog-page-container {
+    flex-direction: row;
+  }
+
+  .relatednews-image img {
+    height: 150px;
+    width: 200px
+  }
+
+  #related-news-box {
+    width: 200px !important;
+  }
+
+  .read-also-image-box {
+    width: 180px;
+  }
+
+  .read-also-text-box p+h2+p {
+    display: block;
+    color: #222;
+  }
+
+  .read-also-image-box img {
+    width: 150px;
+    height: 100px;
+  }
+
   /* media query ******* */
   @media only screen and (min-width: 991px) {
-    #newscontent-container {
-      max-width: 78%;
-    }
 
-    .main-box-article.newsbox {
-      width: 460px
-    }
-
-    .heading-aside-box-mobile {
-      display: block;
-    }
-
-    .layout2.shorts,
-    .layout2-pre.shorts {
-      background: #fff;
-    }
-
-    .layout1 img {
+    .pillarads{
       display: flex;
-    }
-
-    .sliderimagebox {
-      display: none;
-    }
-
-    .socialIcons {
-      display: flex;
-    }
-
-    .date-icon {
-      display: flex;
-    }
-
-    .aside-content {
-      padding-block: var(--gutter-size);
-      width: calc(var(--gutter-size) + var(--square-ad-width));
-      flex-shrink: 0;
-      display: flex;
-    }
-
-    .aside-box-container.mobile {
-      display: none;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .layout1-content {
-      display: flex;
-      flex-direction: column;
-      /* margin-block: auto; */
-      margin-block-start: 1rem;
-      margin-inline-start: 1rem;
-    }
-
-    .content {
-      width: min(100vw - 2 * var(--vertical-ad-width), var(--content-width));
-    }
-
-    .content {
-      /* background: #c9c9c9; */
-      min-height: 100vh;
-      /* padding: var(--gutter-size); */
-    }
-
-    .category-page-trending {
-      display: flex;
-      flex-direction: column;
-    }
-
-    #category-page-box-news {
-      text-align: left !important;
-    }
-
-    .singlepagelink h2 {
-      width: 60%;
-    }
-
-    #blog-page-container {
-      flex-direction: row;
-    }
-
-    .relatednews-image img {
-      height: 150px;
-      width: 200px
-    }
-
-    #related-news-box {
-      width: 200px !important;
-    }
-
-    .read-also-image-box {
-      width: 180px;
-    }
-
-    .read-also-text-box p+h2+p {
-      display: block;
-      color: #222;
-    }
-
-    .read-also-image-box img {
-      width: 150px;
-      height: 100px;
     }
 
     .parliament-news-video-mp-news-list-content p+h2+p {
@@ -5366,12 +5366,6 @@ font-size: var(--fs--2);
       width: 60%;
       display: block;
     }
-
-    /* .pillarads {
-      display: block;
-     
-    }
-     */
 
     .fortyimage img {
       height: 25vh !important;
