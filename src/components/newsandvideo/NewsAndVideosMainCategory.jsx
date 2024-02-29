@@ -36,7 +36,7 @@ const NewsAndVideoCategories = () => {
                         </div>
 
                         <div className="layout2-category">
-                            <div className="aside-ad-contentbox">
+                            <div className="aside-ad-contentbox category">
                                 <div className="aside-content" style={{ paddingBlockStart: '0' }}>
                                     <div class="advertisement square-ad">
                                         <img src="https://placehold.co/300x250" alt="" />
@@ -46,7 +46,7 @@ const NewsAndVideoCategories = () => {
                                 <AsideBoxArticle />
                             </div>
 
-                            <div className="aside-ad-contentbox">
+                            <div className="aside-ad-contentbox category">
                                 <div className="aside-content" style={{ paddingBlock: '0' }}>
                                     <div class="advertisement square-ad">
                                         <img src="https://placehold.co/300x250" alt="" />
@@ -56,7 +56,7 @@ const NewsAndVideoCategories = () => {
                                 <AsideBoxArticle />
                             </div>
 
-                            <div className="aside-ad-contentbox">
+                            <div className="aside-ad-contentbox category">
                                 <div className="aside-content" style={{ paddingBlockStart: '0' }}>
                                     <div class="advertisement square-ad">
                                         <img src="https://placehold.co/300x250" alt="" />

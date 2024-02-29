@@ -194,14 +194,14 @@ const NewsAndVideoSinglePageBlog = () => {
                         <h3 className="section-heading">{post && post.title}</h3>
                         <div className="layout5-category-date">
                             <span className="date">भार्गवी शर्मा</span>
+                            <span className="date" style={{ fontWeight: '700' }}>|</span>
                             <span className="date">19/03/2020 - 10:48</span>
-                            <div className="blog-page-share-options">
+                            <span className="date" style={{ fontWeight: '700' }}>|</span>
                                 <i className="bi bi-share-fill" style={{ color: 'rgb(27 49 106)' }}></i>
                                 <i className="bi bi-facebook" style={{ color: 'rgb(27 49 106)' }} ></i>
                                 <i className="bi bi-whatsapp" style={{ color: 'rgb(27 49 106)' }} ></i>
                                 <i className="bi bi-linkedin" style={{ color: 'rgb(27 49 106)' }}></i>
-                                <i className="bi bi-twitter-x" style={{ color: 'rgb(27 49 106)' }} ></i>
-                            </div>
+                                <i className="bi bi-twitter-x" style={{ color: 'rgb(27 49 106)' }} ></i>          
                         </div>
                         <p className="subheading-single-blog-page" style={{ marginBlockStart: 'var(--gutter-size)' }}>एमएसपी की गारंटी की मांग को लेकर किसान आंदोलन दिल्ली कूच के लिए हरियाणा -पंजाब बॉर्डर पर डटे हुए हैं. उधर प्रधानमंत्री नरेंद्र मोदी गुजरात में किसानों को लेकर किसान आंदोलन दिल्ली कूच के लिए हरियाणा -पंजाब बॉर्डर पर डटे हुए हैं. </p>
                     </div>
