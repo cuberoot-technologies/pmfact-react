@@ -22,15 +22,15 @@ const Footer = () => {
             <div className="footer-wrapper-middle">
               <h5>Quick Links</h5>
               <p>Home</p>
-              <p>Our MPs</p>
-              <p>PF Experts</p>
+              {/* <p>Our MPs</p>
+              <p>PF Experts</p> */}
               <p>Public Voice</p>
               <p>Wish your Mp</p>
               <p>Rate Your MPs</p>
               <p>News & Videos</p>
-              <p>MPs Performance</p>
+              {/* <p>MPs Performance</p>
               <p>Parliamentry Blog</p>
-              <p>Parliament Performance</p>
+              <p>Parliament Performance</p> */}
             </div>
             <div className="footer-wrapper-right">
               <h5>About Parliamentary Fact</h5>
