@@ -15,10 +15,10 @@ const Headingblock = () => {
                         <i className="bi bi-linkedin" style={{ color: 'rgb(27 49 106)' }}></i>
                         <i className="bi bi-twitter-x" style={{ color: 'rgb(27 49 106)' }} ></i>
                     </div>
-
                 </div>
                 <p className="subheading-single-blog-page" style={{ marginBlockStart: 'var(--gutter-size)' }}>एमएसपी की गारंटी की मांग को लेकर किसान आंदोलन दिल्ली कूच के लिए हरियाणा -पंजाब बॉर्डर पर डटे हुए हैं. उधर प्रधानमंत्री नरेंद्र मोदी गुजरात में किसानों को लेकर किसान आंदोलन दिल्ली कूच के लिए हरियाणा -पंजाब बॉर्डर पर डटे हुए हैं.  </p>
             </div>
+            
         </>
 
     );

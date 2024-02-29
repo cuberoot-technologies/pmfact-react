@@ -1,3 +1,4 @@
+// CategoryContent.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,7 +27,7 @@ const CategoryContent = () => {
             <div className="layout1-category-content">
                 {posts.map((post, index) => (
                     <React.Fragment key={post.id}>
-                        <Link to={`/post/${post.slug}/${post.id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                        <Link to={`/news-and-videos-home-main-page/${post.id}`} style={{ textDecoration: 'none', color: '#212529' }}>
                             <div className="layout1-category-content-box">
                                 {post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0] &&
                                     <img src={post._embedded['wp:featuredmedia'][0].source_url} alt={post.slug} className="post-thumbnail" />
@@ -43,12 +44,12 @@ const CategoryContent = () => {
                                 </div>
                             </div>
                         </Link>
-                        {index === Math.ceil(posts.length / 2) - 1 && // Render ad after the first half of posts
+                        {index === Math.ceil(posts.length / 2) - 1 &&
                             <div className="adbox" style={{ marginBlock: 'var(--gutter-size)' }}>
                                 <img src="https://placehold.co/700x80" alt="" />
                             </div>
                         }
-                        {index !== posts.length - 1 && // Render mpline only for posts except the last one
+                        {index !== posts.length - 1 &&
                             <div className="mplinecontainer">
                                 <hr className="mpline" />
                             </div>

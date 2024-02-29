@@ -32,11 +32,7 @@ const NewsAndVideoCategories = () => {
                     <div className="layout-category-wrap">
 
                         <div className="layout1-category">
-                            <CategoryContent />
-                            {/* <div className="adbox" style={{ marginBlock: 'var(--gutter-size)' }}>
-                                <img src="https://placehold.co/700x80" alt="" />
-                            </div>
-                            <CategoryContent /> */}
+                        <CategoryContent />
                         </div>
 
                         <div className="layout2-category">
