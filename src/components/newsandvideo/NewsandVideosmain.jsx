@@ -105,7 +105,7 @@ const NewsAndVideosMain = () => {
           <div className="content">
             <div className="layout2-pre">
               <div className="layout2">
-                <div className="aside-box-container mobile">
+                <div className="aside-box-container">
                   <h3 className="layout-heading">{categories.length > 7 && categories[7].name}</h3>
                   <NewsBoxArticle />
                 </div>
