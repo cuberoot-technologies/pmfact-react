@@ -1,25 +1,62 @@
-import React from "react";
-import Images from "../../../assets/Images.jpeg"
+import React, { useState, useEffect } from "react";
 
+const MainBoxArticle = ({ categoryId }) => {
+  const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-const MainBoxArticle = () => {
+  useEffect(() => {
+    fetchPosts();
+  }, [categoryId]);
 
-    return (
-        <>
-            <div className="main-box-article">
-                <div class="news-block main-big-news">
-                    <img src={Images} alt="" />
-                    <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>भारत जोड़ो पर राहुल</h6>
-                    <h3 class="section-heading main-article">Rajya Sabha Election 2024: राजस्थान से निर्विरोध राज्यसभा सांसद चुनी गईं सोनिया गांधी, जानें लिस्ट में और कौन-कौन?</h3>
-                    <p class="excerpt mainblock" style={{marginBlockStart:'0rem'}}>
-                    रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. यह सीट गांधी परिवार की विरासत वाली रही है. फिरोज गांधी, इंदिरा गांधी, अरुण नेहरू, शीला कौल जैसे लोग इस सीट से सांसद रहे हैं. रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. यह सीट गांधी परिवार की विरासत वाली रही है. फिरोज गांधी, इंदिरा गांधी, अरुण नेहरू, शीला कौल जैसे लोग इस सीट से सांसद रहे हैं. रायबरेली की सीट कांग्रेस की सबसे सुरक्षित सीट मानी जाती है. 1952 के पहले लोकसभा चुनाव के बाद से कांग्रेस यहां सिर्फ तीन बार हारी है. यह सीट गांधी परिवार की विरासत वाली रही है. फिरोज गांधी, इंदिरा गांधी, अरुण नेहरू, शीला कौल जैसे लोग इस सीट से सांसद रहे हैं.
-                    </p>
-                </div>
-            </div>
+  const fetchPosts = () => {
+    fetch(`https://parliamentaryfact.com/wp-json/wp/v2/posts?categories=${categoryId}&_embed&per_page=3`)
+      .then(response => response.json())
+      .then(data => {
+        console.log('Response data:', data);
+        const extractedPosts = data.map(post => ({
+          title: post.title.rendered,
+          excerpt: post.excerpt.rendered,
+          featuredImage: post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : null
+        }));
+        setPosts(extractedPosts);
+        setIsLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching posts:', error);
+        setIsLoading(false);
+      }); 
+  };
 
-        </>
+  
+  const defaultData = {
+    title: "Default Title",
+    excerpt: "Default Excerpt",
+    featuredImage: "https://placehold.co/300x200" 
+  };
 
-    );
+  return (
+    <div className="main-box-article">
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : posts.length > 0 ? (
+        posts.map((post, index) => (
+          <div key={index} className="news-block main-big-news">
+            {post.featuredImage && <img src={post.featuredImage} alt="" />}
+            <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>{post.title}</h6>
+            <h3 className="section-heading main-article">{post.title}</h3>
+            <p class="excerpt mainblock" style={{marginBlockStart:'0rem'}} dangerouslySetInnerHTML={{__html: post.excerpt}}></p>
+          </div>
+        ))
+      ) : (
+        <div className="news-block main-big-news">
+          <img src={defaultData.featuredImage} alt="" />
+          <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>{defaultData.title}</h6>
+          <h3 className="section-heading main-article">{defaultData.title}</h3>
+          <p class="excerpt mainblock" style={{marginBlockStart:'0rem'}}  dangerouslySetInnerHTML={{__html: defaultData.excerpt}}></p>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default MainBoxArticle;

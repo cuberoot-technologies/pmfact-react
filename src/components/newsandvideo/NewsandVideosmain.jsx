@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import Toplayout1 from "./newsandvideosmain/Topsliderlayout";
 import MainBoxArticle from "./newsandvideosmain/Main-big-news";
@@ -18,6 +19,7 @@ const NewsAndVideosMain = () => {
       .then(response => response.json())
       .then(response => {
         const categoriesData = response.map(category => ({
+          id: category.id,
           name: category.name,
           slug: category.slug
         }));
@@ -39,7 +41,9 @@ const NewsAndVideosMain = () => {
             <div className="layout2">
               <div className="aside-box-container mobile">
                 <h3 className="layout-heading">{categories.length > 0 && categories[0].name}</h3>
-                <MainBoxArticle />
+                <div className="main-box-article">
+                  <MainBoxArticle categoryId={categories.length > 0 && categories[0].id} />
+                </div>
               </div>
               <div className="aside-box-container mobile">
                 <h3 className="layout-heading">{categories.length > 1 && categories[1].name}</h3>
@@ -77,7 +81,7 @@ const NewsAndVideosMain = () => {
               <div className="layout2 shorts">
                 <div className="aside-box-container mobile">
                   <h3 className="layout-heading">{categories.length > 4 && categories[4].name}</h3>
-                  <MainBoxArticle />
+                  <MainBoxArticle categoryId={categories.length > 4 && categories[4].id} />
                 </div>
                 <div className="aside-box-container mobile">
                   <h3 className="layout-heading">{categories.length > 5 && categories[5].name}</h3>
