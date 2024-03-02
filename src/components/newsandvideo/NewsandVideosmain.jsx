@@ -47,7 +47,7 @@ const NewsAndVideosMain = () => {
               </div>
               <div className="aside-box-container mobile">
                 <h3 className="layout-heading">{categories.length > 1 && categories[1].name}</h3>
-                <MiddleBoxArticle />
+                <MiddleBoxArticle categoryId={categories.length > 1 && categories[1].id} />
               </div>
               <div className="aside-box-container">
                 <h3 className="layout-heading">{categories.length > 2 && categories[2].name}</h3>
@@ -85,7 +85,7 @@ const NewsAndVideosMain = () => {
                 </div>
                 <div className="aside-box-container mobile">
                   <h3 className="layout-heading">{categories.length > 5 && categories[5].name}</h3>
-                  <MiddleBoxArticle />
+                  <MiddleBoxArticle categoryId={categories.length > 5 && categories[5].id} />
                 </div>
                 <div className="aside-ad-contentbox">
                   <div className="aside-content">
