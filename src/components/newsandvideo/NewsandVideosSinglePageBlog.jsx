@@ -31,7 +31,10 @@ const NewsAndVideoSinglePageBlog = () => {
                     const postData = {
                         title: response.title.rendered,
                         featuredImg: post_featured_img,
-                        content: post_content
+                        content: post_content,
+                        date: response.date,
+                        author: response.author.name,
+                        figureCaption: response._embedded['wp:featuredmedia'][0].caption.rendered
                     };
                     setPost(postData);
                 })
@@ -193,9 +196,9 @@ const NewsAndVideoSinglePageBlog = () => {
                     <div className="layout1-category-headings" style={{ marginBlockEnd: '0' }}>
                         <h3 className="section-heading">{post && post.title}</h3>
                         <div className="layout5-category-date">
-                            <span className="date">भार्गवी शर्मा</span>
+                            <span className="date">{post && post.author}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
-                            <span className="date">19/03/2020 - 10:48</span>
+                            <span className="date">{post && new Date(post.date).toLocaleString()}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
                                 <i className="bi bi-share-fill" style={{ color: 'rgb(27 49 106)' }}></i>
                                 <i className="bi bi-facebook" style={{ color: 'rgb(27 49 106)' }} ></i>
@@ -203,7 +206,7 @@ const NewsAndVideoSinglePageBlog = () => {
                                 <i className="bi bi-linkedin" style={{ color: 'rgb(27 49 106)' }}></i>
                                 <i className="bi bi-twitter-x" style={{ color: 'rgb(27 49 106)' }} ></i>          
                         </div>
-                        <p className="subheading-single-blog-page" style={{ marginBlockStart: 'var(--gutter-size)' }}>एमएसपी की गारंटी की मांग को लेकर किसान आंदोलन दिल्ली कूच के लिए हरियाणा -पंजाब बॉर्डर पर डटे हुए हैं. उधर प्रधानमंत्री नरेंद्र मोदी गुजरात में किसानों को लेकर किसान आंदोलन दिल्ली कूच के लिए हरियाणा -पंजाब बॉर्डर पर डटे हुए हैं. </p>
+                        <p className="subheading-single-blog-page" style={{ marginBlockStart: 'var(--gutter-size)' }}>{post && post.title}</p>
                     </div>
                     <hr />
                     <div className="layout-singlepage-wrap">
@@ -211,7 +214,7 @@ const NewsAndVideoSinglePageBlog = () => {
                             <div className="main-blog-page-image">
                                 {post && <img src={post.featuredImg} alt={post.title} />}
                                 <div className="blogheading-single-page">
-                                    <p className="excerpt img-desc">भारत जोड़ो पर राहुल</p>
+                                    <p className="excerpt img-desc">{post && post.figureCaption}</p>
                                     <hr />
                                 </div>
                             </div>
