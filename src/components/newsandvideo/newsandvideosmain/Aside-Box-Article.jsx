@@ -27,8 +27,8 @@ const AsideBoxArticle = ({ categoryId }) => {
     return (
         <div className="aside-box-article" style={{ marginBlockStart: '1.8rem' }}>
             {posts.map(post => (
-                <Link key={post.id} to={`/news-and-videos-home-main-page/${post.id}`} style={{ textDecoration: 'none', color: '#212529' }}> 
-                    <div className="news-block view2" style={{ marginBottom: 'var(--gutter-size)' }}>
+                <Link key={post.id} to={`/news-and-videos-home-main-page/${post.id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <div className="news-block view2" >
                         {post._embedded && post._embedded['wp:featuredmedia'] && (
                             <img
                                 src={post._embedded['wp:featuredmedia'][0].source_url}
@@ -37,10 +37,9 @@ const AsideBoxArticle = ({ categoryId }) => {
                         )}
                         <h3 className="aside-heading">{post.title.rendered}</h3>
                     </div>
+                    <hr style={{ marginBlock: '1rem', width:'100%' }} />
                 </Link>
-               
             ))}
-            <hr />
         </div>
     );
 };

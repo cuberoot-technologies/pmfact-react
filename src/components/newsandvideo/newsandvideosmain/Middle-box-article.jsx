@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; 
 
-const MainBoxArticle = ({ categoryId }) => {
+const MiddleBoxArticle = ({ categoryId }) => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -39,7 +39,7 @@ const MainBoxArticle = ({ categoryId }) => {
                             <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>{post.title.rendered}</h6>
                             <h3 className="aside-heading middle">{post.title.rendered}</h3>
                         </Link>
-                        <hr /> 
+                        <hr/> 
                     </div>
                 ))}
             </div>
@@ -47,4 +47,4 @@ const MainBoxArticle = ({ categoryId }) => {
     );
 };
 
-export default MainBoxArticle;
+export default MiddleBoxArticle;
