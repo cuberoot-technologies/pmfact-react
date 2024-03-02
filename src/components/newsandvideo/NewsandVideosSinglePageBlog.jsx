@@ -33,7 +33,8 @@ const NewsAndVideoSinglePageBlog = () => {
                         featuredImg: post_featured_img,
                         content: post_content,
                         date: response.date,
-                        author: response.author.name,
+                        authorName: response.author.name,
+                   
                         figureCaption: response._embedded['wp:featuredmedia'][0].caption.rendered
                     };
                     setPost(postData);
@@ -196,7 +197,7 @@ const NewsAndVideoSinglePageBlog = () => {
                     <div className="layout1-category-headings" style={{ marginBlockEnd: '0' }}>
                         <h3 className="section-heading">{post && post.title}</h3>
                         <div className="layout5-category-date">
-                            <span className="date">{post && post.author}</span>
+                            <span className="date">{post && post.authorName}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
                             <span className="date">{post && new Date(post.date).toLocaleString()}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
