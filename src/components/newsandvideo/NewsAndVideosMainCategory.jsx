@@ -2,8 +2,11 @@ import React from "react";
 import Images from "../../assets/Images.jpeg"
 import AsideBoxArticle from "./newsandvideosmain/Aside-Box-Article";
 import CategoryContent from "./newsandvideoscategorycomponents/category-content";
+import { useParams } from "react-router-dom";
 
 const NewsAndVideoCategories = () => {
+    const { categoryId } = useParams();
+
 
     return (
         <>
@@ -32,7 +35,7 @@ const NewsAndVideoCategories = () => {
                     <div className="layout-category-wrap">
 
                         <div className="layout1-category">
-                        <CategoryContent />
+                        <CategoryContent categoryId={categoryId} />
                         </div>
 
                         <div className="layout2-category">

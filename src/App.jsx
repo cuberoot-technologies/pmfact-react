@@ -74,9 +74,9 @@ const App = () => {
 
         {/*News and video********** */}
         <Route path="/news-and-videos-home-main" element={<NewsAndVideosMain />} />
-        <Route path="/news-and-videos-home-main-category" element={<NewsAndVideoCategories />} />
-                <Route path="/news-and-videos-home-main-page/:id" element={<NewsAndVideoSinglePageBlog />} />
-        <Route path="/news-and-videos-details" element={<NewsAndVideoDetails/>} />
+        <Route path="/news-and-videos-home-main-category/:categoryId" element={<NewsAndVideoCategories />} />
+        <Route path="/news-and-videos-home-main-page/:id" element={<NewsAndVideoSinglePageBlog />} />
+        <Route path="/news-and-videos-details" element={<NewsAndVideoDetails />} />
         {/* our team *********** */}
         <Route path="/our-expert" element={<OurExperts />} />
         <Route path="/our-expert-about" element={<OurExpertAbout />} />

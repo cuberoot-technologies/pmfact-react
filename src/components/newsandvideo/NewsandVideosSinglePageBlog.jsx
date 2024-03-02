@@ -219,7 +219,7 @@ const NewsAndVideoSinglePageBlog = () => {
                             {renderAdditionalContent()}
 
                             <h3 className="layout-heading" style={{ marginBlock: '20px', paddingTop: '0' }}>More News</h3>
-                        <CategoryContent />
+                        <CategoryContent categoryId={5} />
                         </div>
                         <div className="layout2-category">
                             <div className="aside-box-container" >

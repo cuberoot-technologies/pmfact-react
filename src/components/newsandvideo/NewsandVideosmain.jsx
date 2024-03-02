@@ -6,6 +6,7 @@ import MiddleBoxArticle from "./newsandvideosmain/Middle-box-article";
 import AsideBoxArticle from "./newsandvideosmain/Aside-Box-Article";
 import ExtraNews from "./newsandvideosmain/extranews";
 import NewsBoxArticle from "./newsandvideosmain/NewsBoxArticle";
+import { Link } from "react-router-dom";
 
 const NewsAndVideosMain = () => {
   const [categories, setCategories] = useState([]);
@@ -40,17 +41,25 @@ const NewsAndVideosMain = () => {
 
             <div className="layout2">
               <div className="aside-box-container mobile">
-                <h3 className="layout-heading">{categories.length > 0 && categories[0].name}</h3>
+
+                <Link to={`/news-and-videos-home-main-category/${categories.length > 0 && categories[0].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                  <h3 className="layout-heading">{categories.length > 0 && categories[0].name}</h3>
+                </Link>
+
                 <div className="main-box-article">
                   <MainBoxArticle categoryId={categories.length > 0 && categories[0].id} />
                 </div>
               </div>
               <div className="aside-box-container mobile">
-                <h3 className="layout-heading">{categories.length > 1 && categories[1].name}</h3>
+                <Link to={`/news-and-videos-home-main-category/${categories.length > 1 && categories[1].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                  <h3 className="layout-heading">{categories.length > 1 && categories[1].name}</h3>
+                </Link>
                 <MiddleBoxArticle categoryId={categories.length > 1 && categories[1].id} />
               </div>
               <div className="aside-box-container">
-                <h3 className="layout-heading">{categories.length > 2 && categories[2].name}</h3>
+                <Link to={`/news-and-videos-home-main-category/${categories.length > 2 && categories[2].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                  <h3 className="layout-heading">{categories.length > 2 && categories[2].name}</h3>
+                </Link>
                 <AsideBoxArticle categoryId={categories.length > 2 && categories[2].id} />
               </div>
             </div>
@@ -68,7 +77,9 @@ const NewsAndVideosMain = () => {
       <div className="layout3" style={{ marginTop: '2rem' }}>
         <div className="layout-3background">
           <div className="layout-3content">
-            <h3 className="layout-heading" style={{ marginInline: 'var(--gutter-size)' }}>{categories.length > 3 && categories[3].name}</h3>
+            <Link to={`/news-and-videos-home-main-category/${categories.length > 3 && categories[3].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+              <h3 className="layout-heading" style={{ marginInline: 'var(--gutter-size)' }}>{categories.length > 3 && categories[3].name}</h3>
+            </Link>
             <ExtraNews />
           </div>
         </div>
@@ -80,11 +91,15 @@ const NewsAndVideosMain = () => {
             <div className="layout2-pre shorts">
               <div className="layout2 shorts">
                 <div className="aside-box-container mobile">
-                  <h3 className="layout-heading">{categories.length > 4 && categories[4].name}</h3>
+                  <Link to={`/news-and-videos-home-main-category/${categories.length > 4 && categories[4].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <h3 className="layout-heading">{categories.length > 4 && categories[4].name}</h3>
+                  </Link>
                   <MainBoxArticle categoryId={categories.length > 4 && categories[4].id} />
                 </div>
                 <div className="aside-box-container mobile">
-                  <h3 className="layout-heading">{categories.length > 5 && categories[5].name}</h3>
+                  <Link to={`/news-and-videos-home-main-category/${categories.length > 5 && categories[5].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <h3 className="layout-heading">{categories.length > 5 && categories[5].name}</h3>
+                  </Link>
                   <MiddleBoxArticle categoryId={categories.length > 5 && categories[5].id} />
                 </div>
                 <div className="aside-ad-contentbox">
@@ -93,7 +108,9 @@ const NewsAndVideosMain = () => {
                       <img src="https://placehold.co/300x250" alt="" />
                     </div>
                   </div>
-                  <h3 className="layout-heading" style={{paddingBlockStart:'0', marginBlockStart:'10px'}}>{categories.length > 6 && categories[6].name}</h3>
+                  <Link to={`/news-and-videos-home-main-category/${categories.length > 6 && categories[6].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <h3 className="layout-heading" style={{ paddingBlockStart: '0', marginBlockStart: '10px' }}>{categories.length > 6 && categories[6].name}</h3>
+                  </Link>
                   <AsideBoxArticle categoryId={categories.length > 6 && categories[6].id} />
                 </div>
               </div>
@@ -110,16 +127,22 @@ const NewsAndVideosMain = () => {
             <div className="layout2-pre">
               <div className="layout2">
                 <div className="aside-box-container">
-                  <h3 className="layout-heading">{categories.length > 7 && categories[7].name}</h3>
+                  <Link to={`/news-and-videos-home-main-category/${categories.length > 7 && categories[7].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <h3 className="layout-heading">{categories.length > 7 && categories[7].name}</h3>
+                  </Link>
                   <NewsBoxArticle />
                 </div>
                 <div className="aside-box-container">
-                  <h3 className="layout-heading">{categories.length > 8 && categories[8].name}</h3>
+                  <Link to={`/news-and-videos-home-main-category/${categories.length > 8 && categories[8].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <h3 className="layout-heading">{categories.length > 8 && categories[8].name}</h3>
+                  </Link>
                   <AsideBoxArticle categoryId={categories.length > 8 && categories[8].id} />
                 </div>
                 <div className="aside-box-container">
-                  <h3 className="layout-heading">{categories.length > 9 && categories[9].name}</h3>
-                  <AsideBoxArticle categoryId={categories.length > 9 && categories[9].id}/>
+                  <Link to={`/news-and-videos-home-main-category/${categories.length > 9 && categories[9].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                    <h3 className="layout-heading">{categories.length > 9 && categories[9].name}</h3>
+                  </Link>
+                  <AsideBoxArticle categoryId={categories.length > 9 && categories[9].id} />
                 </div>
               </div>
             </div>
