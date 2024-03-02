@@ -29,7 +29,7 @@ const CategoryContent = ({ categoryId }) => {
                   <img src={post._embedded['wp:featuredmedia'][0].source_url} alt={post.slug} className="post-thumbnail" />
                 }
                 <div className="layout1-category-content-box-headings">
-                  <h6 className="redheading">भारत जोड़ो पर राहुल</h6>
+                  <h6 className="redheading">{post.title && post.title.rendered}</h6>
                   <h3 className="category-main-heading">{post.title && post.title.rendered}</h3>
                   <p className="excerpt category" style={{ marginTop: '10px' }}>
                     {post.excerpt && post.excerpt.rendered && (
