@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import AsideBoxArticle from "./newsandvideosmain/Aside-Box-Article";
 import CategoryContent from "./newsandvideoscategorycomponents/category-content";
 import { useParams } from "react-router-dom";
@@ -38,7 +39,8 @@ const NewsAndVideoCategories = () => {
                         title: title,
                         authorName: authorName,
                         date: date,
-                        featuredImage: featuredImage
+                        featuredImage: featuredImage,
+                        postId: post.id
                     });
                 }
             } catch (error) {
@@ -59,7 +61,7 @@ const NewsAndVideoCategories = () => {
                 <div className="content">
 
                     <div className="main-category-page-image">
-                    <div className="category-labels">{categoryName}</div>
+                        <div className="category-labels">{categoryName}</div>
                         {categoryData && <img src={categoryData.featuredImage} alt="" />}
 
                     </div>
@@ -71,7 +73,9 @@ const NewsAndVideoCategories = () => {
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
                             <span className="date" style={{ marginInlineEnd: '1rem' }}> {categoryData && categoryData.date}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
-                            <span className="date" style={{ color: 'red' }}>Read More</span>
+                            <span className="date" style={{ color: 'red' }}><Link to={`/news-and-videos-home-main-page/${categoryData?.postId}`} style={{ textDecoration: 'none', color: 'red' }}>
+                                Read More
+                            </Link></span>
                         </div>
                     </div>
 
