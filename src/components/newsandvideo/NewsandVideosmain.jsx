@@ -51,7 +51,7 @@ const NewsAndVideosMain = () => {
               </div>
               <div className="aside-box-container">
                 <h3 className="layout-heading">{categories.length > 2 && categories[2].name}</h3>
-                <AsideBoxArticle />
+                <AsideBoxArticle categoryId={categories.length > 2 && categories[2].id} />
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ const NewsAndVideosMain = () => {
                     </div>
                   </div>
                   <h3 className="layout-heading" style={{paddingBlockStart:'0', marginBlockStart:'10px'}}>{categories.length > 6 && categories[6].name}</h3>
-                  <AsideBoxArticle />
+                  <AsideBoxArticle categoryId={categories.length > 6 && categories[6].id} />
                 </div>
               </div>
             </div>
@@ -115,11 +115,11 @@ const NewsAndVideosMain = () => {
                 </div>
                 <div className="aside-box-container">
                   <h3 className="layout-heading">{categories.length > 8 && categories[8].name}</h3>
-                  <AsideBoxArticle />
+                  <AsideBoxArticle categoryId={categories.length > 8 && categories[8].id} />
                 </div>
                 <div className="aside-box-container">
                   <h3 className="layout-heading">{categories.length > 9 && categories[9].name}</h3>
-                  <AsideBoxArticle />
+                  <AsideBoxArticle categoryId={categories.length > 9 && categories[9].id}/>
                 </div>
               </div>
             </div>

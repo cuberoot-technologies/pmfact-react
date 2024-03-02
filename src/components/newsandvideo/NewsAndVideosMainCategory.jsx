@@ -43,7 +43,7 @@ const NewsAndVideoCategories = () => {
                                     </div>
                                 </div>
                                 <h3 className="layout-heading" style={{ marginBlockStart: '0' }}>MPs News</h3>
-                                <AsideBoxArticle />
+                                <AsideBoxArticle categoryId={8} />
                             </div>
 
                             <div className="aside-ad-contentbox category">
@@ -53,7 +53,7 @@ const NewsAndVideoCategories = () => {
                                     </div>
                                 </div>
                                 <h3 className="layout-heading" style={{ marginBlockStart: '0' }}>MPs News</h3>
-                                <AsideBoxArticle />
+                                <AsideBoxArticle categoryId={6} />
                             </div>
 
                             <div className="aside-ad-contentbox category">
@@ -63,7 +63,7 @@ const NewsAndVideoCategories = () => {
                                     </div>
                                 </div>
                                 <h3 className="layout-heading" style={{ marginBlockStart: '0' }}>MPs News</h3>
-                                <AsideBoxArticle />
+                                <AsideBoxArticle categoryId={9} />
                             </div>
 
                         </div>
