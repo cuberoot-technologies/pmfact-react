@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const MainBoxArticle = ({ categoryId }) => {
     const [posts, setPosts] = useState([]);
@@ -28,14 +29,16 @@ const MainBoxArticle = ({ categoryId }) => {
             <div className="news-block">
                 {posts.map(post => (
                     <div key={post.id}>
-                        {post._embedded && post._embedded['wp:featuredmedia'] &&
-                            <img
-                                src={post._embedded['wp:featuredmedia'][0].source_url}
-                                alt={post._embedded['wp:featuredmedia'][0].alt_text}
-                            />
-                        }
-                        <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>{post.title.rendered}</h6>
-                        <h3 className="aside-heading middle">{post.title.rendered}</h3>
+                        <Link to={`/news-and-videos-home-main-page/${post.id}`} style={{ textDecoration: 'none', color: '#212529' }}> 
+                            {post._embedded && post._embedded['wp:featuredmedia'] &&
+                                <img
+                                    src={post._embedded['wp:featuredmedia'][0].source_url}
+                                    alt={post._embedded['wp:featuredmedia'][0].alt_text}
+                                />
+                            }
+                            <h6 className="redheading" style={{ marginBlockStart: 'var(--gutter-size)' }}>{post.title.rendered}</h6>
+                            <h3 className="aside-heading middle">{post.title.rendered}</h3>
+                        </Link>
                         <hr /> 
                     </div>
                 ))}
