@@ -8,6 +8,7 @@ const NewsAndVideoCategories = () => {
     const { categoryId } = useParams();
     const [categoryData, setCategoryData] = useState(null);
     const [categoryName, setCategoryName] = useState("");
+    const [categoryDate, setCategoryDate] = useState("");
 
     useEffect(() => {
         const fetchCategoryData = async () => {
@@ -32,7 +33,10 @@ const NewsAndVideoCategories = () => {
                     const post = data[0];
                     const title = post.title.rendered;
                     const authorName = post._embedded.author[0].name;
-                    const date = new Date(post.date).toLocaleString();
+                    const dateOptions = {
+                        hour12: true
+                    };
+                    const date = new Date(post.date).toLocaleString('en-US', dateOptions);
                     const featuredImage = post._embedded['wp:featuredmedia'][0].source_url;
 
                     setCategoryData({
@@ -71,7 +75,7 @@ const NewsAndVideoCategories = () => {
                         <div className="layout1-category-date">
                             <span className="date category" style={{ marginInlineEnd: '1rem' }}>{categoryData && categoryData.authorName}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
-                            <span className="date" style={{ marginInlineEnd: '1rem' }}> {categoryData && categoryData.date}</span>
+                            <span className="date" style={{ marginInlineEnd: '1rem' }} > {categoryData && categoryData.date}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
                             <span className="date" style={{ color: 'red' }}><Link to={`/news-and-videos-home-main-page/${categoryData?.postId}`} style={{ textDecoration: 'none', color: 'red' }}>
                                 Read More

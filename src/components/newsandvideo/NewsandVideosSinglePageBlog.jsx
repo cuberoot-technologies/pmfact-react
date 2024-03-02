@@ -33,8 +33,7 @@ const NewsAndVideoSinglePageBlog = () => {
                         featuredImg: post_featured_img,
                         content: post_content,
                         date: response.date,
-                        authorName: response.author.name,
-                   
+                        authorName: response.author && response.author.name ? response.author.name : "pmfact.com",
                         figureCaption: response._embedded['wp:featuredmedia'][0].caption.rendered
                     };
                     setPost(postData);
@@ -199,7 +198,7 @@ const NewsAndVideoSinglePageBlog = () => {
                         <div className="layout5-category-date">
                             <span className="date">{post && post.authorName}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
-                            <span className="date">{post && new Date(post.date).toLocaleString()}</span>
+                            <span className="date">{post && new Date(post.date).toLocaleString('en-US', { hour12: true })}</span>
                             <span className="date" style={{ fontWeight: '700' }}>|</span>
                                 <i className="bi bi-share-fill" style={{ color: 'rgb(27 49 106)' }}></i>
                                 <i className="bi bi-facebook" style={{ color: 'rgb(27 49 106)' }} ></i>
