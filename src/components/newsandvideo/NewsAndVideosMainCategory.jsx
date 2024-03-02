@@ -1,12 +1,53 @@
-import React from "react";
-import Images from "../../assets/Images.jpeg"
+import React, { useState, useEffect } from "react";
 import AsideBoxArticle from "./newsandvideosmain/Aside-Box-Article";
 import CategoryContent from "./newsandvideoscategorycomponents/category-content";
 import { useParams } from "react-router-dom";
 
 const NewsAndVideoCategories = () => {
     const { categoryId } = useParams();
+    const [categoryData, setCategoryData] = useState(null);
+    const [categoryName, setCategoryName] = useState("");
 
+    useEffect(() => {
+        const fetchCategoryData = async () => {
+            try {
+                const response = await fetch(`https://parliamentaryfact.com/wp-json/wp/v2/categories/${categoryId}`);
+                const data = await response.json();
+                setCategoryName(data.name);
+            } catch (error) {
+                console.error('Error fetching category data:', error);
+            }
+        };
+
+        fetchCategoryData();
+    }, [categoryId]);
+
+    useEffect(() => {
+        const fetchPostData = async () => {
+            try {
+                const response = await fetch(`https://parliamentaryfact.com/wp-json/wp/v2/posts?categories=${categoryId}&orderby=date&order=desc&_embed&per_page=1`);
+                const data = await response.json();
+                if (data.length > 0) {
+                    const post = data[0];
+                    const title = post.title.rendered;
+                    const authorName = post._embedded.author[0].name;
+                    const date = new Date(post.date).toLocaleString();
+                    const featuredImage = post._embedded['wp:featuredmedia'][0].source_url;
+
+                    setCategoryData({
+                        title: title,
+                        authorName: authorName,
+                        date: date,
+                        featuredImage: featuredImage
+                    });
+                }
+            } catch (error) {
+                console.error('Error fetching category data:', error);
+            }
+        };
+
+        fetchPostData();
+    }, [categoryId]);
 
     return (
         <>
@@ -18,24 +59,27 @@ const NewsAndVideoCategories = () => {
                 <div className="content">
 
                     <div className="main-category-page-image">
-                        <div className="category-labels">Politics</div>
-                        <img src={Images} alt="" />
-                    </div>
-                    <div className="layout1-category-headings">
-                        <h6>सोनिया गांधी ने 2004 में पहली बार रायबरेली से लड़ा चुनाव</h6>
-                        <h3 className="section-heading"> कांग्रेस की सबसे सुरक्षित सीट मानी जाती है रायबरेली </h3>
-                        <div className="layout1-category-date"><span className="date category">Stephan Romero </span>
-                            <span className="date" style={{ fontWeight: '700' }}>|</span>
-                            <span className="date"> 9/03/2020 - 10:48</span>
-                            <span className="date" style={{ fontWeight: '700' }}>|</span>
-                            <span className="date" style={{ color: 'red' }}>Read More</span></div>
+                    <div className="category-labels">{categoryName}</div>
+                        {categoryData && <img src={categoryData.featuredImage} alt="" />}
 
                     </div>
+                    <div className="layout1-category-headings">
+                        {categoryData && <h6>{categoryData.title}</h6>}
+                        <h3 className="section-heading"> {categoryData && `Top News: ${categoryData.title}`} </h3>
+                        <div className="layout1-category-date">
+                            <span className="date category" style={{ marginInlineEnd: '1rem' }}>{categoryData && categoryData.authorName}</span>
+                            <span className="date" style={{ fontWeight: '700' }}>|</span>
+                            <span className="date" style={{ marginInlineEnd: '1rem' }}> {categoryData && categoryData.date}</span>
+                            <span className="date" style={{ fontWeight: '700' }}>|</span>
+                            <span className="date" style={{ color: 'red' }}>Read More</span>
+                        </div>
+                    </div>
+
 
                     <div className="layout-category-wrap">
 
                         <div className="layout1-category">
-                        <CategoryContent categoryId={categoryId} />
+                            <CategoryContent categoryId={categoryId} />
                         </div>
 
                         <div className="layout2-category">
