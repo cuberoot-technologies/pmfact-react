@@ -4788,7 +4788,6 @@ input.click-here {
   display: flex;
   background: #eee;
   flex-wrap: nowrap;
-  padding-inline: var(--gutter-size);
   gap: var(--gutter-size);
   margin-bottom: var(--gutter-size);
 }
@@ -4993,19 +4992,13 @@ input.click-here {
 }
 
 .main-box-article {
-  padding-block-end: var(--gutter-size);
-  /* padding-inline-start: var(--gutter-size); */
-  /* max-width: 410px; */
+
   display: flex;
   flex-direction: column;
 }
 
-/* .aside-box-container{
-  margin-inline:var(--gap);
-} */
-
 .news-block {
-  padding-block: var(--gutter-size);
+  padding-block-start: var(--gutter-size);
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -5096,22 +5089,56 @@ input.click-here {
   display: none;
 }
 
-.image-box-layout1 img {
-  /* display: none; */
-  padding-block: var(--gutter-size) ;
-  height: 350px;
-  width: 330px
+.layout1{
+  padding-inline:0;
 }
+
+.image-box-layout1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 375px;
+}
+
+.image-box-layout1 img {
+  padding-inline: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+
+.image-box-layout1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.textonimage {
+  position: absolute;
+  display: flex;
+  width:100%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.textonimage h3 {
+  margin: 0;
+}
+
+
 
 .news-block.main-big-news img {
   width: 528px;
   height: 300px
-}
-
-.image-box-layout1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .sliderimagebox img {
@@ -5382,10 +5409,26 @@ input.click-here {
   height: 100px !important;
 }
 
+
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .main-category-page-image {
     width: 100%;
+  }
+
+  .textonimage{
+display: none;
+  }
+
+  .image-box-layout1::before {
+    background: none;
+  }
+
+  .layout1{
+    padding-inline:var(--gutter-size)
+  }
+  .advertisement.square-ad.top-margin, .aside-box-container.mobile.top-margin{
+    margin-block-start: calc(4.3*var(--gutter-size));
   }
 
   .date-icon {
@@ -5482,7 +5525,6 @@ input.click-here {
   .layout1{
     margin-bottom: 0;
   }
-
 
   .layout5-category-date {
     width: 40%;

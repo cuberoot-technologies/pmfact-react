@@ -136,7 +136,7 @@ function Topbar() {
               </div>
             </div>
             <div className="brandtextbox d-flex align-items-end justify-content-center">
-              <p className="brand-text">Representatives At Work</p>
+              <p className="brand-text" style={{marginBottom:'0'}}>Representatives At Work</p>
             </div>
           </Navbar.Brand>
         </Container>

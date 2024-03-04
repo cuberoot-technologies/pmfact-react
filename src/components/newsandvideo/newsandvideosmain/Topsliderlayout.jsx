@@ -42,6 +42,9 @@ const Toplayout1 = () => {
                     <div className="layout1">
                         <div className="image-box-layout1">
                             <img src={postData.featuredImage} alt="" />
+                            <div className="textonimage">
+                            <h3 className="section-heading">{postData.title}</h3>  
+                            </div>
                         </div>
                         <div className="layout1-content">
                             <div className="article">

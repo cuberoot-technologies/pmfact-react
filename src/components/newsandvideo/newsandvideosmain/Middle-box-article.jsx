@@ -9,20 +9,22 @@ const MiddleBoxArticle = ({ categoryId }) => {
     }, [categoryId]);
 
     const fetchPosts = () => {
-        const url = `https://parliamentaryfact.com/wp-json/wp/v2/posts?categories=${categoryId}&orderby=date&order=desc&per_page=2&_embed`;
-
+        const url = `https://parliamentaryfact.com/wp-json/wp/v2/posts?categories=${categoryId}&orderby=date&order=desc&per_page=2&page=2&_embed`;
+    
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 console.log("Response data:", data);
                 if (Array.isArray(data)) {
-                    setPosts(data);
+                    const postsToDisplay = data.slice(0, 2);
+                    setPosts(postsToDisplay);
                 } else {
                     console.error("Invalid response data:", data);
                 }
             })
             .catch(error => console.error("Error fetching posts:", error));
     };
+    
 
     return (
         <div className="aside-box-article">
