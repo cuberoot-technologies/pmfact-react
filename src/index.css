@@ -5409,11 +5409,24 @@ input.click-here {
   height: 100px !important;
 }
 
+.slides{
+  display: block;
+}
+
+.aside-box-container.mobile.top-margin.hidden{
+  display: none;
+}
 
 /* media query ******* */
 @media only screen and (min-width: 991px) {
   .main-category-page-image {
     width: 100%;
+  }
+.slides{
+  display: none;
+}
+  .aside-box-container.mobile.top-margin.hidden{
+    display: flex;
   }
 
   .textonimage{

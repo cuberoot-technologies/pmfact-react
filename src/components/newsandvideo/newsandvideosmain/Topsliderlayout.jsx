@@ -1,7 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Sliderslides from "./slidercontentpost";
 
 const Toplayout1 = () => {
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+        fetchCategories();
+    }, []);
+
+    const fetchCategories = () => {
+        fetch('https://parliamentaryfact.com/wp-json/wp/v2/categories')
+            .then(response => response.json())
+            .then(response => {
+                const categoriesData = response.map(category => ({
+                    id: category.id,
+                    name: category.name,
+                    slug: category.slug
+                }));
+                setCategories(categoriesData);
+            })
+            .catch(error => console.error(error));
+    };
+
     const [postData, setPostData] = useState(null);
 
     useEffect(() => {
@@ -12,8 +34,8 @@ const Toplayout1 = () => {
                     const post = data[0];
                     const title = post.title.rendered;
                     const featuredImage = post._embedded['wp:featuredmedia'][0].source_url;
-                    const authorName = post._embedded.author[0].name; 
-                    const date = new Date(post.date).toLocaleString(); 
+                    const authorName = post._embedded.author[0].name;
+                    const date = new Date(post.date).toLocaleString();
                     let content = post.content.rendered;
                     const cleanContent = content.replace(/<[^>]*>?/gm, '');
                     content = cleanContent.split(' ').slice(0, 44).join(' ');
@@ -24,7 +46,7 @@ const Toplayout1 = () => {
                         content: content,
                         author: authorName,
                         date: date,
-                        id: post.id 
+                        id: post.id
                     };
                     setPostData(postData);
                 })
@@ -38,19 +60,19 @@ const Toplayout1 = () => {
     return (
         <>
             {postData && (
-                <Link to={`/news-and-videos-home-main-page/${postData.id}`} style={{textDecoration:'none', color:'#212529'}}>
+                <Link to={`/news-and-videos-home-main-page/${postData.id}`} style={{ textDecoration: 'none', color: '#212529' }}>
                     <div className="layout1">
                         <div className="image-box-layout1">
                             <img src={postData.featuredImage} alt="" />
                             <div className="textonimage">
-                            <h3 className="section-heading">{postData.title}</h3>  
+                                <h3 className="section-heading">{postData.title}</h3>
                             </div>
                         </div>
                         <div className="layout1-content">
                             <div className="article">
                                 <h3 className="section-heading">{postData.title}</h3>
                                 <div className="article-content">
-                                    <span className="author" style={{marginInlineEnd:'1rem'}}>{postData.author}</span>
+                                    <span className="author" style={{ marginInlineEnd: '1rem' }}>{postData.author}</span>
                                     <span className="date">{postData.date}</span>
                                 </div>
                                 <p className="excerpt">{postData.content}...</p>
@@ -64,6 +86,11 @@ const Toplayout1 = () => {
                     </div>
                 </Link>
             )}
+
+            <div className="slides">
+                <Sliderslides categoryId={categories.length > 1 && categories[1].id} />
+            </div>
+
         </>
     );
 };

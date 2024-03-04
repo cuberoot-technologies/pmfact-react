@@ -50,7 +50,7 @@ const NewsAndVideosMain = () => {
                   <MainBoxArticle categoryId={categories.length > 1 && categories[1].id} />
                 </div>
               </div>
-              <div className="aside-box-container mobile top-margin">
+              <div className="aside-box-container mobile top-margin hidden">
                 {/* <Link to={`/news-and-videos-home-main-category/${categories.length > 1 && categories[1].id}`} style={{ textDecoration: 'none', color: '#212529' }}>
                   <h3 className="layout-heading">{categories.length > 1 && categories[1].name}</h3>
                 </Link> */}
