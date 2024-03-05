@@ -3,95 +3,86 @@ import { Link } from "react-router-dom";
 import Sliderslides from "./slidercontentpost";
 
 const Toplayout1 = () => {
-
     const [categories, setCategories] = useState([]);
+    const [postData, setPostData] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         fetchCategories();
+        fetchData();
     }, []);
 
     const fetchCategories = () => {
         fetch('https://parliamentaryfact.com/wp-json/wp/v2/categories')
             .then(response => response.json())
             .then(response => {
-                const categoriesData = response.map(category => ({
-                    id: category.id,
-                    name: category.name,
-                    slug: category.slug
-                }));
-                setCategories(categoriesData);
+                setCategories(response);
             })
             .catch(error => console.error(error));
     };
 
-    const [postData, setPostData] = useState(null);
+    const fetchData = () => {
+        fetch('https://parliamentaryfact.com/wp-json/wp/v2/posts?orderby=date&order=desc&per_page=3&_embed')
+            .then(response => response.json())
+            .then(data => {
+                setPostData(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    };
 
     useEffect(() => {
-        const fetchData = () => {
-            fetch('https://parliamentaryfact.com/wp-json/wp/v2/posts?orderby=date&order=desc&per_page=1&page=1&_embed')
-                .then(response => response.json())
-                .then(data => {
-                    const post = data[0];
-                    const title = post.title.rendered;
-                    const featuredImage = post._embedded['wp:featuredmedia'][0].source_url;
-                    const authorName = post._embedded.author[0].name;
-                    const date = new Date(post.date).toLocaleString();
-                    let content = post.content.rendered;
-                    const cleanContent = content.replace(/<[^>]*>?/gm, '');
-                    content = cleanContent.split(' ').slice(0, 44).join(' ');
-
-                    const postData = {
-                        title: title,
-                        featuredImage: featuredImage,
-                        content: content,
-                        author: authorName,
-                        date: date,
-                        id: post.id
-                    };
-                    setPostData(postData);
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                });
-        };
-        fetchData();
-    }, []);
+        const intervalId = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % postData.length);
+        }, 3000);
+        return () => clearInterval(intervalId);
+    }, [postData.length]);
 
     return (
-        <>
-            {postData && (
-                <Link to={`/news-and-videos-home-main-page/${postData.id}`} style={{ textDecoration: 'none', color: '#212529' }}>
-                    <div className="layout1">
-                        <div className="image-box-layout1">
-                            <img src={postData.featuredImage} alt="" />
-                            <div className="textonimage">
-                                <h3 className="section-heading">{postData.title}</h3>
-                            </div>
-                        </div>
-                        <div className="layout1-content">
-                            <div className="article">
-                                <h3 className="section-heading">{postData.title}</h3>
-                                <div className="article-content">
-                                    <span className="author" style={{ marginInlineEnd: '1rem' }}>{postData.author}</span>
-                                    <span className="date">{postData.date}</span>
+        <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+            <div className="carousel-inner">
+                {postData.map((post, index) => (
+                    <div key={post.id} className={`carousel-item ${currentIndex === index ? 'active' : ''}`}>
+                        {post && (
+                            <Link to={`/news-and-videos-home-main-page/${post.id}`} style={{ textDecoration: 'none', color: '#212529' }}>
+                                <div className="layout1">
+                                    <div className="image-box-layout1">
+                                        <img src={post._embedded['wp:featuredmedia'][0].source_url} className="d-block w-100" alt="" />
+                                        <div className="textonimage">
+                                            <h3 className="section-heading">{post.title.rendered}</h3>
+                                        </div>
+                                    </div>
+                                    <div className="layout1-content">
+                                        <div className="article">
+                                            <h3 className="section-heading">{post.title.rendered}</h3>
+                                            <div className="article-content">
+                                                <span className="author" style={{ marginInlineEnd: '1rem' }}>{post._embedded.author[0].name}</span>
+                                                <span className="date">{new Date(post.date).toLocaleString()}</span>
+                                            </div>
+                                            <p className="excerpt">{post.content.rendered.replace(/<[^>]*>?/gm, '').split(' ').slice(0, 44).join(' ')}...</p>
+                                        </div>
+                                    </div>
+                                    <div className="aside-content">
+                                        <div className="toplayout square-ad">
+                                            <img src="https://placehold.co/300x250" alt="" />
+                                        </div>
+                                    </div>
                                 </div>
-                                <p className="excerpt">{postData.content}...</p>
-                            </div>
-                        </div>
-                        <div className="aside-content" >
-                            <div className="toplayout square-ad ">
-                                <img src="https://placehold.co/300x250" alt="" />
-                            </div>
-                        </div>
+                            </Link>
+                        )}
                     </div>
-                </Link>
-            )}
-
-            <div className="slides">
-                <Sliderslides categoryId={categories.length > 1 && categories[1].id} />
+                ))}
+                {/* Next Slide - 20% visibility */}
+                {postData.length > 1 && (
+                    <div className="carousel-item-next">
+                        {postData[(currentIndex + 1) % postData.length] && (
+                            <img src={postData[(currentIndex + 1) % postData.length]._embedded['wp:featuredmedia'][0].source_url} className="d-block w-100" alt="" />
+                        )}
+                    </div>
+                )}
             </div>
-
-        </>
+        </div>
     );
 };
 

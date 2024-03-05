@@ -9,7 +9,7 @@ const Sliderslides = ({ categoryId }) => {
     }, [categoryId]);
 
     const fetchPosts = () => {
-        const url = `https://parliamentaryfact.com/wp-json/wp/v2/posts?categories=${categoryId}&orderby=date&order=desc&per_page=2&page=2&_embed`;
+        const url = `https://parliamentaryfact.com/wp-json/wp/v2/posts?categories=${categoryId}&orderby=date&order=desc&per_page=1&page=2&_embed`;
 
         fetch(url)
             .then(response => response.json())
